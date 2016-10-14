@@ -1,0 +1,4 @@
+I:\jewellery\18_04_2016_Girvi\bal\bin\Release\BAL.dll
+I:\jewellery\18_04_2016_Girvi\bal\bin\Release\BAL.pdb
+I:\jewellery\18_04_2016_Girvi\bal\obj\Release\BAL.dll
+I:\jewellery\18_04_2016_Girvi\bal\obj\Release\BAL.pdb

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74A8BC8C-3EE5-48EF-B1B1-94E6E721ADB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BAL</RootNamespace>
+    <AssemblyName>BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\..\..\UpdatedGirvi 17.11.15\GirviApurva_19_08_15\BLL\bin\Debug\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsVariable.cs" />
+    <Compile Include="Common\clsCommon.cs" />
+    <Compile Include="Common\ClsFinancialYear.cs" />
+    <Compile Include="Common\clsGirviCommon.cs" />
+    <Compile Include="Common\Cls_BalanceSheet.cs" />
+    <Compile Include="Common\cls_CashInHand.cs" />
+    <Compile Include="Common\LoginBAL.cs" />
+    <Compile Include="Girvi\clsAddress.cs" />
+    <Compile Include="Girvi\clsTahsil.cs" />
+    <Compile Include="Girvi\Cls_CastMaster.cs" />
+    <Compile Include="Girvi\cls_InterestPay.cs" />
+    <Compile Include="Reports\Girvi\CameraBAL.cs" />
+    <Compile Include="Reports\Girvi\clsKhatawaniList.cs" />
+    <Compile Include="Reports\Girvi\clsGirviReport.cs" />
+    <Compile Include="Reports\Girvi\clsRokad.cs" />
+    <Compile Include="Girvi\cls_Bhandval.cs" />
+    <Compile Include="Girvi\cls_GirviAdd.cs" />
+    <Compile Include="Girvi\cls_GirviRelease.cs" />
+    <Compile Include="Girvi\cls_GirviUpdate.cs" />
+    <Compile Include="Girvi\cls_Login.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Girvi\clsKhatawaniGirviRecord.cs" />
+    <Compile Include="Reports\Girvi\KhatawaniWithGirviBAL.cs" />
+    <Compile Include="Simplevalidations.cs" />
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="DataBaseForms\Cls_SettingDatabase.cs" />
+    <Compile Include="Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BAL.dll" />
+    <Content Include="bin\Debug\BAL.pdb" />
+    <Content Include="bin\Release\BAL.dll" />
+    <Content Include="bin\Release\BAL.pdb" />
+    <Content Include="obj\Debug\BAL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\BAL.dll" />
+    <Content Include="obj\Debug\BAL.pdb" />
+    <Content Include="obj\Release\BAL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\BAL.dll" />
+    <Content Include="obj\Release\BAL.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

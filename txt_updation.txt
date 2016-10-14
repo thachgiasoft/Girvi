@@ -1,0 +1,28 @@
+Database
+setting_value = AccountType varchar(MAX),Print_count_theva varchar(MAX),Duration varchar(MAX),Print_count_sodva varchar(MAX)
+GirviMaster = Interest nvarchar(MAX).
+Customer_Master=PoliceStation	nvarchar(MAX),Tahsil	nvarchar(MAX),District	nvarchar(MAX).
+
+ *********Form Updation**********
+1. Intrest Record(search By khatawani no and search by girvi no done.Add Extra feild Address and show details).
+
+2. Girvi Forword(Update Form Lable and extra feild Bank Intrest and set default value 11).
+
+3. Delete Girvi( Auto Search By Invoice No and Receipt No).
+
+4. Add Gorvi(upload photo done).
+
+5. Add feild in setting No1 and No2.
+
+6. Forword Girvi(Add feild FullName And Auto search done by FullName).
+7. Duplicate Girvi Release(add grid view feild AmountDeposit).
+8. Duplicate Girvi Add Print(add grid view feild Amount).
+9.Girvi Add Form(hide police station, tahsil and dist.)
+10.Add Emi Calculator new form.
+11.Add Girvin Report new form in A.R. report.
+12.Add all A.R. report Receipt No. feild in grid view.
+13.Add setting DeleteAllData form.
+14. add allrokad form Receipt No feild in grid view. 
+15. Add UpdateQuery Form in setting. 
+
+

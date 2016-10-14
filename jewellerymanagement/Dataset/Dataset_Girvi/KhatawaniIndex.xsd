@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KhatawaniIndex" targetNamespace="http://tempuri.org/KhatawaniIndex.xsd" xmlns:mstns="http://tempuri.org/KhatawaniIndex.xsd" xmlns="http://tempuri.org/KhatawaniIndex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KhatawaniIndex" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="KhatawaniIndex" msprop:Generator_UserDSName="KhatawaniIndex">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_CompanyMaster" msprop:Generator_TableClassName="dt_CompanyMasterDataTable" msprop:Generator_TableVarName="tabledt_CompanyMaster" msprop:Generator_RowChangedName="dt_CompanyMasterRowChanged" msprop:Generator_TablePropName="dt_CompanyMaster" msprop:Generator_RowDeletingName="dt_CompanyMasterRowDeleting" msprop:Generator_RowChangingName="dt_CompanyMasterRowChanging" msprop:Generator_RowEvHandlerName="dt_CompanyMasterRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_CompanyMasterRowDeleted" msprop:Generator_RowClassName="dt_CompanyMasterRow" msprop:Generator_UserTableName="dt_CompanyMaster" msprop:Generator_RowEvArgName="dt_CompanyMasterRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="companyid" msprop:Generator_ColumnVarNameInTable="columncompanyid" msprop:Generator_ColumnPropNameInRow="companyid" msprop:Generator_ColumnPropNameInTable="companyidColumn" msprop:Generator_UserColumnName="companyid" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="Addressline1" msprop:Generator_ColumnVarNameInTable="columnAddressline1" msprop:Generator_ColumnPropNameInRow="Addressline1" msprop:Generator_ColumnPropNameInTable="Addressline1Column" msprop:Generator_UserColumnName="Addressline1" type="xs:string" minOccurs="0" />
+              <xs:element name="Addressline2" msprop:Generator_ColumnVarNameInTable="columnAddressline2" msprop:Generator_ColumnPropNameInRow="Addressline2" msprop:Generator_ColumnPropNameInTable="Addressline2Column" msprop:Generator_UserColumnName="Addressline2" type="xs:string" minOccurs="0" />
+              <xs:element name="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_UserColumnName="city" type="xs:string" minOccurs="0" />
+              <xs:element name="MobNo" msprop:Generator_ColumnVarNameInTable="columnMobNo" msprop:Generator_ColumnPropNameInRow="MobNo" msprop:Generator_ColumnPropNameInTable="MobNoColumn" msprop:Generator_UserColumnName="MobNo" type="xs:string" minOccurs="0" />
+              <xs:element name="MobNo2" msprop:Generator_ColumnVarNameInTable="columnMobNo2" msprop:Generator_ColumnPropNameInRow="MobNo2" msprop:Generator_ColumnPropNameInTable="MobNo2Column" msprop:Generator_UserColumnName="MobNo2" type="xs:string" minOccurs="0" />
+              <xs:element name="Antargat" msprop:Generator_ColumnVarNameInTable="columnAntargat" msprop:Generator_ColumnPropNameInRow="Antargat" msprop:Generator_ColumnPropNameInTable="AntargatColumn" msprop:Generator_UserColumnName="Antargat" type="xs:string" minOccurs="0" />
+              <xs:element name="LicenceNo" msprop:Generator_ColumnVarNameInTable="columnLicenceNo" msprop:Generator_ColumnPropNameInRow="LicenceNo" msprop:Generator_ColumnPropNameInTable="LicenceNoColumn" msprop:Generator_UserColumnName="LicenceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Post" msprop:Generator_ColumnVarNameInTable="columnPost" msprop:Generator_ColumnPropNameInRow="Post" msprop:Generator_ColumnPropNameInTable="PostColumn" msprop:Generator_UserColumnName="Post" type="xs:string" minOccurs="0" />
+              <xs:element name="Tahsil" msprop:Generator_ColumnVarNameInTable="columnTahsil" msprop:Generator_ColumnPropNameInRow="Tahsil" msprop:Generator_ColumnPropNameInTable="TahsilColumn" msprop:Generator_UserColumnName="Tahsil" type="xs:string" minOccurs="0" />
+              <xs:element name="District" msprop:Generator_ColumnVarNameInTable="columnDistrict" msprop:Generator_ColumnPropNameInRow="District" msprop:Generator_ColumnPropNameInTable="DistrictColumn" msprop:Generator_UserColumnName="District" type="xs:string" minOccurs="0" />
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:string" minOccurs="0" />
+              <xs:element name="PinCode" msprop:Generator_ColumnVarNameInTable="columnPinCode" msprop:Generator_ColumnPropNameInRow="PinCode" msprop:Generator_ColumnPropNameInTable="PinCodeColumn" msprop:Generator_UserColumnName="PinCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dt_KhatawaniDetails" msprop:Generator_TableClassName="dt_KhatawaniDetailsDataTable" msprop:Generator_TableVarName="tabledt_KhatawaniDetails" msprop:Generator_RowChangedName="dt_KhatawaniDetailsRowChanged" msprop:Generator_TablePropName="dt_KhatawaniDetails" msprop:Generator_RowDeletingName="dt_KhatawaniDetailsRowDeleting" msprop:Generator_RowChangingName="dt_KhatawaniDetailsRowChanging" msprop:Generator_RowEvHandlerName="dt_KhatawaniDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_KhatawaniDetailsRowDeleted" msprop:Generator_RowClassName="dt_KhatawaniDetailsRow" msprop:Generator_UserTableName="dt_KhatawaniDetails" msprop:Generator_RowEvArgName="dt_KhatawaniDetailsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KhatawaniNo" msprop:Generator_ColumnVarNameInTable="columnKhatawaniNo" msprop:Generator_ColumnPropNameInRow="KhatawaniNo" msprop:Generator_ColumnPropNameInTable="KhatawaniNoColumn" msprop:Generator_UserColumnName="KhatawaniNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="PhoneNo" msprop:Generator_ColumnVarNameInTable="columnPhoneNo" msprop:Generator_ColumnPropNameInRow="PhoneNo" msprop:Generator_ColumnPropNameInTable="PhoneNoColumn" msprop:Generator_UserColumnName="PhoneNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,2157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D9E85DD-D837-4291-83BB-A10B471DC6E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JewelleryManagement</RootNamespace>
+    <AssemblyName>JewelleryManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>JewelleryManagement.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\CamCapture\CamCapture\CamCapture\bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\CamCapture\CamCapture\CamCapture\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\CamCapture\CamCapture\CamCapture\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SergeUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SergeUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.65.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture, Version=1.0.2395.24959, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\UpdatedGirvi 17.11.15\GirviApurva_19_08_15\JMS\bin\Debug\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Debug\Crt_YerpudeRelease.cs">
+      <DependentUpon>Crt_YerpudeRelease.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_AkolaDilipGirviSodwa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_AkolaDilipGirviSodwa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_akoladilipGirviTheva.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_akoladilipGirviTheva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_AkolaLalitGirviSodwa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_AkolaLalitGirviSodwa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_akolalalitGirviTheva.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_akolalalitGirviTheva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_AkolaRahulGirviSodwa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_AkolaRahulGirviSodwa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_akolarahulGirviTheva.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_akolarahulGirviTheva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_BabulgaonGirviAdd.cs">
+      <DependentUpon>Crt_BabulgaonGirviAdd.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_BabulgaonVaarrshikVivranPatra.cs">
+      <DependentUpon>Crt_BabulgaonVaarrshikVivranPatra.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\crt_Bhandval.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_Bhandval.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_CustomerPrintList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_CustomerPrintList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_form8%281%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_form8%281%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_GirviReliese.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_GirviReliese.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_Girvi_Renwal Notice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_Girvi_Renwal Notice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_InterestRecord.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_InterestRecord.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KaranjaLaadBhandval.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KaranjaLaadBhandval.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KaranjaLaadInterestRecord.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KaranjaLaadInterestRecord.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KaranjaLaadNotice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KaranjaLaadNotice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_karanjaLaadRokadAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_karanjaLaadRokadAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_Lambat_Girvi_Add.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_Lambat_Girvi_Add.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_Lambt_Girvi_Release.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_Lambt_Girvi_Release.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_Nikhare_Notice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_Nikhare_Notice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_NitinTumsarGirviByAddress.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_NitinTumsarGirviByAddress.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_notice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_notice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_RokadAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_RokadAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_SagarInterestRecord.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_SagarInterestRecord.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KarandeCustomerSale.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarandeCustomerSale.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KarandeCustomerSaleWithoutVat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarandeCustomerSaleWithoutVat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_karanjaNotice1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_karanjaNotice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_KarnjaGirviRelease1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KarnjaGirviRelease.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_KarnjaGirviTheva1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KarnjaGirviTheva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_NitinTumsarKhatawani1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_NitinTumsarKhatawani.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_SagarRokadAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_SagarRokadAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_SagarRokadMultiPrint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_SagarRokadMultiPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_WardhaGirviAdd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_WardhaGirviAdd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_WardhaRelease.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_WardhaRelease.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_YerpudeGirviAdd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_YerpudeGirviAdd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Lambat_Girvi_Add.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lambat_Girvi_Add.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Nikharecrt_form8%281%29.cs">
+      <DependentUpon>Nikharecrt_form8%281%29.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_NitinTumsarGirviReliese.cs">
+      <DependentUpon>Crt_NitinTumsarGirviReliese.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\crt_form8Babulgoan.cs">
+      <DependentUpon>crt_form8Babulgoan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\crt_GirviAddNormal.cs">
+      <DependentUpon>crt_GirviAddNormal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_BabulgaonGirviReliese.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_BabulgaonGirviReliese.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_InterestRecordMultiPrint.cs">
+      <DependentUpon>crt_InterestRecordMultiPrint.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Common\CreditDebitUpdateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CreditDebitUpdateQuery.Designer.cs">
+      <DependentUpon>CreditDebitUpdateQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CrystalReportUpdates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CrystalReportUpdates.Designer.cs">
+      <DependentUpon>CrystalReportUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmBackupandRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmBackupandRestore.designer.cs">
+      <DependentUpon>frmBackupandRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Frm_BalanceSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_BalanceSheet.Designer.cs">
+      <DependentUpon>Frm_BalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frm_CrDr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frm_CrDr.Designer.cs">
+      <DependentUpon>frm_CrDr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Frm_DeveloperLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_DeveloperLogin.designer.cs">
+      <DependentUpon>Frm_DeveloperLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Frm_ProfitLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_ProfitLoss.Designer.cs">
+      <DependentUpon>Frm_ProfitLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frm_UpdateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frm_UpdateQuery.Designer.cs">
+      <DependentUpon>frm_UpdateQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SettingValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\SettingValue.Designer.cs">
+      <DependentUpon>SettingValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sql\Cls_Backup.cs" />
+    <Compile Include="Common\Sql\ColumnSchema.cs" />
+    <Compile Include="Common\Credit_Debit\frm_CreditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Credit_Debit\frm_CreditForm.Designer.cs">
+      <DependentUpon>frm_CreditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Credit_Debit\frm_DebitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Credit_Debit\frm_DebitForm.Designer.cs">
+      <DependentUpon>frm_DebitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sql\DatabaseSchema.cs" />
+    <Compile Include="Common\Frm_CashInHandOpening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_CashInHandOpening.Designer.cs">
+      <DependentUpon>Frm_CashInHandOpening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sql\Frm_DatabaseBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Sql\Frm_DatabaseBackup.Designer.cs">
+      <DependentUpon>Frm_DatabaseBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sql\frm_dbbackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Sql\frm_dbbackup.designer.cs">
+      <DependentUpon>frm_dbbackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\KeyGen.cs" />
+    <Compile Include="Common\Sql\ForeignKeySchema.cs" />
+    <Compile Include="Common\Sql\IndexSchema.cs" />
+    <Compile Include="Common\Sql\SqlServerToSQLite.cs" />
+    <Compile Include="Common\Sql\TableSchema.cs" />
+    <Compile Include="Common\Sql\TableSelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Sql\TableSelectionDialog.designer.cs">
+      <DependentUpon>TableSelectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sql\TriggerBuilder.cs" />
+    <Compile Include="Common\Sql\TriggerSchema.cs" />
+    <Compile Include="Common\Sql\ViewFailureDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Sql\ViewFailureDialog.designer.cs">
+      <DependentUpon>ViewFailureDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Sql\ViewSchema.cs" />
+    <Compile Include="CrystalReport\Crt_KhatawaniIndex.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KhatawaniIndex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_YerpudeGirviAdd.cs">
+      <DependentUpon>crt_YerpudeGirviAdd.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_balsheetmontwise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_balsheetmontwise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_BabulgaonOfficeCopy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_BabulgaonOfficeCopy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_formno12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_formno12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_CustomerPrintList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_CustomerPrintList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_formno12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_formno12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_GirviByAdress.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_GirviByAdress.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_Girvi_Renwal Notice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_Girvi_Renwal Notice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_karanjalaadformno12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_karanjalaadformno12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadGirviReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KaranjaLaadGirviReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadMonthlyReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KaranjaLaadMonthlyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_KarnajaLaadFormNo_12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarnajaLaadFormNo_12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniGahanRegister.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_khatawaniGahanRegister.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_KhatawaniList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KhatawaniList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_Nikhare_Notice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_Nikhare_Notice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_NitinTumsarGirviByAddress.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_NitinTumsarGirviByAddress.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_notice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_notice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_RokadMultiPrint.cs">
+      <DependentUpon>crt_RokadMultiPrint.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Common\CashFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CashFlow.Designer.cs">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Frm_TrialBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_TrialBalance.Designer.cs">
+      <DependentUpon>Frm_TrialBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\OpeningAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\OpeningAccount.Designer.cs">
+      <DependentUpon>OpeningAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Opening_Value.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Opening_Value.Designer.cs">
+      <DependentUpon>Opening_Value.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_RokadAll.cs">
+      <DependentUpon>crt_RokadAll.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_ForwardGirviReport.cs">
+      <DependentUpon>crt_ForwardGirviReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_Bhandval.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_Bhandval.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_CashBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_CashBook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_CashInHand.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_CashInHand.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_GirviAdd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_GirviAdd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_GirviByAddress.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_GirviByAddress.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_GirviDailyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_GirviDailyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_GirviReliese.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_GirviReliese.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_InterestRecord.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_InterestRecord.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\crt_ReleasedGirvi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_ReleasedGirvi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_Rokad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_Rokad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_RokadAllUnreleased.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_RokadAllUnreleased.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_RokadDateWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_RokadDateWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_TotalIntreset.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_TotalIntreset.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithgirvi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_khatawaniwithgirvi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithgirviAdded.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_khatawaniwithgirviAdded.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithReleasegirvi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_khatawaniwithReleasegirvi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithUnReleasegirvi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_khatawaniwithUnReleasegirvi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_VinaTaranReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_VinaTaranReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\SixMonthReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SixMonthReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\frm_ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\frm_ReportViewer.Designer.cs">
+      <DependentUpon>frm_ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport\PrinterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\PrinterSetting.Designer.cs">
+      <DependentUpon>PrinterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseForms\UpdateDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseForms\UpdateDataBase.Designer.cs">
+      <DependentUpon>UpdateDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_balancesheetmonthwise.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_balancesheetmonthwise.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_cashbook.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_cashbook.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_forwardGirvi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_forwardGirvi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_girvi.cs">
+      <DependentUpon>ds_girvi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_girvi1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_girvi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_GirviRelesase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_GirviRelesase.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_GirviReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_GirviReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_InterestRecord.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_InterestRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_Nikhare_notice1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Nikhare_notice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_RokadSingle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_RokadSingle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_SixMonth.cs">
+      <DependentUpon>ds_SixMonth.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_SixMonth.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_SixMonth.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_Bhandval.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_Bhandval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_CashInHand.cs">
+      <DependentUpon>dt_CashInHand.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_CashInHand.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_CashInHand.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_customerprinatablelist1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_customerprinatablelist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_GirviByAddress.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_GirviByAddress.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\Dt_KaranjaLaadMonthWiseDataSet.cs">
+      <DependentUpon>Dt_KaranjaLaadMonthWiseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\Dt_KaranjaLaadMonthWiseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dt_KaranjaLaadMonthWiseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_khatawaniwithGirvixsd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_khatawaniwithGirvixsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_TotalInterest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_TotalInterest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\dt_vinataran1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dt_vinataran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\GiriviAdd.cs">
+      <DependentUpon>GiriviAdd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\GiriviAdd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GiriviAdd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\girivimonthly.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>girivimonthly.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\KhatawaniIndex.cs">
+      <DependentUpon>KhatawaniIndex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\KhatawaniIndex.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KhatawaniIndex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Registrationform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Registrationform.designer.cs">
+      <DependentUpon>frm_Registrationform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\CameraCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\CameraCapture.Designer.cs">
+      <DependentUpon>CameraCapture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\EMICalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\EMICalculator.Designer.cs">
+      <DependentUpon>EMICalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\FrmDuplicateGirviAddPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\FrmDuplicateGirviAddPrint.Designer.cs">
+      <DependentUpon>FrmDuplicateGirviAddPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_ActualPayAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_ActualPayAmount.Designer.cs">
+      <DependentUpon>frm_ActualPayAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_AddGoldSilverRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_AddGoldSilverRate.Designer.cs">
+      <DependentUpon>frm_AddGoldSilverRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_AddressMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_AddressMaster.Designer.cs">
+      <DependentUpon>frm_AddressMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frm_AddYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frm_AddYear.Designer.cs">
+      <DependentUpon>frm_AddYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\Frm_CasteMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\Frm_CasteMaster.Designer.cs">
+      <DependentUpon>Frm_CasteMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\Frm_customerprintablelist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\Frm_customerprintablelist.Designer.cs">
+      <DependentUpon>Frm_customerprintablelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_DeleteGirvi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_DeleteGirvi.Designer.cs">
+      <DependentUpon>frm_DeleteGirvi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_DuplicateGirviRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_DuplicateGirviRelease.designer.cs">
+      <DependentUpon>frm_DuplicateGirviRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_EmiCalculetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_EmiCalculetor.Designer.cs">
+      <DependentUpon>frm_EmiCalculetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_GirviAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_GirviAdd.Designer.cs">
+      <DependentUpon>frm_GirviAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_Girvi_Forword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_Girvi_Forword.Designer.cs">
+      <DependentUpon>frm_Girvi_Forword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_InterestPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_InterestPay.Designer.cs">
+      <DependentUpon>frm_InterestPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_Password.Designer.cs">
+      <DependentUpon>frm_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_ReleaseGirvi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_ReleaseGirvi.Designer.cs">
+      <DependentUpon>frm_ReleaseGirvi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\Frm_ReleaseWithNewAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\Frm_ReleaseWithNewAdd.Designer.cs">
+      <DependentUpon>Frm_ReleaseWithNewAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_TahsilMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_TahsilMaster.Designer.cs">
+      <DependentUpon>frm_TahsilMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\frm_UpdatedGirviItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girvi\frm_UpdatedGirviItem.Designer.cs">
+      <DependentUpon>frm_UpdatedGirviItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girvi\WebCam.cs" />
+    <Compile Include="JewelleryManagementSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JewelleryManagementSystem.Designer.cs">
+      <DependentUpon>JewelleryManagementSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGirviForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGirviForm.Designer.cs">
+      <DependentUpon>MainGirviForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Frm_BalanceSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_BalanceSheetForm.Designer.cs">
+      <DependentUpon>Frm_BalanceSheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniGirviAddedDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniGirviAddedDetails.Designer.cs">
+      <DependentUpon>Frm_allkhatawaniGirviAddedDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniGirviDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniGirviDetails.Designer.cs">
+      <DependentUpon>Frm_allkhatawaniGirviDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniReleasedGirviDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniReleasedGirviDetails.Designer.cs">
+      <DependentUpon>Frm_allkhatawaniReleasedGirviDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniUnReleasedGirviDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniUnReleasedGirviDetails.Designer.cs">
+      <DependentUpon>Frm_allkhatawaniUnReleasedGirviDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_GirviReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_GirviReport.Designer.cs">
+      <DependentUpon>Frm_GirviReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_ViewPhotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\A.R.Required\Frm_ViewPhotos.Designer.cs">
+      <DependentUpon>Frm_ViewPhotos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_CustomerDetailsByTahsilName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_CustomerDetailsByTahsilName.Designer.cs">
+      <DependentUpon>Frm_CustomerDetailsByTahsilName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_BabhulgaonOfficeCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_BabhulgaonOfficeCopy.Designer.cs">
+      <DependentUpon>Frm_BabhulgaonOfficeCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_Form14Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_Form14Report.Designer.cs">
+      <DependentUpon>Frm_Form14Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_BalansheetMonthly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_BalansheetMonthly.Designer.cs">
+      <DependentUpon>Frm_BalansheetMonthly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_Bhandwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_Bhandwal.Designer.cs">
+      <DependentUpon>frm_Bhandwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_CashBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_CashBook.Designer.cs">
+      <DependentUpon>frm_CashBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_CashInHand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_CashInHand.Designer.cs">
+      <DependentUpon>frm_CashInHand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_CustomerDetailsByVillageName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_CustomerDetailsByVillageName.Designer.cs">
+      <DependentUpon>Frm_CustomerDetailsByVillageName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_Form12Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_Form12Report.Designer.cs">
+      <DependentUpon>Frm_Form12Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_ForwordGirvi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_ForwordGirvi.Designer.cs">
+      <DependentUpon>frm_ForwordGirvi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_InterestPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_InterestPaid.Designer.cs">
+      <DependentUpon>frm_InterestPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_InterestPayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_InterestPayDetails.Designer.cs">
+      <DependentUpon>Frm_InterestPayDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_InterestRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_InterestRecord.Designer.cs">
+      <DependentUpon>frm_InterestRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_KhatawaniList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_KhatawaniList.Designer.cs">
+      <DependentUpon>frm_KhatawaniList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_Notice.Designer.cs">
+      <DependentUpon>Frm_Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_ProfitLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_ProfitLoss.Designer.cs">
+      <DependentUpon>frm_ProfitLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_Rokad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_Rokad.Designer.cs">
+      <DependentUpon>frm_Rokad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_RokadAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_RokadAll.Designer.cs">
+      <DependentUpon>frm_RokadAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_SixMonthsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_SixMonthsReport.Designer.cs">
+      <DependentUpon>Frm_SixMonthsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_TotalInterest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\frm_TotalInterest.Designer.cs">
+      <DependentUpon>frm_TotalInterest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\frm_CreditDebitRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_CreditDebitRecord.Designer.cs">
+      <DependentUpon>frm_CreditDebitRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseForms\Frm_DeleteAllTableData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseForms\Frm_DeleteAllTableData.Designer.cs">
+      <DependentUpon>Frm_DeleteAllTableData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseForms\Frm_DeveloperLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseForms\Frm_DeveloperLogin.Designer.cs">
+      <DependentUpon>Frm_DeveloperLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Girvi\VinaTarakReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\VinaTarakReport.Designer.cs">
+      <DependentUpon>VinaTarakReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\VayajReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\VayajReport.Designer.cs">
+      <DependentUpon>VayajReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bin\Debug\Crt_YerpudeRelease.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_YerpudeRelease.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_AkolaDilipGirviSodwa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_AkolaDilipGirviSodwa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_akoladilipGirviTheva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_akoladilipGirviTheva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_AkolaLalitGirviSodwa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_AkolaLalitGirviSodwa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_akolalalitGirviTheva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_akolalalitGirviTheva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_AkolaRahulGirviSodwa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_AkolaRahulGirviSodwa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_akolarahulGirviTheva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_akolarahulGirviTheva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_BabulgaonGirviAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_BabulgaonGirviAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_BabulgaonVaarrshikVivranPatra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_BabulgaonVaarrshikVivranPatra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_Bhandval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_Bhandval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_CustomerPrintList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_CustomerPrintList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_form8%281%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_form8%281%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_GirviReliese.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_GirviReliese.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_Girvi_Renwal Notice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_Girvi_Renwal Notice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_InterestRecord.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_InterestRecord.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KaranjaLaadBhandval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KaranjaLaadBhandval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KaranjaLaadInterestRecord.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KaranjaLaadInterestRecord.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KaranjaLaadNotice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KaranjaLaadNotice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_karanjaLaadRokadAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_karanjaLaadRokadAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_Lambat_Girvi_Add.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_Lambat_Girvi_Add.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_Lambt_Girvi_Release.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_Lambt_Girvi_Release.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_Nikhare_Notice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_Nikhare_Notice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_NitinTumsarGirviByAddress.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_NitinTumsarGirviByAddress.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_notice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_notice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_RokadAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_RokadAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_SagarInterestRecord.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_SagarInterestRecord.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KarandeCustomerSale.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarandeCustomerSale.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KarandeCustomerSaleWithoutVat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarandeCustomerSaleWithoutVat.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_karanjaNotice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_karanjaNotice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_KarnjaGirviRelease.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KarnjaGirviRelease1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_KarnjaGirviTheva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KarnjaGirviTheva1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_NitinTumsarKhatawani.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_NitinTumsarKhatawani1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_SagarRokadAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_SagarRokadAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_SagarRokadMultiPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_SagarRokadMultiPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_WardhaGirviAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_WardhaGirviAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_WardhaRelease.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_WardhaRelease.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_YerpudeGirviAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_YerpudeGirviAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Lambat_Girvi_Add.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Lambat_Girvi_Add.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Nikharecrt_form8%281%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Nikharecrt_form8%281%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_NitinTumsarGirviReliese.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_NitinTumsarGirviReliese.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_form8Babulgoan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_form8Babulgoan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_GirviAddNormal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_GirviAddNormal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_BabulgaonGirviReliese.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_BabulgaonGirviReliese.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_InterestRecordMultiPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_InterestRecordMultiPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CreditDebitUpdateQuery.resx">
+      <DependentUpon>CreditDebitUpdateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Credit_Debit\frm_CreditForm.resx">
+      <DependentUpon>frm_CreditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Credit_Debit\frm_DebitForm.resx">
+      <DependentUpon>frm_DebitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CrystalReportUpdates.resx">
+      <DependentUpon>CrystalReportUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frmBackupandRestore.resx">
+      <DependentUpon>frmBackupandRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Frm_BalanceSheet.resx">
+      <DependentUpon>Frm_BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Frm_CashInHandOpening.resx">
+      <DependentUpon>Frm_CashInHandOpening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frm_CrDr.resx">
+      <DependentUpon>frm_CrDr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Frm_DeveloperLogin.resx">
+      <DependentUpon>Frm_DeveloperLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Frm_ProfitLoss.resx">
+      <DependentUpon>Frm_ProfitLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frm_UpdateQuery.resx">
+      <DependentUpon>frm_UpdateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SettingValue.resx">
+      <DependentUpon>SettingValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Sql\Frm_DatabaseBackup.resx">
+      <DependentUpon>Frm_DatabaseBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Sql\frm_dbbackup.resx">
+      <DependentUpon>frm_dbbackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Sql\TableSelectionDialog.resx">
+      <DependentUpon>TableSelectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Sql\ViewFailureDialog.resx">
+      <DependentUpon>ViewFailureDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\Crt_KhatawaniIndex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KhatawaniIndex.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_YerpudeGirviAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_YerpudeGirviAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_balsheetmontwise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_balsheetmontwise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_BabulgaonOfficeCopy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_BabulgaonOfficeCopy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_formno12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_formno12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_CustomerPrintList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_CustomerPrintList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_formno12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_formno12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_GirviByAdress.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_GirviByAdress.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_Girvi_Renwal Notice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_Girvi_Renwal Notice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_karanjalaadformno12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_karanjalaadformno12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadGirviReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KaranjaLaadGirviReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadMonthlyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KaranjaLaadMonthlyReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_KarnajaLaadFormNo_12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarnajaLaadFormNo_12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniGahanRegister.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_khatawaniGahanRegister.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_KhatawaniList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KhatawaniList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_Nikhare_Notice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_Nikhare_Notice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_NitinTumsarGirviByAddress.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_NitinTumsarGirviByAddress.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_notice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_notice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_RokadMultiPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_RokadMultiPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CashFlow.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Frm_TrialBalance.resx">
+      <DependentUpon>Frm_TrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OpeningAccount.resx">
+      <DependentUpon>OpeningAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Opening_Value.resx">
+      <DependentUpon>Opening_Value.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_RokadAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_RokadAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_ForwardGirviReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_ForwardGirviReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_Bhandval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_Bhandval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_CashBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_CashBook.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_CashInHand.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_CashInHand.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_GirviAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_GirviAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_GirviByAddress.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_GirviByAddress.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_GirviDailyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_GirviDailyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_GirviReliese.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_GirviReliese.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_InterestRecord.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_InterestRecord.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Dataset_Girvi\crt_ReleasedGirvi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_ReleasedGirvi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_Rokad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_Rokad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_RokadAllUnreleased.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_RokadAllUnreleased.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_RokadDateWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_RokadDateWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_TotalIntreset.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_TotalIntreset.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithgirvi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_khatawaniwithgirvi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithgirviAdded.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_khatawaniwithgirviAdded.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithReleasegirvi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_khatawaniwithReleasegirvi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_khatawaniwithUnReleasegirvi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_khatawaniwithUnReleasegirvi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_VinaTaranReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_VinaTaranReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\SixMonthReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SixMonthReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\frm_ReportViewer.resx">
+      <DependentUpon>frm_ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\PrinterSetting.resx">
+      <DependentUpon>PrinterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseForms\UpdateDataBase.resx">
+      <DependentUpon>UpdateDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Registrationform.resx">
+      <DependentUpon>frm_Registrationform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\CameraCapture.resx">
+      <DependentUpon>CameraCapture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\EMICalculator.resx">
+      <DependentUpon>EMICalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\FrmDuplicateGirviAddPrint.resx">
+      <DependentUpon>FrmDuplicateGirviAddPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_ActualPayAmount.resx">
+      <DependentUpon>frm_ActualPayAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_AddGoldSilverRate.resx">
+      <DependentUpon>frm_AddGoldSilverRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_AddressMaster.resx">
+      <DependentUpon>frm_AddressMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frm_AddYear.resx">
+      <DependentUpon>frm_AddYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_CaptureImage.resx" />
+    <EmbeddedResource Include="Girvi\Frm_CasteMaster.resx">
+      <DependentUpon>Frm_CasteMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\Frm_customerprintablelist.resx">
+      <DependentUpon>Frm_customerprintablelist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_DeleteGirvi.resx">
+      <DependentUpon>frm_DeleteGirvi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_DuplicateGirviRelease.resx">
+      <DependentUpon>frm_DuplicateGirviRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_EmiCalculetor.resx">
+      <DependentUpon>frm_EmiCalculetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_GirviAdd.resx">
+      <DependentUpon>frm_GirviAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_Girvi_Forword.resx">
+      <DependentUpon>frm_Girvi_Forword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_InterestPay.resx">
+      <DependentUpon>frm_InterestPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_Password.resx">
+      <DependentUpon>frm_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_ReleaseGirvi.resx">
+      <DependentUpon>frm_ReleaseGirvi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\Frm_ReleaseWithNewAdd.resx">
+      <DependentUpon>Frm_ReleaseWithNewAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_TahsilMaster.resx">
+      <DependentUpon>frm_TahsilMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girvi\frm_UpdatedGirviItem.resx">
+      <DependentUpon>frm_UpdatedGirviItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JewelleryManagementSystem.resx">
+      <DependentUpon>JewelleryManagementSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGirviForm.resx">
+      <DependentUpon>MainGirviForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Frm_BalanceSheetForm.resx">
+      <DependentUpon>Frm_BalanceSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniGirviAddedDetails.resx">
+      <DependentUpon>Frm_allkhatawaniGirviAddedDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniGirviDetails.resx">
+      <DependentUpon>Frm_allkhatawaniGirviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniReleasedGirviDetails.resx">
+      <DependentUpon>Frm_allkhatawaniReleasedGirviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\A.R.Required\Frm_allkhatawaniUnReleasedGirviDetails.resx">
+      <DependentUpon>Frm_allkhatawaniUnReleasedGirviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\A.R.Required\Frm_GirviReport.resx">
+      <DependentUpon>Frm_GirviReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\A.R.Required\Frm_ViewPhotos.resx">
+      <DependentUpon>Frm_ViewPhotos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_CustomerDetailsByTahsilName.resx">
+      <DependentUpon>Frm_CustomerDetailsByTahsilName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_BabhulgaonOfficeCopy.resx">
+      <DependentUpon>Frm_BabhulgaonOfficeCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_Form14Report.resx">
+      <DependentUpon>Frm_Form14Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_BalansheetMonthly.resx">
+      <DependentUpon>Frm_BalansheetMonthly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_Bhandwal.resx">
+      <DependentUpon>frm_Bhandwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_CashBook.resx">
+      <DependentUpon>frm_CashBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_CashInHand.resx">
+      <DependentUpon>frm_CashInHand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_CustomerDetailsByVillageName.resx">
+      <DependentUpon>Frm_CustomerDetailsByVillageName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_Form12Report.resx">
+      <DependentUpon>Frm_Form12Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_ForwordGirvi.resx">
+      <DependentUpon>frm_ForwordGirvi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_InterestPaid.resx">
+      <DependentUpon>frm_InterestPaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_InterestPayDetails.resx">
+      <DependentUpon>Frm_InterestPayDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_InterestRecord.resx">
+      <DependentUpon>frm_InterestRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_KhatawaniList.resx">
+      <DependentUpon>frm_KhatawaniList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_Notice.resx">
+      <DependentUpon>Frm_Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_ProfitLoss.resx">
+      <DependentUpon>frm_ProfitLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_Rokad.resx">
+      <DependentUpon>frm_Rokad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_RokadAll.resx">
+      <DependentUpon>frm_RokadAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_SixMonthsReport.resx">
+      <DependentUpon>Frm_SixMonthsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\frm_TotalInterest.resx">
+      <DependentUpon>frm_TotalInterest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\frm_CreditDebitRecord.resx">
+      <DependentUpon>frm_CreditDebitRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseForms\Frm_DeleteAllTableData.resx">
+      <DependentUpon>Frm_DeleteAllTableData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseForms\Frm_DeveloperLogin.resx">
+      <DependentUpon>Frm_DeveloperLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\VinaTarakReport.resx">
+      <DependentUpon>VinaTarakReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VayajReport.resx">
+      <DependentUpon>VayajReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Dataset\Dataset_Girvi\ds_balancesheetmonthwise.xsc">
+      <DependentUpon>ds_balancesheetmonthwise.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_balancesheetmonthwise.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_balancesheetmonthwise.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_balancesheetmonthwise.xss">
+      <DependentUpon>ds_balancesheetmonthwise.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_cashbook.xsc">
+      <DependentUpon>ds_cashbook.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_cashbook.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_cashbook.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_cashbook.xss">
+      <DependentUpon>ds_cashbook.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_forwardGirvi.xsc">
+      <DependentUpon>ds_forwardGirvi.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_forwardGirvi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_forwardGirvi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_forwardGirvi.xss">
+      <DependentUpon>ds_forwardGirvi.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_girvi.xsc">
+      <DependentUpon>ds_girvi.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_girvi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_girvi1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_girvi.xss">
+      <DependentUpon>ds_girvi.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_GirviRelesase.xsc">
+      <DependentUpon>ds_GirviRelesase.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_GirviRelesase.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_GirviRelesase.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_GirviRelesase.xss">
+      <DependentUpon>ds_GirviRelesase.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_GirviReport.xsc">
+      <DependentUpon>ds_GirviReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_GirviReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_GirviReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_GirviReport.xss">
+      <DependentUpon>ds_GirviReport.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_InterestRecord.xsc">
+      <DependentUpon>ds_InterestRecord.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_InterestRecord.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_InterestRecord.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_InterestRecord.xss">
+      <DependentUpon>ds_InterestRecord.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_Nikhare_notice.xsc">
+      <DependentUpon>ds_Nikhare_notice.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_Nikhare_notice.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Nikhare_notice1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_Nikhare_notice.xss">
+      <DependentUpon>ds_Nikhare_notice.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_Report.xsc">
+      <DependentUpon>ds_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Report1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_Report.xss">
+      <DependentUpon>ds_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_RokadSingle.xsc">
+      <DependentUpon>ds_RokadSingle.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_RokadSingle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_RokadSingle.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_RokadSingle.xss">
+      <DependentUpon>ds_RokadSingle.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_SixMonth.xsc">
+      <DependentUpon>ds_SixMonth.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_SixMonth.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_SixMonth.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_SixMonth.xss">
+      <DependentUpon>ds_SixMonth.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_Bhandval.xsc">
+      <DependentUpon>dt_Bhandval.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_Bhandval.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_Bhandval.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_Bhandval.xss">
+      <DependentUpon>dt_Bhandval.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_CashInHand.xsc">
+      <DependentUpon>dt_CashInHand.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_CashInHand.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_CashInHand.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_CashInHand.xss">
+      <DependentUpon>dt_CashInHand.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_customerprinatablelist.xsc">
+      <DependentUpon>dt_customerprinatablelist.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_customerprinatablelist.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_customerprinatablelist1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_customerprinatablelist.xss">
+      <DependentUpon>dt_customerprinatablelist.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_GirviByAddress.xsc">
+      <DependentUpon>dt_GirviByAddress.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_GirviByAddress.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_GirviByAddress.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_GirviByAddress.xss">
+      <DependentUpon>dt_GirviByAddress.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\Dt_KaranjaLaadMonthWiseDataSet.xsc">
+      <DependentUpon>Dt_KaranjaLaadMonthWiseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\Dt_KaranjaLaadMonthWiseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dt_KaranjaLaadMonthWiseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\Dt_KaranjaLaadMonthWiseDataSet.xss">
+      <DependentUpon>Dt_KaranjaLaadMonthWiseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_khatawaniwithGirvixsd.xsc">
+      <DependentUpon>dt_khatawaniwithGirvixsd.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_khatawaniwithGirvixsd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_khatawaniwithGirvixsd.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_khatawaniwithGirvixsd.xss">
+      <DependentUpon>dt_khatawaniwithGirvixsd.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_TotalInterest.xsc">
+      <DependentUpon>dt_TotalInterest.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_TotalInterest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_TotalInterest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_TotalInterest.xss">
+      <DependentUpon>dt_TotalInterest.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_vinataran.xsc">
+      <DependentUpon>dt_vinataran.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_vinataran.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dt_vinataran1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\dt_vinataran.xss">
+      <DependentUpon>dt_vinataran.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\GiriviAdd.xsc">
+      <DependentUpon>GiriviAdd.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\GiriviAdd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GiriviAdd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\GiriviAdd.xss">
+      <DependentUpon>GiriviAdd.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\girivimonthly.xsc">
+      <DependentUpon>girivimonthly.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\girivimonthly.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>girivimonthly.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\girivimonthly.xss">
+      <DependentUpon>girivimonthly.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\KhatawaniIndex.xsc">
+      <DependentUpon>KhatawaniIndex.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\KhatawaniIndex.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KhatawaniIndex.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\KhatawaniIndex.xss">
+      <DependentUpon>KhatawaniIndex.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{74A8BC8C-3EE5-48EF-B1B1-94E6E721ADB9}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Resources\BLUEBUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Resources\greenbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Resources\ADDBUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Resources\button%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ConnectionString.txt" />
+    <None Include="Resources\743239-jewelry-wallpaper.jpg" />
+    <None Include="Resources\742687-jewelry-wallpaper.jpg" />
+    <None Include="Resources\742618-jewelry-wallpaper.jpeg" />
+    <None Include="Resources\742853-jewelry-wallpaper.jpg" />
+    <None Include="Resources\742828-jewelry-wallpaper.jpeg" />
+    <Content Include="Resources\ADDBUTTON.png" />
+    <Content Include="Resources\BLUEBUTTON.png" />
+    <None Include="Resources\MetroUI_Mail.png" />
+    <None Include="Resources\Twitter-logo.png" />
+    <None Include="Resources\boutique-jewelry-design.jpeg" />
+    <Content Include="Resources\button%282%29.png" />
+    <Content Include="Resources\button.png" />
+    <None Include="Resources\Cufflinks-model.jpg" />
+    <Content Include="Resources\designmainpage.jpg" />
+    <None Include="Resources\facebook.png" />
+    <Content Include="Resources\greenbutton.png" />
+    <Content Include="Resources\jewelry-pic2.jpg" />
+    <Content Include="Resources\jwelri.jpg" />
+    <None Include="Resources\a9d61cd67abf0f8267956d7c382a94ef.jpg" />
+    <None Include="Resources\H_G1L-x1.png" />
+    <None Include="bin\Debug\no-profile-img.gif" />
+    <None Include="bin\Debug\no_image.gif" />
+    <Content Include="bin\SergeUtils.dll" />
+    <None Include="Resources\red-cross-symbol-62905.png" />
+    <None Include="Resources\male-user-shadow_318-34042.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

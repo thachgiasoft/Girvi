@@ -1,0 +1,516 @@
+E:\FinalJewellery\JewelleryManagement\BAL\bin\Debug\BAL.dll
+E:\FinalJewellery\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.dll
+E:\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+G:\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.dll
+G:\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+G:\FinalJewellery\JewelleryManagement\BAL\bin\Debug\BAL.dll
+G:\FinalJewellery\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery\JewelleryManagement\BAL\bin\Debug\BAL.dll
+E:\appsthentic\FinalJewellery\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.dll
+E:\appsthentic\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery\JewelleryManagement\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\appsthentic\FinalJewellery 8_8_15\JewelleryManagement\BAL\bin\Debug\BAL.dll
+E:\appsthentic\FinalJewellery 8_8_15\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery 8_8_15\JewelleryManagement\BAL\obj\Debug\BAL.dll
+E:\appsthentic\FinalJewellery 8_8_15\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery 8_8_15\JewelleryManagement\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\subodh\FinalJewellery 19_8_15\JewelleryManagement\BAL\bin\Debug\BAL.dll
+E:\subodh\FinalJewellery 19_8_15\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\subodh\FinalJewellery 19_8_15\JewelleryManagement\BAL\obj\Debug\BAL.dll
+E:\subodh\FinalJewellery 19_8_15\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+E:\subodh\FinalJewellery 20_8_15\JewelleryManagement\BAL\bin\Debug\BAL.dll
+E:\subodh\FinalJewellery 20_8_15\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\subodh\FinalJewellery 20_8_15\JewelleryManagement\BAL\obj\Debug\BAL.dll
+E:\subodh\FinalJewellery 20_8_15\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery 20_8_15\JewelleryManagement\BAL\bin\Debug\BAL.dll
+E:\appsthentic\FinalJewellery 20_8_15\JewelleryManagement\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\FinalJewellery 20_8_15\JewelleryManagement\BAL\obj\Debug\BAL.dll
+E:\appsthentic\FinalJewellery 20_8_15\JewelleryManagement\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement25_08_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement25_08_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement25_08_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement25_08_15\BAL\obj\Debug\BAL.dll
+C:\Users\Rohit\Desktop\JewelleryManagement_06_09_15\BAL\bin\Debug\BAL.dll
+C:\Users\Rohit\Desktop\JewelleryManagement_06_09_15\BAL\bin\Debug\BAL.pdb
+C:\Users\Rohit\Desktop\JewelleryManagement_06_09_15\BAL\obj\Debug\BAL.dll
+C:\Users\Rohit\Desktop\JewelleryManagement_06_09_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_06_09_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_06_09_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_06_09_15\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_06_09_15\BAL\obj\Debug\BAL.pdb
+D:\JewelleryManagement_06_09_15 update\BAL\bin\Debug\BAL.dll
+D:\JewelleryManagement_06_09_15 update\BAL\bin\Debug\BAL.pdb
+D:\JewelleryManagement_06_09_15 update\BAL\obj\Debug\BAL.dll
+D:\JewelleryManagement_06_09_15 update\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_11_09_15\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_11_09_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_11_09_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_11_09_15\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\JewelleryManagement_11_09_15\BAL\bin\Debug\BAL.dll
+E:\appsthentic\JewelleryManagement_11_09_15\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\JewelleryManagement_11_09_15\BAL\obj\Debug\BAL.dll
+E:\appsthentic\JewelleryManagement_11_09_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+D:\Office Data\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+D:\Office Data\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+D:\Office Data\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+D:\Office Data\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi subodh\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+E:\appsthentic\DONE\girvi subodh\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi subodh\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+E:\appsthentic\DONE\girvi subodh\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\girvi subodh\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\girvi subodh\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\girvi subodh\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\girvi subodh\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+D:\Girvi26_11_15Update\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+D:\Girvi26_11_15Update\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+D:\Girvi26_11_15Update\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+D:\Girvi26_11_15Update\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+D:\Girvi01-12-15\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+D:\Girvi01-12-15\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+D:\Girvi01-12-15\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+D:\Girvi01-12-15\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+D:\Backup\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.dll
+D:\Backup\JewelleryManagement_12_09_15\BAL\bin\Debug\BAL.pdb
+D:\Backup\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.dll
+D:\Backup\JewelleryManagement_12_09_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_05_12_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_05_12_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\JewelleryManagement_05_12_15\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\JewelleryManagement_05_12_15\BAL\obj\Debug\BAL.pdb
+C:\Users\Home\Desktop\MortgageJewelleryManagement_05_12_15\BAL\bin\Debug\BAL.dll
+C:\Users\Home\Desktop\MortgageJewelleryManagement_05_12_15\BAL\bin\Debug\BAL.pdb
+C:\Users\Home\Desktop\MortgageJewelleryManagement_05_12_15\BAL\obj\Debug\BAL.dll
+C:\Users\Home\Desktop\MortgageJewelleryManagement_05_12_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.pdb
+D:\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.dll
+D:\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.pdb
+D:\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.dll
+D:\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.pdb
+C:\Users\Apurva-pc\Desktop\harish\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.dll
+C:\Users\Apurva-pc\Desktop\harish\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.pdb
+C:\Users\Apurva-pc\Desktop\harish\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.dll
+C:\Users\Apurva-pc\Desktop\harish\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.pdb
+C:\Users\Apurva-pc\Desktop\harish31_12_15\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.dll
+C:\Users\Apurva-pc\Desktop\harish31_12_15\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.pdb
+C:\Users\Apurva-pc\Desktop\harish31_12_15\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.dll
+C:\Users\Apurva-pc\Desktop\harish31_12_15\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.pdb
+C:\Users\Apurva-pc\Desktop\harish2_1_16\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.dll
+C:\Users\Apurva-pc\Desktop\harish2_1_16\MortgageJewelleryManagement_10_12_15\BAL\bin\Debug\BAL.pdb
+C:\Users\Apurva-pc\Desktop\harish2_1_16\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.dll
+C:\Users\Apurva-pc\Desktop\harish2_1_16\MortgageJewelleryManagement_10_12_15\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_9_1_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_9_1_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_9_1_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_9_1_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_25_1_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_25_1_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_25_1_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_25_1_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16WithoutExtra\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16WithoutExtra\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16WithoutExtra\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_27_1_16WithoutExtra\BAL\obj\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\MortgageJewelleryManagement_29_1_16\BAL\bin\Debug\BAL.dll
+C:\Users\Angel's\Desktop\MortgageJewelleryManagement_29_1_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\MortgageJewelleryManagement_29_1_16\BAL\obj\Debug\BAL.dll
+C:\Users\Angel's\Desktop\MortgageJewelleryManagement_29_1_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\30_01_16\BAL\bin\Debug\BAL.dll
+C:\Users\Angel's\Desktop\30_01_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\30_01_16\BAL\obj\Debug\BAL.dll
+C:\Users\Angel's\Desktop\30_01_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\2-2-16\BAL\bin\Debug\BAL.dll
+C:\Users\Angel's\Desktop\2-2-16\BAL\bin\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\2-2-16\BAL\obj\Debug\BAL.dll
+C:\Users\Angel's\Desktop\2-2-16\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\2-2-16\BAL\bin\Debug\BAL.dll
+E:\appsthentic\DONE\2-2-16\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\2-2-16\BAL\obj\Debug\BAL.dll
+E:\appsthentic\DONE\2-2-16\BAL\obj\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\3-2-16\BAL\bin\Debug\BAL.dll
+C:\Users\Angel's\Desktop\3-2-16\BAL\bin\Debug\BAL.pdb
+C:\Users\Angel's\Desktop\3-2-16\BAL\obj\Debug\BAL.dll
+C:\Users\Angel's\Desktop\3-2-16\BAL\obj\Debug\BAL.pdb
+D:\3-2-16\BAL\bin\Debug\BAL.dll
+D:\3-2-16\BAL\bin\Debug\BAL.pdb
+D:\3-2-16\BAL\obj\Debug\BAL.dll
+D:\3-2-16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\3-2-16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\3-2-16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\3-2-16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\3-2-16\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\4-2-16\BAL\bin\Debug\BAL.dll
+E:\appsthentic\DONE\4-2-16\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\4-2-16\BAL\obj\Debug\BAL.dll
+E:\appsthentic\DONE\4-2-16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\4-2-16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\4-2-16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\4-2-16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\4-2-16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\5-2-16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\5-2-16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\5-2-16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\5-2-16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_5_2_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_5_2_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_5_2_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_5_2_16\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\MortgageJewelleryManagement_6_2_16\BAL\bin\Debug\BAL.dll
+E:\appsthentic\DONE\MortgageJewelleryManagement_6_2_16\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\MortgageJewelleryManagement_6_2_16\BAL\obj\Debug\BAL.dll
+E:\appsthentic\DONE\MortgageJewelleryManagement_6_2_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_6_2_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_6_2_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_6_2_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement_6_2_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement10_2_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement10_2_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement10_2_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement10_2_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement10_2_16\BAL\bin\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement10_2_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement10_2_16\BAL\obj\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement10_2_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement15_2_16\BAL\bin\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement15_2_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement15_2_16\BAL\obj\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement15_2_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement25_2_16\BAL\bin\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement25_2_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement25_2_16\BAL\obj\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\MortgageJewelleryManagement25_2_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16 - Copy\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16 - Copy\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16 - Copy\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement1_3_16 - Copy\BAL\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\MortgageJewelleryManagement1_3_16 - Copy\MortgageJewelleryManagement1_3_16 - Copy\BAL\bin\Debug\BAL.dll
+E:\appsthentic\DONE\MortgageJewelleryManagement1_3_16 - Copy\MortgageJewelleryManagement1_3_16 - Copy\BAL\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\MortgageJewelleryManagement1_3_16 - Copy\MortgageJewelleryManagement1_3_16 - Copy\BAL\obj\Debug\BAL.dll
+E:\appsthentic\DONE\MortgageJewelleryManagement1_3_16 - Copy\MortgageJewelleryManagement1_3_16 - Copy\BAL\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.pdb
+G:\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.dll
+G:\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.pdb
+G:\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.dll
+G:\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Rohit\Desktop\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.dll
+C:\Users\Rohit\Desktop\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Rohit\Desktop\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.dll
+C:\Users\Rohit\Desktop\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Apurva Raut\Desktop\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.dll
+C:\Users\Apurva Raut\Desktop\MortgageJewelleryManagement19_03_16\BAL\bin\Debug\BAL.pdb
+C:\Users\Apurva Raut\Desktop\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.dll
+C:\Users\Apurva Raut\Desktop\MortgageJewelleryManagement19_03_16\BAL\obj\Debug\BAL.pdb
+C:\Users\Dhiraj\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\bin\Debug\BAL.dll
+C:\Users\Dhiraj\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\bin\Debug\BAL.pdb
+C:\Users\Dhiraj\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\obj\Debug\BAL.dll
+C:\Users\Dhiraj\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\obj\Debug\BAL.pdb
+C:\Users\ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\bin\Debug\BAL.dll
+C:\Users\ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\bin\Debug\BAL.pdb
+C:\Users\ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\obj\Debug\BAL.dll
+C:\Users\ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\obj\Debug\BAL.pdb
+C:\Users\SUBODH.Ricky\Desktop\UpdatedProject\MortgageJewelleryManagement23_03_16WithList\BAL\bin\Debug\BAL.dll
+C:\Users\SUBODH.Ricky\Desktop\UpdatedProject\MortgageJewelleryManagement23_03_16WithList\BAL\bin\Debug\BAL.pdb
+C:\Users\SUBODH.Ricky\Desktop\UpdatedProject\MortgageJewelleryManagement23_03_16WithList\BAL\obj\Debug\BAL.dll
+C:\Users\SUBODH.Ricky\Desktop\UpdatedProject\MortgageJewelleryManagement23_03_16WithList\BAL\obj\Debug\BAL.pdb
+C:\Users\SUBODH.Ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\bin\Debug\BAL.dll
+C:\Users\SUBODH.Ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\bin\Debug\BAL.pdb
+C:\Users\SUBODH.Ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\obj\Debug\BAL.dll
+C:\Users\SUBODH.Ricky\Desktop\MortgageJewelleryManagement23_03_16WithList\bal\obj\Debug\BAL.pdb
+C:\Users\SUBODH.Ricky\Desktop\05.04.2016 Girvi\bal\bin\Debug\BAL.dll
+C:\Users\SUBODH.Ricky\Desktop\05.04.2016 Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\SUBODH.Ricky\Desktop\05.04.2016 Girvi\bal\obj\Debug\BAL.dll
+C:\Users\SUBODH.Ricky\Desktop\05.04.2016 Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Rohit\Desktop\05.04.2016 Girvi\bal\bin\Debug\BAL.dll
+C:\Users\Rohit\Desktop\05.04.2016 Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\Rohit\Desktop\05.04.2016 Girvi\bal\obj\Debug\BAL.dll
+C:\Users\Rohit\Desktop\05.04.2016 Girvi\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\08_0_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\08_0_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\08_0_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\08_0_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\10_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\10_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\10_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\10_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+G:\11_04_2016_Girvi\bal\bin\Debug\BAL.dll
+G:\11_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+G:\11_04_2016_Girvi\bal\obj\Debug\BAL.dll
+G:\11_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+I:\jewellery\11_04_2016_Girvi\bal\bin\Debug\BAL.dll
+I:\jewellery\11_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+I:\jewellery\11_04_2016_Girvi\bal\obj\Debug\BAL.dll
+I:\jewellery\11_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+I:\jewellery\16_04_2016_Girvi\bal\bin\Debug\BAL.dll
+I:\jewellery\16_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+I:\jewellery\16_04_2016_Girvi\bal\obj\Debug\BAL.dll
+I:\jewellery\16_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+I:\jewellery\18_04_2016_Girvi\bal\bin\Debug\BAL.dll
+I:\jewellery\18_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+I:\jewellery\18_04_2016_Girvi\bal\obj\Debug\BAL.dll
+I:\jewellery\18_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\user\Desktop\20_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\Users\user\Desktop\20_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\user\Desktop\20_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\Users\user\Desktop\20_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\20_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\20_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\20_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\20_04_2016_Girvi\20_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\user\Desktop\25_04_2016_Girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\Users\user\Desktop\25_04_2016_Girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\user\Desktop\25_04_2016_Girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\Users\user\Desktop\25_04_2016_Girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\25_04_2016_Girvi_Vaishali\25_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\25_04_2016_Girvi_Vaishali\25_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\25_04_2016_Girvi_Vaishali\25_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\25_04_2016_Girvi_Vaishali\25_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\user\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.dll
+C:\Users\user\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+C:\Users\user\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.dll
+C:\Users\user\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+C:\Users\user\Desktop\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\WebCam_Capture.dll
+G:\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.dll
+G:\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\BAL.pdb
+G:\27-4-2016 girvi\25_04_2016_Girvi\bal\bin\Debug\WebCam_Capture.dll
+G:\27-4-2016 girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.dll
+G:\27-4-2016 girvi\25_04_2016_Girvi\bal\obj\Debug\BAL.pdb
+G:\5_5_16vaishaligirvi\5_5__16vprasadgirvi\bal\bin\Debug\BAL.dll
+G:\5_5_16vaishaligirvi\5_5__16vprasadgirvi\bal\bin\Debug\BAL.pdb
+G:\5_5_16vaishaligirvi\5_5__16vprasadgirvi\bal\bin\Debug\WebCam_Capture.dll
+G:\5_5_16vaishaligirvi\5_5__16vprasadgirvi\bal\obj\Debug\BAL.dll
+G:\5_5_16vaishaligirvi\5_5__16vprasadgirvi\bal\obj\Debug\BAL.pdb
+G:\5_5_16vaishaligirvi\6_5__16VaishaliGirvi\bal\bin\Debug\BAL.dll
+G:\5_5_16vaishaligirvi\6_5__16VaishaliGirvi\bal\bin\Debug\BAL.pdb
+G:\5_5_16vaishaligirvi\6_5__16VaishaliGirvi\bal\bin\Debug\WebCam_Capture.dll
+G:\5_5_16vaishaligirvi\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+G:\5_5_16vaishaligirvi\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.dll
+G:\5_5_16vaishaligirvi\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.pdb
+G:\6_5__16VaishaliGirvi\bal\bin\Debug\BAL.dll
+G:\6_5__16VaishaliGirvi\bal\bin\Debug\BAL.pdb
+G:\6_5__16VaishaliGirvi\bal\bin\Debug\WebCam_Capture.dll
+G:\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.dll
+G:\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\6_5__16VaishaliGirvi\6_5__16VaishaliGirvi\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\6_5__16VaishaliGirvi\6_5__16VaishaliGirvi\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\6_5__16VaishaliGirvi\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\6_5__16VaishaliGirvi\6_5__16VaishaliGirvi\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\Girvi_09_5_16\bal\bin\Debug\BAL.dll
+E:\appsthentic\DONE\Girvi_09_5_16\bal\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\Girvi_09_5_16\bal\obj\Debug\BAL.dll
+E:\appsthentic\DONE\Girvi_09_5_16\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\Girvi_09_5_16\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\appsthentic\DONE\Girvi_17_5_16_Rohit\bal\bin\Debug\BAL.dll
+E:\appsthentic\DONE\Girvi_17_5_16_Rohit\bal\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\Girvi_17_5_16_Rohit\bal\obj\Debug\BAL.dll
+E:\appsthentic\DONE\Girvi_17_5_16_Rohit\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\Girvi_17_5_16_Rohit\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+G:\Girvi_17_5_16_Rohit\bal\bin\Debug\BAL.dll
+G:\Girvi_17_5_16_Rohit\bal\bin\Debug\BAL.pdb
+G:\Girvi_17_5_16_Rohit\bal\bin\Debug\WebCam_Capture.dll
+G:\Girvi_17_5_16_Rohit\bal\obj\Debug\BAL.dll
+G:\Girvi_17_5_16_Rohit\bal\obj\Debug\BAL.pdb
+G:\Girvi_18_5_16_vaisahli\bal\bin\Debug\BAL.dll
+G:\Girvi_18_5_16_vaisahli\bal\bin\Debug\BAL.pdb
+G:\Girvi_18_5_16_vaisahli\bal\bin\Debug\WebCam_Capture.dll
+G:\Girvi_18_5_16_vaisahli\bal\obj\Debug\BAL.dll
+G:\Girvi_18_5_16_vaisahli\bal\obj\Debug\BAL.pdb
+G:\Girvi_19_5_16_vaisahli\bal\bin\Debug\BAL.dll
+G:\Girvi_19_5_16_vaisahli\bal\bin\Debug\BAL.pdb
+G:\Girvi_19_5_16_vaisahli\bal\bin\Debug\WebCam_Capture.dll
+G:\Girvi_19_5_16_vaisahli\bal\obj\Debug\BAL.dll
+G:\Girvi_19_5_16_vaisahli\bal\obj\Debug\BAL.pdb
+G:\Girvi_21_5_16_vaisahli\bal\bin\Debug\BAL.dll
+G:\Girvi_21_5_16_vaisahli\bal\bin\Debug\BAL.pdb
+G:\Girvi_21_5_16_vaisahli\bal\bin\Debug\WebCam_Capture.dll
+G:\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.dll
+G:\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.pdb
+E:\Girvi_21_5_16_vaisahli\bal\bin\Debug\BAL.dll
+E:\Girvi_21_5_16_vaisahli\bal\bin\Debug\BAL.pdb
+E:\Girvi_21_5_16_vaisahli\bal\bin\Debug\WebCam_Capture.dll
+E:\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.dll
+E:\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\Girvi_21_5_16_vaisahli\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\Girvi_21_5_16_vaisahli\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Subodh\Desktop\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\Girvi_21_5_16_vaisahli\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\27_05_2016girvi\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\27_05_2016girvi\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\27_05_2016girvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Subodh\Desktop\27_05_2016girvi\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\27_05_2016girvi\bal\obj\Debug\BAL.pdb
+E:\27_05_2016girvi_vaishali\27_05_2016girvi\bal\bin\Debug\BAL.dll
+E:\27_05_2016girvi_vaishali\27_05_2016girvi\bal\bin\Debug\BAL.pdb
+E:\27_05_2016girvi_vaishali\27_05_2016girvi\bal\bin\Debug\WebCam_Capture.dll
+E:\27_05_2016girvi_vaishali\27_05_2016girvi\bal\obj\Debug\BAL.dll
+E:\27_05_2016girvi_vaishali\27_05_2016girvi\bal\obj\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\27_05_2016girvi\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\27_05_2016girvi\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\27_05_2016girvi\bal\bin\Debug\WebCam_Capture.dll
+E:\31_05_2016girvi_vaishali\27_05_2016girvi\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\27_05_2016girvi\bal\obj\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\1_06_2016girvi\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\1_06_2016girvi\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\1_06_2016girvi\bal\bin\Debug\WebCam_Capture.dll
+E:\31_05_2016girvi_vaishali\1_06_2016girvi\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\1_06_2016girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\Vaishali\31_05_2016girvi_vaishali\7_06_2016girvi\bal\bin\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\Vaishali\31_05_2016girvi_vaishali\7_06_2016girvi\bal\bin\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\Vaishali\31_05_2016girvi_vaishali\7_06_2016girvi\bal\obj\Debug\BAL.dll
+C:\Users\Lalit.Thinker\Desktop\Vaishali\31_05_2016girvi_vaishali\7_06_2016girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Lalit.Thinker\Desktop\Vaishali\31_05_2016girvi_vaishali\7_06_2016girvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\31_05_2016girvi_vaishali\7_06_2016girvi\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\7_06_2016girvi\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\7_06_2016girvi\bal\bin\Debug\WebCam_Capture.dll
+E:\31_05_2016girvi_vaishali\7_06_2016girvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\31_05_2016girvi_vaishali\7_06_2016girvi\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\7_06_2016girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\7_06_2016girvi\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\7_06_2016girvi\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\7_06_2016girvi\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\7_06_2016girvi\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\girvi7_06_2016\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\girvi7_06_2016\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\girvi7_06_2016\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\girvi7_06_2016\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\girvi14_6_2016\girvi14_6_2016\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\girvi14_6_2016\girvi14_6_2016\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\girvi14_6_2016\girvi14_6_2016\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\girvi14_6_2016\girvi14_6_2016\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\girvi15_6_2016\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\girvi15_6_2016\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\girvi15_6_2016\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\girvi15_6_2016\bal\obj\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\girvi16_6_2016\bal\bin\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\girvi16_6_2016\bal\bin\Debug\BAL.pdb
+C:\DOTNET\WINDOWS_PROJECTS\girvi16_6_2016\bal\obj\Debug\BAL.dll
+C:\DOTNET\WINDOWS_PROJECTS\girvi16_6_2016\bal\obj\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi16_6_2016\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi16_6_2016\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi16_6_2016\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi16_6_2016\bal\obj\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi21_6_2016\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi21_6_2016\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi21_6_2016\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi21_6_2016\bal\obj\Debug\BAL.pdb
+D:\PRASAD\girvi21_6_2016\girvi21_6_2016\bal\bin\Debug\BAL.dll
+D:\PRASAD\girvi21_6_2016\girvi21_6_2016\bal\bin\Debug\BAL.pdb
+D:\PRASAD\girvi21_6_2016\girvi21_6_2016\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+D:\PRASAD\girvi21_6_2016\girvi21_6_2016\bal\obj\Debug\BAL.dll
+D:\PRASAD\girvi21_6_2016\girvi21_6_2016\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi23_6_2016\girvi23_6_2016\girvi21_6_2016\bal\bin\Debug\BAL.dll
+E:\appsthentic\DONE\girvi23_6_2016\girvi23_6_2016\girvi21_6_2016\bal\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi23_6_2016\girvi23_6_2016\girvi21_6_2016\bal\obj\Debug\BAL.dll
+E:\appsthentic\DONE\girvi23_6_2016\girvi23_6_2016\girvi21_6_2016\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi23_6_2016\girvi23_6_2016\girvi21_6_2016\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi21_6_2016\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi21_6_2016\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi21_6_2016\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi21_6_2016\bal\obj\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi28_6_2016\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi28_6_2016\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi7_06_2016\girvi23_6_2016Updated\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi29_6_2016\girvi28_6_2016\bal\bin\Debug\BAL.dll
+E:\appsthentic\DONE\girvi29_6_2016\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi29_6_2016\girvi28_6_2016\bal\bin\Debug\WebCam_Capture.dll
+E:\appsthentic\DONE\girvi29_6_2016\girvi28_6_2016\bal\obj\Debug\BAL.dll
+E:\appsthentic\DONE\girvi29_6_2016\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+E:\appsthentic\DONE\girvi29_6_2016\girvi28_6_2016\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi30_6_2016\girvi28_6_2016\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi30_6_2016\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi30_6_2016\girvi28_6_2016\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi30_6_2016\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi2_7_2016\girvi28_6_2016\bal\bin\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi2_7_2016\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi2_7_2016\girvi28_6_2016\bal\obj\Debug\BAL.dll
+E:\31_05_2016girvi_vaishali\girvi30_6_2016\girvi2_7_2016\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+D:\PRASAD\New folder\girvi6_7_2016Vaishali\girvi28_6_2016\bal\bin\Debug\BAL.dll
+D:\PRASAD\New folder\girvi6_7_2016Vaishali\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+D:\PRASAD\New folder\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+D:\PRASAD\New folder\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.dll
+D:\PRASAD\New folder\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+D:\PRASAD\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\bin\Debug\BAL.dll
+D:\PRASAD\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+D:\PRASAD\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.dll
+D:\PRASAD\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+E:\GirviLastUpdate\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\bin\Debug\BAL.dll
+E:\GirviLastUpdate\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\bin\Debug\BAL.pdb
+E:\GirviLastUpdate\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.dll
+E:\GirviLastUpdate\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.pdb
+E:\GirviLastUpdate\last up date -76\girvi6_7_2016Vaishali\girvi28_6_2016\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\GirviLastUpdate\girvi18_7_2016\bal\bin\Debug\BAL.dll
+E:\GirviLastUpdate\girvi18_7_2016\bal\bin\Debug\BAL.pdb
+E:\GirviLastUpdate\girvi18_7_2016\bal\bin\Debug\WebCam_Capture.dll
+E:\GirviLastUpdate\girvi18_7_2016\bal\obj\Debug\BAL.dll
+E:\GirviLastUpdate\girvi18_7_2016\bal\obj\Debug\BAL.pdb
+C:\Appsthentic\Windows Projects\girvi25_7_2016_Apurva\bal\bin\Debug\BAL.dll
+C:\Appsthentic\Windows Projects\girvi25_7_2016_Apurva\bal\bin\Debug\BAL.pdb
+C:\Appsthentic\Windows Projects\girvi25_7_2016_Apurva\bal\obj\Debug\BAL.dll
+C:\Appsthentic\Windows Projects\girvi25_7_2016_Apurva\bal\obj\Debug\BAL.pdb
+C:\Appsthentic\Windows Projects\girvi25_7_2016_Apurva\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Appsthentic\Windows Projects\girvi26_7_2016_Apurva\bal\bin\Debug\BAL.dll
+C:\Appsthentic\Windows Projects\girvi26_7_2016_Apurva\bal\bin\Debug\BAL.pdb
+C:\Appsthentic\Windows Projects\girvi26_7_2016_Apurva\bal\obj\Debug\BAL.dll
+C:\Appsthentic\Windows Projects\girvi26_7_2016_Apurva\bal\obj\Debug\BAL.pdb
+E:\girvi27_7_2016_Apurva\bal\bin\Debug\BAL.dll
+E:\girvi27_7_2016_Apurva\bal\bin\Debug\BAL.pdb
+E:\girvi27_7_2016_Apurva\bal\bin\Debug\WebCam_Capture.dll
+E:\girvi27_7_2016_Apurva\bal\obj\Debug\BAL.dll
+E:\girvi27_7_2016_Apurva\bal\obj\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\girvi27_7_2016_Apurva\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\girvi27_7_2016_Apurva\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\girvi27_7_2016_Apurva\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\girvi27_7_2016_Apurva\bal\obj\Debug\BAL.pdb
+E:\Girvi06_09_2016\GIRVI\bal\bin\Debug\BAL.dll
+E:\Girvi06_09_2016\GIRVI\bal\bin\Debug\BAL.pdb
+E:\Girvi06_09_2016\GIRVI\bal\bin\Debug\WebCam_Capture.dll
+E:\Girvi06_09_2016\GIRVI\bal\obj\Debug\BAL.dll
+E:\Girvi06_09_2016\GIRVI\bal\obj\Debug\BAL.pdb
+C:\Users\vaishali\Desktop\GIRVI\bal\bin\Debug\BAL.dll
+C:\Users\vaishali\Desktop\GIRVI\bal\bin\Debug\BAL.pdb
+C:\Users\vaishali\Desktop\GIRVI\bal\obj\Debug\BAL.dll
+C:\Users\vaishali\Desktop\GIRVI\bal\obj\Debug\BAL.pdb
+C:\Users\vaishali\Desktop\GIRVI\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Subodh\Desktop\Girvi20_09_16\GIRVI\bal\bin\Debug\BAL.dll
+C:\Users\Subodh\Desktop\Girvi20_09_16\GIRVI\bal\bin\Debug\BAL.pdb
+C:\Users\Subodh\Desktop\Girvi20_09_16\GIRVI\bal\obj\Debug\BAL.dll
+C:\Users\Subodh\Desktop\Girvi20_09_16\GIRVI\bal\obj\Debug\BAL.pdb
+C:\Users\TheThinker\Desktop\Girvi20_09_16\GIRVI\bal\bin\Debug\BAL.dll
+C:\Users\TheThinker\Desktop\Girvi20_09_16\GIRVI\bal\bin\Debug\BAL.pdb
+C:\Users\TheThinker\Desktop\Girvi20_09_16\GIRVI\bal\obj\Debug\BAL.dll
+C:\Users\TheThinker\Desktop\Girvi20_09_16\GIRVI\bal\obj\Debug\BAL.pdb
+C:\Users\TheThinker\Desktop\Girvi20_09_16\GIRVI\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+D:\Git\Girvi\Girvi\bal\bin\Debug\BAL.dll
+D:\Git\Girvi\Girvi\bal\bin\Debug\BAL.pdb
+D:\Git\Girvi\Girvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+D:\Git\Girvi\Girvi\bal\obj\Debug\BAL.dll
+D:\Git\Girvi\Girvi\bal\obj\Debug\BAL.pdb
