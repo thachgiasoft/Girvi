@@ -39,9 +39,9 @@
             this.dgv_Expence = new System.Windows.Forms.DataGridView();
             this.DeParticular = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DeAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            //this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            //this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            //this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lbl_Expences = new System.Windows.Forms.Label();
             this.lbl_Income = new System.Windows.Forms.Label();
             this.dgv_Income = new System.Windows.Forms.DataGridView();
