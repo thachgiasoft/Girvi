@@ -394,9 +394,6 @@ namespace JewelleryManagement
 
         private void frm_Girvi_Load(object sender, EventArgs e)
         {
-            //////
-        
-
             DataTable dt2 = _objGirviCommon.getAccountType();
             if (dt2.Rows[0][0].ToString() == "1")
             {
@@ -2554,11 +2551,13 @@ namespace JewelleryManagement
 
         }
 
-    
-    
-
-     
+        private void allSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JewelleryManagement.Frm_All_Settings _ObjAllSettings = new JewelleryManagement.Frm_All_Settings();
+            _ObjAllSettings.ShowDialog();
+       
         }
+    }
     }
 
 

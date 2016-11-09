@@ -79,8 +79,6 @@ namespace JewelleryManagement.Common
             string query14 = "ALTER TABLE tbl_GirviCrystalReports  ADD Khatawani varchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, Khatawani, query14, Date);
 
-
-           
             string Rokad = "Rokad";
             string query21 = "ALTER TABLE tbl_GirviCrystalReports  ADD Rokad varchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, Rokad, query21, Date);
@@ -120,6 +118,10 @@ namespace JewelleryManagement.Common
             string vadhiv = "vadhiv";
             string query30 = "ALTER TABLE GirviMaster  ADD vadhiv  nvarchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, vadhiv, query30, Date);
+
+            string duration = " duration";
+            string query31 = "ALTER TABLE setting_value  ADD duration nvarchar(MAX)";
+            dgv_UpdateQuery.Rows.Add(false, duration, query31, Date);
 
 
 

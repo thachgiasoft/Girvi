@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
 using System.Windows.Forms;
 using BAL.Girvi;
+using BAL.Common;
 
 namespace BAL.Common
 {
@@ -945,7 +943,12 @@ namespace BAL.Common
             _objSQLHelper.ExecuteSql(str);
         }
 
-
+        public DataTable getAllDataFromGetSettingValue()
+        {
+            string str = "SELECT  *  FROM  setting_value";
+            DataTable dt = _objSQLHelper.GetDataTable(str);
+            return dt;
+        }
         public void setreceipt(string value)
         {
             string str = "UPDATE setting_value SET receipt='" + value + "'";
@@ -991,7 +994,7 @@ namespace BAL.Common
             string str = "UPDATE setting_value SET HideDataFeild='" + value + "'";
             _objSQLHelper.ExecuteSql(str);
         }
-        public  string setlanguage()
+        public string setlanguage()
         {
             string str = "SELECT language FROM setting_value";
             return _objSQLHelper.ExecuteScalar(str);
@@ -1038,6 +1041,19 @@ namespace BAL.Common
             return dt;
         }
 
+        public void setDuration(string value)
+        {
+            string str1 = "UPDATE setting_value SET Duration='" + value + "'";
+            _objSQLHelper.ExecuteSql(str1);
+
+        }
+
+        public DataTable getduration()
+        {
+            string str1 = "SELECT Duration from setting_value ";
+            DataTable dt = _objSQLHelper.GetDataTable(str1);
+            return dt;
+        }
 
         public object InterestAmount(string Amount, string InterestRate, string noofdays)
         {

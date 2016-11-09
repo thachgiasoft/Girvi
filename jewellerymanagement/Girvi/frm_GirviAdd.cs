@@ -27,6 +27,7 @@ namespace JewelleryManagement.Girvi
         internal System.Windows.Forms.ComboBox ComboBox1;
         private string[] animals;
         byte[] big;
+        public static int durationDate { get; set; }
         public frm_GirviAdd()
         {
             InitializeComponent();
@@ -286,8 +287,8 @@ namespace JewelleryManagement.Girvi
 
         private void clearall()
         {
-          
-            dtp_Duration.Value = dtp_DateOfDeposit.Value.AddMonths(6);
+           
+           
             cmb_FullName.ResetText();
             CustName = "";
             txt_MobileNo.ResetText();
@@ -343,6 +344,17 @@ namespace JewelleryManagement.Girvi
 
 
         }
+
+        public void setdate()
+        {
+            DataTable dt = new DataTable();
+            dt = _objGirviCommon.getduration();
+            // dtp_Duration.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            //dtp_DateOfDeposit.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            durationDate = (Convert.ToInt32(dt.Rows[0]["Duration"].ToString()));
+            dtp_Duration.Value = dtp_DateOfDeposit.Value.AddMonths(durationDate);
+        }
+
         private void clearallwithoutname()
         {
            // lbl_OpeningBalance.Text = _objGirviCommon.getOpeningBalance();
@@ -357,7 +369,7 @@ namespace JewelleryManagement.Girvi
 
             }
 
-            dtp_DateOfDeposit.ResetText();
+            //dtp_DateOfDeposit.ResetText();
             txt_GrossWt.ResetText();
             ProfilePhoto = "";
             Documennt2 = "";
@@ -368,7 +380,7 @@ namespace JewelleryManagement.Girvi
             txt_FinalWtInPercent.Text = "100";
             txt_FineWt.ResetText();
             txt_CurrentPrice.ResetText();
-            dtp_Duration.ResetText();
+          //  dtp_Duration.ResetText();
             txt_FinalAmount.ResetText();
             txt_TotalAmount.ResetText();
             txt_EstimateInPer.Text = "75";
@@ -834,7 +846,7 @@ namespace JewelleryManagement.Girvi
 
         private void frm_GirviAdd_Load(object sender, EventArgs e)
         {
-
+            setdate();
             masterclear();
             SetFont();
             cmb_FullName.Select();
@@ -1968,7 +1980,7 @@ namespace JewelleryManagement.Girvi
         PrinterSetting oPrintersetting = new PrinterSetting();
         private void bttn_Save_Click(object sender, EventArgs e)
         {
-           
+             
             try
             
             
@@ -2267,7 +2279,7 @@ namespace JewelleryManagement.Girvi
         private void dtp_DateOfDeposit_ValueChanged(object sender, EventArgs e)
         {
 
-            dtp_Duration.Value = dtp_DateOfDeposit.Value.AddMonths(12);
+            dtp_Duration.Value = dtp_DateOfDeposit.Value.AddMonths(durationDate);
         }
 
         private void txt_FinalWt_TextChanged(object sender, EventArgs e)

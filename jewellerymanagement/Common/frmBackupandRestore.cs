@@ -8,12 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.Odbc;
 using System.Collections;
-using Microsoft.SqlServer.Management.Smo;
-using Microsoft.SqlServer.Management.Common;
 using System.IO;
 using BAL;
-
-
+using Microsoft.SqlServer.Management.Common;
+using Microsoft.SqlServer.Management.Smo;
 
 namespace JwelleryManagement
 {
@@ -184,49 +182,49 @@ namespace JwelleryManagement
             }
             if (srvr != null)
             {
-                try
-                {
-                    if (!Directory.Exists(DBpath))
-                    {
-                        Directory.CreateDirectory(DBpath);
-                    }
+                //try
+                //{
+                //    if (!Directory.Exists(DBpath))
+                //    {
+                //        Directory.CreateDirectory(DBpath);
+                //    }
 
-                    btn_backup.Enabled = false;
-                    btn_restore.Enabled = false;
-                    db_change.Enabled = false;
-                    // server_change.Enabled = false;
+                //    btn_backup.Enabled = false;
+                //    btn_restore.Enabled = false;
+                //    db_change.Enabled = false;
+                //    // server_change.Enabled = false;
 
-                    //Use this line if you have already created a bakup file.
-                    File.Delete(DBpath + "\\" + cmbDataBase.Text + ".bak");
-                    this.Cursor = Cursors.WaitCursor;
-                    // If the user has chosen a path where to save the backup file
-                    // Create a new backup operation
-                    Backup bkpDatabase = new Backup();
-                    // Set the backup type to a database backup
-                    bkpDatabase.Action = BackupActionType.Database;
-                    // Set the database that we want to perform a backup on
-                    bkpDatabase.Database = cmbDataBase.Text;
-                    // Set the backup device to a file
-                    BackupDeviceItem bkpDevice = new BackupDeviceItem(DBpath + "\\" + cmbDataBase.Text + ".bak", DeviceType.File);
-                    // Add the backup device to the backup
-                    bkpDatabase.Devices.Add(bkpDevice);
-                    // Perform the backup
-                    bkpDatabase.SqlBackup(srvr);
-                    MessageBox.Show("Bakup of Database " + cmbDataBase.Text + " successfully created", "Server", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception x)
-                {
-                    MessageBox.Show("ERROR: An error ocurred while backing up DataBase" + x, "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    this.Cursor = Cursors.Arrow;
+                //    //Use this line if you have already created a bakup file.
+                //    File.Delete(DBpath + "\\" + cmbDataBase.Text + ".bak");
+                //    this.Cursor = Cursors.WaitCursor;
+                //    // If the user has chosen a path where to save the backup file
+                //    // Create a new backup operation
+                //    Backup bkpDatabase = new Backup();
+                //    // Set the backup type to a database backup
+                //    bkpDatabase.Action = BackupActionType.Database;
+                //    // Set the database that we want to perform a backup on
+                //    bkpDatabase.Database = cmbDataBase.Text;
+                //    // Set the backup device to a file
+                //    BackupDeviceItem bkpDevice = new BackupDeviceItem(DBpath + "\\" + cmbDataBase.Text + ".bak", DeviceType.File);
+                //    // Add the backup device to the backup
+                //    bkpDatabase.Devices.Add(bkpDevice);
+                //    // Perform the backup
+                //    bkpDatabase.SqlBackup(srvr);
+                //    MessageBox.Show("Bakup of Database " + cmbDataBase.Text + " successfully created", "Server", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
+                //catch (Exception x)
+                //{
+                //    MessageBox.Show("ERROR: An error ocurred while backing up DataBase" + x, "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
+                //finally
+                //{
+                //    this.Cursor = Cursors.Arrow;
 
-                    btn_backup.Enabled = true;
-                    btn_restore.Enabled = true;
-                    db_change.Enabled = true;
-                    // server_change.Enabled = true;
-                }
+                //    btn_backup.Enabled = true;
+                //    btn_restore.Enabled = true;
+                //    db_change.Enabled = true;
+                //    // server_change.Enabled = true;
+                //}
             }
             else
             {
@@ -304,49 +302,49 @@ namespace JwelleryManagement
             // If there was a SQL connection created
             if (srvr != null)
             {
-                try
-                {
-                    //srvr.KillAllProcesses(cmbDataBase.SelectedItem.ToString());
-                    //srvr.DetachDatabase(cmbDataBase.SelectedItem.ToString(), true);
-                    btn_backup.Enabled = false;
-                    btn_restore.Enabled = false;
-                    db_change.Enabled = false;
-                    //server_change.Enabled = false;
+                //try
+                //{
+                //    //srvr.KillAllProcesses(cmbDataBase.SelectedItem.ToString());
+                //    //srvr.DetachDatabase(cmbDataBase.SelectedItem.ToString(), true);
+                //    btn_backup.Enabled = false;
+                //    btn_restore.Enabled = false;
+                //    db_change.Enabled = false;
+                //    //server_change.Enabled = false;
 
-                    this.Cursor = Cursors.WaitCursor;
-                    // If the user has chosen the file from which he wants the database to be restored
-                    // Create a new database restore operation
-                    Restore rstDatabase = new Restore();
-                    // Set the restore type to a database restore
-                    rstDatabase.Action = RestoreActionType.Database;
-                    // Set the database that we want to perform the restore on
-                    rstDatabase.Database = cmbDataBase.Text ;
+                //    this.Cursor = Cursors.WaitCursor;
+                //    // If the user has chosen the file from which he wants the database to be restored
+                //    // Create a new database restore operation
+                //    Restore rstDatabase = new Restore();
+                //    // Set the restore type to a database restore
+                //    rstDatabase.Action = RestoreActionType.Database;
+                //    // Set the database that we want to perform the restore on
+                //    rstDatabase.Database = cmbDataBase.Text ;
                     
-                    // Set the backup device from which we want to restore, to a file
-                    BackupDeviceItem bkpDevice = new BackupDeviceItem(DBpath +"\\"+ cmbDataBase.Text + ".bak", DeviceType.File);
-                    // Add the backup device to the restore type
-                    rstDatabase.Devices.Add(bkpDevice);
-                    // If the database already exists, replace it
-                    rstDatabase.ReplaceDatabase = true;
-                    //rstDatabase.NoRecovery = true;
-                    //rstDatabase.SqlRestoreAsync(srvr);
-                    // Perform the restore
-                    rstDatabase.SqlRestore(srvr);
-                    MessageBox.Show("Database " + cmbDataBase.Text + " succefully restored", "Server", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch
-                {
-                    MessageBox.Show("ERROR: An error ocurred while restoring the database", "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    this.Cursor = Cursors.Arrow;
+                //    // Set the backup device from which we want to restore, to a file
+                //    BackupDeviceItem bkpDevice = new BackupDeviceItem(DBpath +"\\"+ cmbDataBase.Text + ".bak", DeviceType.File);
+                //    // Add the backup device to the restore type
+                //    rstDatabase.Devices.Add(bkpDevice);
+                //    // If the database already exists, replace it
+                //    rstDatabase.ReplaceDatabase = true;
+                //    //rstDatabase.NoRecovery = true;
+                //    //rstDatabase.SqlRestoreAsync(srvr);
+                //    // Perform the restore
+                //    rstDatabase.SqlRestore(srvr);
+                //    MessageBox.Show("Database " + cmbDataBase.Text + " succefully restored", "Server", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
+                //catch
+                //{
+                //    MessageBox.Show("ERROR: An error ocurred while restoring the database", "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
+                //finally
+                //{
+                //    this.Cursor = Cursors.Arrow;
 
-                    btn_backup.Enabled = true;
-                    btn_restore.Enabled = true;
-                    db_change.Enabled = true;
-                    //  server_change.Enabled = true;
-                }
+                //    btn_backup.Enabled = true;
+                //    btn_restore.Enabled = true;
+                //    db_change.Enabled = true;
+                //    //  server_change.Enabled = true;
+                //}
             }
             else
             {
