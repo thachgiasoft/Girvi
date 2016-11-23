@@ -398,6 +398,12 @@
     <Compile Include="Common\frmBackupandRestore.designer.cs">
       <DependentUpon>frmBackupandRestore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Common\Frm_All_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Frm_All_Settings.designer.cs">
+      <DependentUpon>Frm_All_Settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\Frm_BalanceSheet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -897,12 +903,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KhatawaniIndex.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Common\Frm_All_Settings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Common\Frm_All_Settings.Designer.cs">
-      <DependentUpon>Frm_All_Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Registrationform.cs">
       <SubType>Form</SubType>
