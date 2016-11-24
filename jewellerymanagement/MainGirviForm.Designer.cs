@@ -153,6 +153,7 @@
             this.allSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eMICalculetorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MonthWiseNoticevayajReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.pnl_Visibility.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -739,7 +740,8 @@
             this.viewPhotosToolStripMenuItem,
             this.sixMonthReportToolStripMenuItem,
             this.vinaTaranReportToolStripMenuItem,
-            this.vayajReportToolStripMenuItem});
+            this.vayajReportToolStripMenuItem,
+            this.MonthWiseNoticevayajReportToolStripMenuItem});
             this.fileMenu.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileMenu.ForeColor = System.Drawing.Color.White;
             this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
@@ -926,6 +928,7 @@
             this.nOTICEToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.nOTICEToolStripMenuItem.Text = "Notice";
             this.nOTICEToolStripMenuItem.Visible = false;
+            this.nOTICEToolStripMenuItem.Click += new System.EventHandler(this.nOTICEToolStripMenuItem_Click);
             // 
             // customerCopyToolStripMenuItem
             // 
@@ -1117,14 +1120,14 @@
             this.yesToolStripMenuItem.Checked = true;
             this.yesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.yesToolStripMenuItem.Name = "yesToolStripMenuItem";
-            this.yesToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.yesToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.yesToolStripMenuItem.Text = "Yes";
             this.yesToolStripMenuItem.Click += new System.EventHandler(this.yesToolStripMenuItem_Click);
             // 
             // noToolStripMenuItem
             // 
             this.noToolStripMenuItem.Name = "noToolStripMenuItem";
-            this.noToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.noToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.noToolStripMenuItem.Text = "No";
             this.noToolStripMenuItem.Click += new System.EventHandler(this.noToolStripMenuItem_Click);
             // 
@@ -1168,14 +1171,14 @@
             // trueToolStripMenuItem
             // 
             this.trueToolStripMenuItem.Name = "trueToolStripMenuItem";
-            this.trueToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.trueToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.trueToolStripMenuItem.Text = "True";
             this.trueToolStripMenuItem.Click += new System.EventHandler(this.trueToolStripMenuItem_Click);
             // 
             // falseToolStripMenuItem
             // 
             this.falseToolStripMenuItem.Name = "falseToolStripMenuItem";
-            this.falseToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.falseToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.falseToolStripMenuItem.Text = "False";
             this.falseToolStripMenuItem.Click += new System.EventHandler(this.falseToolStripMenuItem_Click);
             // 
@@ -1223,14 +1226,14 @@
             // no1ToolStripMenuItem
             // 
             this.no1ToolStripMenuItem.Name = "no1ToolStripMenuItem";
-            this.no1ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.no1ToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.no1ToolStripMenuItem.Text = "No 1";
             this.no1ToolStripMenuItem.Click += new System.EventHandler(this.no1ToolStripMenuItem_Click);
             // 
             // no2ToolStripMenuItem
             // 
             this.no2ToolStripMenuItem.Name = "no2ToolStripMenuItem";
-            this.no2ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.no2ToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.no2ToolStripMenuItem.Text = "No 2";
             this.no2ToolStripMenuItem.Click += new System.EventHandler(this.no2ToolStripMenuItem_Click);
             // 
@@ -1263,14 +1266,14 @@
             // yesToolStripMenuItem1
             // 
             this.yesToolStripMenuItem1.Name = "yesToolStripMenuItem1";
-            this.yesToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
+            this.yesToolStripMenuItem1.Size = new System.Drawing.Size(114, 26);
             this.yesToolStripMenuItem1.Text = "Yes";
             this.yesToolStripMenuItem1.Click += new System.EventHandler(this.yesToolStripMenuItem1_Click);
             // 
             // noToolStripMenuItem1
             // 
             this.noToolStripMenuItem1.Name = "noToolStripMenuItem1";
-            this.noToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
+            this.noToolStripMenuItem1.Size = new System.Drawing.Size(114, 26);
             this.noToolStripMenuItem1.Text = "No";
             this.noToolStripMenuItem1.Click += new System.EventHandler(this.noToolStripMenuItem1_Click);
             // 
@@ -1353,6 +1356,13 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(57, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // MonthWiseNoticevayajReportToolStripMenuItem
+            // 
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Name = "MonthWiseNoticevayajReportToolStripMenuItem";
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Text = "Months Wise Notice";
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Click += new System.EventHandler(this.MonthWiseNoticevayajReportToolStripMenuItem_Click);
             // 
             // MainGirviForm
             // 
@@ -1540,6 +1550,7 @@
         private System.Windows.Forms.Button bttn_google;
         private System.Windows.Forms.ToolStripMenuItem AboutUstoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MonthWiseNoticevayajReportToolStripMenuItem;
     }
 }
 

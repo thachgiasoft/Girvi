@@ -231,7 +231,7 @@ namespace JewelleryManagement.Reports.Girvi
 
             dgv_SixMonthReport.Columns["SrNo"].HeaderText = "क्र.";
             dgv_SixMonthReport.Columns["KhatawaniNo"].HeaderText = "खतावणी क्र.";
-            dgv_SixMonthReport.Columns["Name"].HeaderText = "नाव.";
+            dgv_SixMonthReport.Columns["CName"].HeaderText = "नाव.";
             dgv_SixMonthReport.Columns["ContactNo"].HeaderText = "संपर्क क्र.";
 
             dgv_SixMonthReport.Columns["Address"].HeaderText = "पत्ता";
@@ -257,7 +257,7 @@ namespace JewelleryManagement.Reports.Girvi
 
             dgv_SixMonthReport.Columns["SrNo"].HeaderText = "क्र.";
             dgv_SixMonthReport.Columns["KhatawaniNo"].HeaderText = "खतावणी क्र.";
-            dgv_SixMonthReport.Columns["Name"].HeaderText = "नाम";
+            dgv_SixMonthReport.Columns["CName"].HeaderText = "नाम";
             dgv_SixMonthReport.Columns["ContactNo"].HeaderText = "संपर्क क्र.";
 
             dgv_SixMonthReport.Columns["Address"].HeaderText = "पता";
@@ -283,7 +283,7 @@ namespace JewelleryManagement.Reports.Girvi
 
             dgv_SixMonthReport.Columns["SrNo"].HeaderText = "Sr No";
             dgv_SixMonthReport.Columns["KhatawaniNo"].HeaderText = "Khatawani No.";
-            dgv_SixMonthReport.Columns["Name"].HeaderText = "Name";
+            dgv_SixMonthReport.Columns["CName"].HeaderText = "Name";
             dgv_SixMonthReport.Columns["ContactNo"].HeaderText = "Contact No";
 
             dgv_SixMonthReport.Columns["Address"].HeaderText = "Address";

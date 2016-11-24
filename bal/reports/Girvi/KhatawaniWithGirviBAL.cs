@@ -109,7 +109,7 @@ namespace BAL.Reports.Girvi
         {
 
             // string str = "SELECT  Customer_Master.FullName, Customer_Master.Address,Customer_Master.Contact_No,GirviMaster.Amount,GirviMaster.interset_rate, GirviMaster.Date_of_deposit, GirviMaster.khatawani_No, GirviMaster.duration, GirviMaster.GirviRecordNo FROM  Customer_Master INNER JOIN GirviMaster ON Customer_Master.khatawani_No = GirviMaster.khatawani_No WHERE     (CONVERT(DateTime, GirviMaster.duration, 103) <= CONVERT(DateTime, '" + duration + "', 103) and status='unchange')";          
-            string str = "SELECT  Customer_Master.FullName, Customer_Master.Address,Customer_Master.Contact_No,GirviMaster.Amount,GirviMaster.interset_rate, GirviMaster.Date_of_deposit, GirviMaster.khatawani_No, GirviMaster.duration, GirviMaster.GirviRecordNo,Customer_Master.PageNo FROM  Customer_Master INNER JOIN GirviMaster ON Customer_Master.khatawani_No = GirviMaster.khatawani_No WHERE (status='unchange')";
+            string str = "SELECT  Customer_Master.FullName, Customer_Master.Address,Customer_Master.Contact_No,GirviMaster.Amount,GirviMaster.interset_rate, GirviMaster.Date_of_deposit, GirviMaster.khatawani_No, GirviMaster.duration, GirviMaster.GirviRecordNo,Customer_Master.PageNo, GirviMaster.NSN FROM  Customer_Master INNER JOIN GirviMaster ON Customer_Master.khatawani_No = GirviMaster.khatawani_No WHERE (status='unchange')";
             DataTable dt = _objSQLHelper.GetDataTable(str);
             return dt;
         }

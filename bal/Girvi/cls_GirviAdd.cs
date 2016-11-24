@@ -197,7 +197,7 @@ namespace BAL.Girvi
 
         public DataTable getGirviDetailsByKhatawaniAll(string khatawani_No)
         {
-            string str = "SELECT GirviRecordNo, Amount, Date_of_deposit, interset_rate,updated_girvi_no,duration,Forwarded_to,Date_of_Forward,receipt_no,Status FROM GirviMaster WHERE (khatawani_No = '" + khatawani_No + "') ";
+            string str = "SELECT GirviRecordNo, Amount, Date_of_deposit, interset_rate,updated_girvi_no,duration,Forwarded_to,Date_of_Forward,receipt_no,Status,NSN FROM GirviMaster WHERE (khatawani_No = '" + khatawani_No + "') And (Status = '" + "unchange" + "')";
             DataTable dt = _objSQLHelper.GetDataTable(str);
             return dt;
         }

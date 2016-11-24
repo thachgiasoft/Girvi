@@ -208,7 +208,23 @@ namespace JewelleryManagement.CrystalReport
 
 
             crReportViewer.ReportSource = _oVIReport;
+
+            UpdateNSNInGirviMaster(GirviNo);
         }
+
+        public void UpdateNSNInGirviMaster(string GirviNo)
+        {
+            string NSNCount;
+            string strCount;
+            string strUpdateNSNCount;
+            string strNSN = "Select NSN From GirviMaster where (GirviRecordNo = '" + GirviNo + "') ";
+           
+            NSNCount = _objsqlhelper.ExecuteScalar(strNSN);
+            strUpdateNSNCount = Convert.ToString(Convert.ToInt32(NSNCount) + 1);
+            strCount = "UPDATE GirviMaster SET NSN ='" + strUpdateNSNCount + "' where (GirviRecordNo = '" + GirviNo + "') ";
+            _objsqlhelper.ExecuteSql(strCount);
+        }
+
 
         public void ReceiveBabhulgaonOfficeCopy(string GirviNo, string AccNo, string OtherFont, string PrinterName)
         {

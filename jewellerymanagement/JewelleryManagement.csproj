@@ -1193,6 +1193,12 @@
     <Compile Include="Reports\Girvi\frm_RokadAll.Designer.cs">
       <DependentUpon>frm_RokadAll.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Girvi\Frm_MonthsWiseNoticeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Girvi\Frm_MonthsWiseNoticeReport.Designer.cs">
+      <DependentUpon>Frm_MonthsWiseNoticeReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Girvi\Frm_SixMonthsReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1793,6 +1799,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Girvi\frm_RokadAll.resx">
       <DependentUpon>frm_RokadAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Girvi\Frm_MonthsWiseNoticeReport.resx">
+      <DependentUpon>Frm_MonthsWiseNoticeReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Girvi\Frm_SixMonthsReport.resx">
       <DependentUpon>Frm_SixMonthsReport.cs</DependentUpon>
