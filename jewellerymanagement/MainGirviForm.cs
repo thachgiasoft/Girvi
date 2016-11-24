@@ -326,18 +326,18 @@ namespace JewelleryManagement
             vinaTaranReportToolStripMenuItem.Text = "विना तारण रिपोर्ट";
             viewPhotosToolStripMenuItem.Text = "फोटो बघा";
             allKhatwaniWisePrintoutToolStripMenuItem.Text = "सर्वं खातावनी तारखे प्रमाणे प्रिंट";
-                openingAccountToolStripMenuItem1.Text=" खात्याची रक्कम ";
+            openingAccountToolStripMenuItem1.Text = " खात्याची रक्कम ";
 
-                creditCashToolStripMenuItem.Text = "क्रेडिट रोख";
-                debitCashToolStripMenuItem.Text = "डेबिट रोख";
-                trailBalanceToolStripMenuItem.Text = "trail शिल्लक";
-                creditDebitReportToolStripMenuItem.Text = "क्रेडिट/डेबिट रिकॉर्ड ";
-                balanceSheetToolStripMenuItem1.Text = "balance sheet";
-                vayajReportToolStripMenuItem.Text = "व्याज रिपोर्ट ";
+            creditCashToolStripMenuItem.Text = "क्रेडिट रोख";
+            debitCashToolStripMenuItem.Text = "डेबिट रोख";
+            trailBalanceToolStripMenuItem.Text = "trail शिल्लक";
+            creditDebitReportToolStripMenuItem.Text = "क्रेडिट/डेबिट रिकॉर्ड ";
+            balanceSheetToolStripMenuItem1.Text = "balance sheet";
+            vayajReportToolStripMenuItem.Text = "व्याज रिपोर्ट ";
             customeRDataPrintToolStripMenuItem.Text = " ग्राहक रिपोर्ट प्रिंट";
 
 
-            
+
         }
 
         private void rbt_Hindii_CheckedChanged(object sender, EventArgs e)
@@ -636,7 +636,8 @@ namespace JewelleryManagement
                 if (rbt_English.Checked == true)
                 {
                     _objDeleteGirvi.rbt_English.Checked = true;
-                } if (rbt_Other.Checked == true)
+                }
+                if (rbt_Other.Checked == true)
                 {
                     _objDeleteGirvi.rbt_OtherTrue.Checked = true;
                 }
@@ -664,7 +665,7 @@ namespace JewelleryManagement
             }
         }
 
-     
+
 
         private void addGoldSilverRateToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -746,7 +747,7 @@ namespace JewelleryManagement
 
             }
             else { _objOpeningAccount.BringToFront(); }
-        
+
         }
 
 
@@ -1318,7 +1319,7 @@ namespace JewelleryManagement
         {
             JewelleryManagement.Reports.Girvi.Frm_CustomerDetailsByVillageName _objGirviByAddress = new Reports.Girvi.Frm_CustomerDetailsByVillageName();
 
-          
+
 
             if (!CheckForm(_objGirviByAddress))
             {
@@ -1440,7 +1441,7 @@ namespace JewelleryManagement
             if (childform.result == true)
             {
                 menuStrip.Visible = true;
-              
+
                 pnl_language.Visible = true;
                 bttnz_twiter.Visible = true;
                 bttn_facebook.Visible = true;
@@ -1448,7 +1449,7 @@ namespace JewelleryManagement
                 this.BackgroundImage = null;
                 //bttn_login.Visible = true;
                 pnl_language.Visible = true;
-               
+
             }
             else
             {
@@ -1462,7 +1463,7 @@ namespace JewelleryManagement
             //rbt_Marathi.Checked = true;
         }
 
-     
+
         private void addressToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_AddressMaster _obj_AddressMaster = new frm_AddressMaster();
@@ -1591,7 +1592,7 @@ namespace JewelleryManagement
             }
         }
 
-      
+
 
         private void casteMasterToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -1658,7 +1659,7 @@ namespace JewelleryManagement
             else { _objRokadAllUnrelease.BringToFront(); }
         }
 
-     
+
 
         private void MainGirviForm_Deactivate(object sender, EventArgs e)
         {
@@ -1795,7 +1796,7 @@ namespace JewelleryManagement
             }
         }
 
-      
+
         private void releasedGirviToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_DuplicateGirviRelease _objDuprelease = new frm_DuplicateGirviRelease();
@@ -1898,7 +1899,7 @@ namespace JewelleryManagement
 
         }
 
-      
+
         private void trueToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _objGirviCommon.setprint("1");
@@ -2052,7 +2053,7 @@ namespace JewelleryManagement
             }
         }
 
-      
+
         private void creditDebitReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Reports.frm_CreditDebitRecord _objfrm_dbbackup = new Reports.frm_CreditDebitRecord();
@@ -2103,7 +2104,7 @@ namespace JewelleryManagement
 
         }
 
-     
+
 
         private void eMICalculetorToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -2172,7 +2173,7 @@ namespace JewelleryManagement
 
         private void no1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // _objGirviCommon.setaccounttype("1");
+            // _objGirviCommon.setaccounttype("1");
 
             DataTable dt2 = _objGirviCommon.getAccountType();
             if (dt2.Rows[0][0].ToString() == "1")
@@ -2189,7 +2190,7 @@ namespace JewelleryManagement
 
         private void no2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          //  _objGirviCommon.setaccounttype("0");
+            //  _objGirviCommon.setaccounttype("0");
 
             DataTable dt2 = _objGirviCommon.getAccountType();
             if (dt2.Rows[0][0].ToString() == "1")
@@ -2204,7 +2205,7 @@ namespace JewelleryManagement
             }
         }
 
-     
+
         private void dataBaseUpdationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             JewelleryManagement.DataBaseForms.UpdateDataBase _objdatabase = new JewelleryManagement.DataBaseForms.UpdateDataBase();
@@ -2235,7 +2236,7 @@ namespace JewelleryManagement
         private void sixMonthReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             JewelleryManagement.Reports.Girvi.Frm_SixMonthsReport _objSixMonthReport = new JewelleryManagement.Reports.Girvi.Frm_SixMonthsReport();
-           // _objSixMonthReport.ShowDialog();
+            // _objSixMonthReport.ShowDialog();
 
 
             if (!CheckForm(_objSixMonthReport))
@@ -2271,11 +2272,11 @@ namespace JewelleryManagement
 
         }
 
-     
+
 
         private void yesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           // _objGirviCommon.sethidefeild("1");
+            // _objGirviCommon.sethidefeild("1");
 
             DataTable dt2 = _objGirviCommon.getHideDataFeild();
             if (dt2.Rows[0][0].ToString() == "1")
@@ -2310,7 +2311,7 @@ namespace JewelleryManagement
         private void girviReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             JewelleryManagement.Reports.Girvi.A.R.Required.Frm_GirviReport _objgirvireport = new JewelleryManagement.Reports.Girvi.A.R.Required.Frm_GirviReport();
-         
+
             if (!CheckForm(_objgirvireport))
             {
 
@@ -2360,7 +2361,7 @@ namespace JewelleryManagement
                 _ObjDeveloperLogin.ShowDialog();
             }
 
-         
+
         }
 
         private void profitLossToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2388,7 +2389,7 @@ namespace JewelleryManagement
             _objVinaTarakeport.Show();
         }
 
-     
+
 
         private void vayajReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -2400,8 +2401,8 @@ namespace JewelleryManagement
         private void customeRDataPrintToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_customerprintablelist _objcustomerprintable = new Frm_customerprintablelist();
-          //  _objcustomerprintable.MdiParent = this;
-           // _objcustomerprintable.Show();
+            //  _objcustomerprintable.MdiParent = this;
+            // _objcustomerprintable.Show();
             if (!CheckForm(_objcustomerprintable))
             {
 
@@ -2440,7 +2441,7 @@ namespace JewelleryManagement
             {
                 JewelleryManagement.Common.frm_UpdateQuery _objUpdateDataBase = new JewelleryManagement.Common.frm_UpdateQuery();
 
-               // _objUpdateDataBase.ShowDialog();
+                // _objUpdateDataBase.ShowDialog();
                 _objUpdateDataBase.MdiParent = this;
                 _objUpdateDataBase.Show();
             }
@@ -2459,7 +2460,7 @@ namespace JewelleryManagement
             if (_ObjDeveloperLogin.Developer_login_Result == true)
             {
                 JewelleryManagement.DataBaseForms.Frm_DeleteAllTableData _objdeletedata = new JewelleryManagement.DataBaseForms.Frm_DeleteAllTableData();
-               // _objdeletedata.ShowDialog();
+                // _objdeletedata.ShowDialog();
                 _objdeletedata.MdiParent = this;
                 _objdeletedata.Show();
             }
@@ -2555,13 +2556,54 @@ namespace JewelleryManagement
         {
             JewelleryManagement.Frm_All_Settings _ObjAllSettings = new JewelleryManagement.Frm_All_Settings();
             _ObjAllSettings.ShowDialog();
-       
+
+        }
+
+        private void MonthWiseNoticevayajReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_MonthsWiseNoticeReport _objMonthsWiseNoticeReport = new Frm_MonthsWiseNoticeReport();
+
+            if (!CheckForm(_objMonthsWiseNoticeReport))
+            {
+
+                _objMonthsWiseNoticeReport.MdiParent = this;
+
+                _objMonthsWiseNoticeReport.AutoScroll = true;
+
+                _objMonthsWiseNoticeReport.Show();
+
+
+            }
+            else { _objMonthsWiseNoticeReport.BringToFront(); }
+
+
+            if (rbt_English.Checked == true)
+            {
+                _objMonthsWiseNoticeReport.rbt_English.Checked = true;
+            }
+            else if (rbt_Hindii.Checked == true)
+            {
+                _objMonthsWiseNoticeReport.rbt_Hindi.Checked = true;
+            }
+            else if (rbt_Marathi.Checked == true)
+            {
+                _objMonthsWiseNoticeReport.rbt_Marathi.Checked = true;
+            }
+            else if (rbt_Other.Checked == true)
+            {
+                _objMonthsWiseNoticeReport.rbt_OtherTrue.Checked = true;
+            }
+        }
+
+        private void nOTICEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
-    }
+}
 
 
-    
+
 
 
 

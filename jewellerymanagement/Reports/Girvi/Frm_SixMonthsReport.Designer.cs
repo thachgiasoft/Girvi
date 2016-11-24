@@ -46,9 +46,14 @@
             this.rbt_English = new System.Windows.Forms.RadioButton();
             this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.dgv_SixMonthReport = new System.Windows.Forms.DataGridView();
+            this.pnl_Bottom = new System.Windows.Forms.Panel();
+            this.bttn_monthwiseReport = new System.Windows.Forms.Button();
+            this.bttn_Print = new System.Windows.Forms.Button();
+            this.bttn_Close = new System.Windows.Forms.Button();
+            this.lst_FullName = new System.Windows.Forms.ListBox();
             this.SrNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KhatawaniNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContactNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,11 +63,6 @@
             this.IntrestAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PavtiNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnl_Bottom = new System.Windows.Forms.Panel();
-            this.bttn_monthwiseReport = new System.Windows.Forms.Button();
-            this.bttn_Print = new System.Windows.Forms.Button();
-            this.bttn_Close = new System.Windows.Forms.Button();
-            this.lst_FullName = new System.Windows.Forms.ListBox();
             this.pnl_Header.SuspendLayout();
             this.panel_sixmonthreport.SuspendLayout();
             this.pnl_LanguageOther.SuspendLayout();
@@ -73,7 +73,6 @@
             // pnl_Header
             // 
             this.pnl_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(132)))), ((int)(((byte)(153)))));
-            this.pnl_Header.BackgroundImage = global::JewelleryManagement.Properties.Resources._742828_jewelry_wallpaper;
             this.pnl_Header.Controls.Add(this.panel_sixmonthreport);
             this.pnl_Header.Controls.Add(this.cmb_VillageName);
             this.pnl_Header.Controls.Add(this.lbl_VillageName);
@@ -288,7 +287,7 @@
             this.dgv_SixMonthReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SrNo,
             this.KhatawaniNo,
-            this.Name,
+            this.CName,
             this.ContactNo,
             this.Address,
             this.Amount,
@@ -303,66 +302,6 @@
             this.dgv_SixMonthReport.Size = new System.Drawing.Size(1230, 399);
             this.dgv_SixMonthReport.TabIndex = 102;
             this.dgv_SixMonthReport.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_KhatawaniDetail_CellContentClick);
-            // 
-            // SrNo
-            // 
-            this.SrNo.HeaderText = "SrNo";
-            this.SrNo.Name = "SrNo";
-            // 
-            // KhatawaniNo
-            // 
-            this.KhatawaniNo.HeaderText = "KhatawaniNo";
-            this.KhatawaniNo.Name = "KhatawaniNo";
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            // 
-            // ContactNo
-            // 
-            this.ContactNo.HeaderText = "ContactNo";
-            this.ContactNo.Name = "ContactNo";
-            // 
-            // Address
-            // 
-            this.Address.HeaderText = "Address";
-            this.Address.Name = "Address";
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "Amount";
-            this.Amount.Name = "Amount";
-            // 
-            // DateOfDeposit
-            // 
-            this.DateOfDeposit.HeaderText = "DateOfDeposit";
-            this.DateOfDeposit.Name = "DateOfDeposit";
-            // 
-            // Duration
-            // 
-            this.Duration.HeaderText = "Duration";
-            this.Duration.Name = "Duration";
-            // 
-            // IntrestRate
-            // 
-            this.IntrestRate.HeaderText = "IntrestRate";
-            this.IntrestRate.Name = "IntrestRate";
-            // 
-            // IntrestAmount
-            // 
-            this.IntrestAmount.HeaderText = "IntrestAmount";
-            this.IntrestAmount.Name = "IntrestAmount";
-            // 
-            // TotalAmount
-            // 
-            this.TotalAmount.HeaderText = "TotalAmount";
-            this.TotalAmount.Name = "TotalAmount";
-            // 
-            // PavtiNo
-            // 
-            this.PavtiNo.HeaderText = "PavtiNo";
-            this.PavtiNo.Name = "PavtiNo";
             // 
             // pnl_Bottom
             // 
@@ -437,6 +376,66 @@
             this.lst_FullName.TabIndex = 386;
             this.lst_FullName.Visible = false;
             // 
+            // SrNo
+            // 
+            this.SrNo.HeaderText = "SrNo";
+            this.SrNo.Name = "SrNo";
+            // 
+            // KhatawaniNo
+            // 
+            this.KhatawaniNo.HeaderText = "KhatawaniNo";
+            this.KhatawaniNo.Name = "KhatawaniNo";
+            // 
+            // CName
+            // 
+            this.CName.HeaderText = "Name";
+            this.CName.Name = "CName";
+            // 
+            // ContactNo
+            // 
+            this.ContactNo.HeaderText = "ContactNo";
+            this.ContactNo.Name = "ContactNo";
+            // 
+            // Address
+            // 
+            this.Address.HeaderText = "Address";
+            this.Address.Name = "Address";
+            // 
+            // Amount
+            // 
+            this.Amount.HeaderText = "Amount";
+            this.Amount.Name = "Amount";
+            // 
+            // DateOfDeposit
+            // 
+            this.DateOfDeposit.HeaderText = "DateOfDeposit";
+            this.DateOfDeposit.Name = "DateOfDeposit";
+            // 
+            // Duration
+            // 
+            this.Duration.HeaderText = "Duration";
+            this.Duration.Name = "Duration";
+            // 
+            // IntrestRate
+            // 
+            this.IntrestRate.HeaderText = "IntrestRate";
+            this.IntrestRate.Name = "IntrestRate";
+            // 
+            // IntrestAmount
+            // 
+            this.IntrestAmount.HeaderText = "IntrestAmount";
+            this.IntrestAmount.Name = "IntrestAmount";
+            // 
+            // TotalAmount
+            // 
+            this.TotalAmount.HeaderText = "TotalAmount";
+            this.TotalAmount.Name = "TotalAmount";
+            // 
+            // PavtiNo
+            // 
+            this.PavtiNo.HeaderText = "PavtiNo";
+            this.PavtiNo.Name = "PavtiNo";
+            // 
             // Frm_SixMonthsReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,6 +446,7 @@
             this.Controls.Add(this.dgv_SixMonthReport);
             this.Controls.Add(this.pnl_Header);
             this.KeyPreview = true;
+            this.Name = "Frm_SixMonthsReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Six Months Report";
             this.Load += new System.EventHandler(this.Frm_SixMonthsReport_Load);
@@ -482,9 +482,14 @@
         private System.Windows.Forms.RadioButton rbt_threemonths;
         private System.Windows.Forms.RadioButton rbt_sixmonth;
         private System.Windows.Forms.Panel panel_sixmonthreport;
+        public SergeUtils.EasyCompletionComboBox cmb_VillageName;
+        private System.Windows.Forms.Label lbl_VillageName;
+        private System.Windows.Forms.ListBox lst_FullName;
+        private System.Windows.Forms.Button bttn_Print;
+        private System.Windows.Forms.Button bttn_monthwiseReport;
         private System.Windows.Forms.DataGridViewTextBoxColumn SrNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn KhatawaniNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContactNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
@@ -494,10 +499,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IntrestAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn PavtiNo;
-        public SergeUtils.EasyCompletionComboBox cmb_VillageName;
-        private System.Windows.Forms.Label lbl_VillageName;
-        private System.Windows.Forms.ListBox lst_FullName;
-        private System.Windows.Forms.Button bttn_Print;
-        private System.Windows.Forms.Button bttn_monthwiseReport;
     }
 }

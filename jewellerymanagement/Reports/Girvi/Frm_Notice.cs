@@ -124,7 +124,6 @@ namespace JewelleryManagement.Reports.Girvi
             {
                 if (lst_FullName.Items.Count > 0)
                 {
-
                     lst_FullName.Focus();
                 }
             }
