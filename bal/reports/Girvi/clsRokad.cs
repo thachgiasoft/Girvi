@@ -100,7 +100,7 @@ namespace BAL.Reports.Girvi
 
         public DataTable getAllGirviDatewise(string startdate, string enddate)
         {
-            string cmd = "SELECT khatawani_No,GirviRecordNo, Amount,Date_of_deposit,receipt_no,interset_rate FROM GirviMaster WHERE (CONVERT(DateTime, Date_of_deposit, 103) >= CONVERT(DateTime,  '" + startdate + "', 103)) AND (CONVERT(DateTime, Date_of_deposit, 103) <= CONVERT(DateTime, '" + enddate + "' , 103)) order by CONVERT(DateTime, Date_of_deposit, 103)";
+            string cmd = "SELECT khatawani_No,GirviRecordNo, Amount,Date_of_deposit,receipt_no,interset_rate FROM GirviMaster WHERE (CONVERT(DateTime, Date_of_deposit, 103) >= CONVERT(DateTime,  '" + startdate + "', 103)) AND (CONVERT(DateTime, Date_of_deposit, 103) <= CONVERT(DateTime, '" + enddate + "' , 103)) order by CONVERT(DateTime, Date_of_deposit, 103), receipt_no";
             DataTable dt = _objSQLHelper.GetDataTable(cmd);
             return dt;
         }
