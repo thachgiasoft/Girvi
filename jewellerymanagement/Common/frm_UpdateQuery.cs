@@ -107,8 +107,8 @@ namespace JewelleryManagement.Common
             string query27 = "ALTER TABLE GirviItemMaster  ADD narration  nvarchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, Narration1, query27, Date);
 
-            string Narration2 = "Narration";
-            string query28 = "ALTER TABLE GirviReleasemaster  ADD Narration  nvarchar(MAX)";
+            string Narration2 = "financialYearId And Narration";
+            string query28 = "ALTER TABLE GirviReleasemaster  ADD [financialYearId] [int] NOT NULL CONSTRAINT [DF_GirviReleasemaster_financialYearId_1]  DEFAULT ((1)),Narration  nvarchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, Narration2, query28, Date);
 
             string TahsilMaster = "TahsilMaster";
@@ -123,8 +123,8 @@ namespace JewelleryManagement.Common
             string query31 = "ALTER TABLE setting_value  ADD duration nvarchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, duration, query31, Date);
 
-            string NSN = "NO  of Send Notice";
-            string query32 = "ALTER TABLE GirviMaster  ADD [NSN] [int] NOT NULL CONSTRAINT [DF_GirviMaster_NSN]  DEFAULT ((0))";
+            string NSN = "No of Send Notice";
+            string query32 = "ALTER TABLE GirviMaster  ADD [NSN] [int] NOT NULL CONSTRAINT [DF_GirviMaster_NSN]  DEFAULT ((0)), [DateTime] [datetime] NOT NULL CONSTRAINT [DF_GirviMaster_DateTime]  DEFAULT (getdate())";
             dgv_UpdateQuery.Rows.Add(false, NSN, query32, Date);
             
         }
