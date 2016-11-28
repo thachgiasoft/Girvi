@@ -123,8 +123,10 @@ namespace JewelleryManagement.Common
             string query31 = "ALTER TABLE setting_value  ADD duration nvarchar(MAX)";
             dgv_UpdateQuery.Rows.Add(false, duration, query31, Date);
 
-
-
+            string NSN = "NO  of Send Notice";
+            string query32 = "ALTER TABLE GirviMaster  ADD [NSN] [int] NOT NULL CONSTRAINT [DF_GirviMaster_NSN]  DEFAULT ((0))";
+            dgv_UpdateQuery.Rows.Add(false, NSN, query32, Date);
+            
         }
 
 
