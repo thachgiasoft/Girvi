@@ -66,7 +66,7 @@ namespace BAL.Reports.Girvi
         {
             string str1 = "SELECT GirviNo, metal_type_no, metal_type, item_type_no, item_type, gross_wt,reduce_wt, net_wt,wt_in_percent, fine_wt,Total_Quantity,current_rate,amount FROM GirviItemMaster WHERE (GirviNo = '" + gn + "')";
             DataTable dt = _objSQLHelper.GetDataTable(str1);
-            return dt.Rows[0]["metal_type"].ToString().Trim() + "  " + dt.Rows[0]["item_type"].ToString().Trim();
+            return dt.Rows[0]["metal_type"].ToString().Trim() ;
         }
         //वैशाली//
         public DataTable GetGirviItemMetalWt(string gn, string grosswt)

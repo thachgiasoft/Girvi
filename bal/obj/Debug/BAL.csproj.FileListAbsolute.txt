@@ -514,3 +514,8 @@ D:\Git\Girvi\Girvi\bal\bin\Debug\BAL.pdb
 D:\Git\Girvi\Girvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache
 D:\Git\Girvi\Girvi\bal\obj\Debug\BAL.dll
 D:\Git\Girvi\Girvi\bal\obj\Debug\BAL.pdb
+E:\git\09_12girvi\Girvi\bal\bin\Debug\BAL.dll
+E:\git\09_12girvi\Girvi\bal\bin\Debug\BAL.pdb
+E:\git\09_12girvi\Girvi\bal\obj\Debug\BAL.dll
+E:\git\09_12girvi\Girvi\bal\obj\Debug\BAL.pdb
+E:\git\09_12girvi\Girvi\bal\obj\Debug\BAL.csprojResolveAssemblyReference.cache

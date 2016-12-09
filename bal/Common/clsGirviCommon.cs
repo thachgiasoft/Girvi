@@ -490,7 +490,7 @@ namespace BAL.Common
                 //{
                 int amt = Convert.ToInt32(Amount);
                 decimal rate = Convert.ToDecimal(Convert.ToDecimal(InterestRate));
-                decimal dys = Convert.ToDecimal(Convert.ToInt32(noofdays) + 1);
+                decimal dys = Convert.ToDecimal(Convert.ToInt32(noofdays));
                 intAmount = (((amt * rate) / 100) /30 ) * dys;
                 //}
             }
