@@ -113,6 +113,7 @@
             this.sixMonthReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vinaTaranReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vayajReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MonthWiseNoticevayajReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openingAccountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.creditCashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -153,7 +154,6 @@
             this.allSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eMICalculetorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MonthWiseNoticevayajReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.pnl_Visibility.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -765,7 +765,6 @@
             this.rokadToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.rokadToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.rokadToolStripMenuItem.Text = "Rokad For Print";
-            this.rokadToolStripMenuItem.Visible = false;
             this.rokadToolStripMenuItem.Click += new System.EventHandler(this.rokadToolStripMenuItem_Click);
             // 
             // rokadAllToolStripMenuItem
@@ -815,7 +814,6 @@
             this.aRRequiredToolStripMenuItem.Name = "aRRequiredToolStripMenuItem";
             this.aRRequiredToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.aRRequiredToolStripMenuItem.Text = "A. R. Required";
-            this.aRRequiredToolStripMenuItem.Visible = false;
             // 
             // allGirviReletedToKhatawaniToolStripMenuItem
             // 
@@ -892,7 +890,6 @@
             this.girviByAddressToolStripMenuItem.Name = "girviByAddressToolStripMenuItem";
             this.girviByAddressToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.girviByAddressToolStripMenuItem.Text = "Girvi By Address";
-            this.girviByAddressToolStripMenuItem.Visible = false;
             this.girviByAddressToolStripMenuItem.Click += new System.EventHandler(this.girviByAddressToolStripMenuItem_Click);
             // 
             // duplicateBillToolStripMenuItem
@@ -927,7 +924,6 @@
             this.nOTICEToolStripMenuItem.Name = "nOTICEToolStripMenuItem";
             this.nOTICEToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.nOTICEToolStripMenuItem.Text = "Notice";
-            this.nOTICEToolStripMenuItem.Visible = false;
             this.nOTICEToolStripMenuItem.Click += new System.EventHandler(this.nOTICEToolStripMenuItem_Click);
             // 
             // customerCopyToolStripMenuItem
@@ -949,7 +945,6 @@
             this.formNo12ToolStripMenuItem.Name = "formNo12ToolStripMenuItem";
             this.formNo12ToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.formNo12ToolStripMenuItem.Text = "Form No 12";
-            this.formNo12ToolStripMenuItem.Visible = false;
             this.formNo12ToolStripMenuItem.Click += new System.EventHandler(this.formNo12ToolStripMenuItem_Click);
             // 
             // allKhatwaniWisePrintoutToolStripMenuItem
@@ -964,7 +959,6 @@
             this.vaarshikVivranPatraToolStripMenuItem.Name = "vaarshikVivranPatraToolStripMenuItem";
             this.vaarshikVivranPatraToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.vaarshikVivranPatraToolStripMenuItem.Text = "Vaarshik Vivran Patra";
-            this.vaarshikVivranPatraToolStripMenuItem.Visible = false;
             this.vaarshikVivranPatraToolStripMenuItem.Click += new System.EventHandler(this.vaarshikVivranPatraToolStripMenuItem_Click);
             // 
             // officeCopyToolStripMenuItem
@@ -972,7 +966,6 @@
             this.officeCopyToolStripMenuItem.Name = "officeCopyToolStripMenuItem";
             this.officeCopyToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.officeCopyToolStripMenuItem.Text = "Office Copy";
-            this.officeCopyToolStripMenuItem.Visible = false;
             this.officeCopyToolStripMenuItem.Click += new System.EventHandler(this.officeCopyToolStripMenuItem_Click);
             // 
             // tahsilReportToolStripMenuItem
@@ -980,7 +973,6 @@
             this.tahsilReportToolStripMenuItem.Name = "tahsilReportToolStripMenuItem";
             this.tahsilReportToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
             this.tahsilReportToolStripMenuItem.Text = "Girvi By Tahsil";
-            this.tahsilReportToolStripMenuItem.Visible = false;
             this.tahsilReportToolStripMenuItem.Click += new System.EventHandler(this.tahsilReportToolStripMenuItem_Click);
             // 
             // viewPhotosToolStripMenuItem
@@ -1012,6 +1004,13 @@
             this.vayajReportToolStripMenuItem.Text = "Vayaj Report";
             this.vayajReportToolStripMenuItem.Visible = false;
             this.vayajReportToolStripMenuItem.Click += new System.EventHandler(this.vayajReportToolStripMenuItem_Click);
+            // 
+            // MonthWiseNoticevayajReportToolStripMenuItem
+            // 
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Name = "MonthWiseNoticevayajReportToolStripMenuItem";
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Text = "Months Wise Notice";
+            this.MonthWiseNoticevayajReportToolStripMenuItem.Click += new System.EventHandler(this.MonthWiseNoticevayajReportToolStripMenuItem_Click);
             // 
             // accountingToolStripMenuItem
             // 
@@ -1356,13 +1355,6 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(57, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // MonthWiseNoticevayajReportToolStripMenuItem
-            // 
-            this.MonthWiseNoticevayajReportToolStripMenuItem.Name = "MonthWiseNoticevayajReportToolStripMenuItem";
-            this.MonthWiseNoticevayajReportToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
-            this.MonthWiseNoticevayajReportToolStripMenuItem.Text = "Months Wise Notice";
-            this.MonthWiseNoticevayajReportToolStripMenuItem.Click += new System.EventHandler(this.MonthWiseNoticevayajReportToolStripMenuItem_Click);
             // 
             // MainGirviForm
             // 

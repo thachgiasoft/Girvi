@@ -301,26 +301,48 @@ namespace JewelleryManagement.Reports.Girvi
                         DataTable dtPaydetails = _objCommon.DataGridView2DataTable(dgv_GirviRelease, "table");
                         DataTable dtMerge = _objCommon.mergeTwoDataGrid(dtGirviDetails, dtPaydetails);
 
-
-                        CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
-                        SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveRokadMultiRecord);
-                        if (rbt_OtherTrue.Checked == true)
+                        if (dt.Rows.Count > 0)
                         {
+                            CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
+                            SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveRokadMultiRecord);
+                            if (rbt_OtherTrue.Checked == true)
+                            {
 
-                            _obj(dtMerge, oPrintersetting.PrinterName, true, _objGirviCommon.getPageNumber((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j)).ToString("dd/MM/yyyy")));
+                                _obj(dtMerge, oPrintersetting.PrinterName, true, _objGirviCommon.getPageNumber((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j)).ToString("dd/MM/yyyy")));
+                            }
+                            else
+                            {
+                                _obj(dtMerge, oPrintersetting.PrinterName, false, _objGirviCommon.getPageNumber((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j)).ToString("dd/MM/yyyy")));
+
+                            }
+                            //  _objfrm_ReportViewer.Show();
+                            //DataTable dtmerge=_objCommon.mergeTwoDataGrid(_objCommon.DataGridView2DataTable(dgv_GirviAdded,"table1"),_objCommon.DataGridView2DataTable(dgv_GirviRelease,"table2"));
+                            //RokadoneNew(dtmerge, totalGirviAmount.ToString(), totalReleaseAmount.ToString(), totalinterestamt.ToString(), pageno);
+
                         }
-                        else
+
+                        if (dt1.Rows.Count > 0)
                         {
-                            _obj(dtMerge, oPrintersetting.PrinterName, false, _objGirviCommon.getPageNumber((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j)).ToString("dd/MM/yyyy")));
+                            CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
+                            SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveRokadMultiRecord);
+                            if (rbt_OtherTrue.Checked == true)
+                            {
+
+                                _obj(dtMerge, oPrintersetting.PrinterName, true, _objGirviCommon.getPageNumber((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j)).ToString("dd/MM/yyyy")));
+                            }
+                            else
+                            {
+                                _obj(dtMerge, oPrintersetting.PrinterName, false, _objGirviCommon.getPageNumber((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j - 1)).ToString("dd/MM/yyyy")), _objGirviCommon.getOpeningBalanceWithlastDate((Convert.ToDateTime(dtp_StartDate.Text).AddDays(j)).ToString("dd/MM/yyyy")));
+
+                            }
+                            //  _objfrm_ReportViewer.Show();
+                            //DataTable dtmerge=_objCommon.mergeTwoDataGrid(_objCommon.DataGridView2DataTable(dgv_GirviAdded,"table1"),_objCommon.DataGridView2DataTable(dgv_GirviRelease,"table2"));
+                            //RokadoneNew(dtmerge, totalGirviAmount.ToString(), totalReleaseAmount.ToString(), totalinterestamt.ToString(), pageno);
 
                         }
-                        //  _objfrm_ReportViewer.Show();
-                        //DataTable dtmerge=_objCommon.mergeTwoDataGrid(_objCommon.DataGridView2DataTable(dgv_GirviAdded,"table1"),_objCommon.DataGridView2DataTable(dgv_GirviRelease,"table2"));
-                        //RokadoneNew(dtmerge, totalGirviAmount.ToString(), totalReleaseAmount.ToString(), totalinterestamt.ToString(), pageno);
 
                     }
                 }
-
 
             }
             catch (Exception ex)
