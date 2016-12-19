@@ -122,6 +122,9 @@ namespace BAL.Common
             string str = "SELECT AccountLedger.ledgerId AS Id, AccountNature.Under AS [Account Group], AccountLedger.name AS Name, AccountLedger.openingBal AS [Opening Balance], AccountLedger.CreditOrDebit AS [Credit/Debit],  AccountLedger.narration AS Narration, AccountLedger.nameofbank AS [Bank Name], AccountLedger.chequeno AS [Cheque No], AccountLedger.accno AS [Acc No] FROM AccountLedger INNER JOIN AccountNature ON AccountLedger.accGroupId = AccountNature.srno Where AccountNature.Under=N'" + accountnature + "'";
             return _objdb.GetDataTable(str);
         }
+
+       
+
         public DataTable getallAccountLedgerDetailsByLedgerId(string LedgerId)
         {
             string str = "SELECT AccountLedger.ledgerId AS Id, AccountNature.Under AS [Account Group], AccountLedger.name AS Name, AccountLedger.openingBal AS [Opening Balance], AccountLedger.CreditOrDebit AS [Credit/Debit],  AccountLedger.narration AS Narration, AccountLedger.nameofbank AS [Bank Name], AccountLedger.chequeno AS [Cheque No], AccountLedger.accno AS [Acc No] FROM AccountLedger INNER JOIN AccountNature ON AccountLedger.accGroupId = AccountNature.srno Where AccountLedger.ledgerId=N'" + LedgerId + "'";
@@ -134,8 +137,9 @@ namespace BAL.Common
             string id = _objdb.ExecuteScalar(str);
             return id.ToString();
         }
+        
 
-        public void insertCreditDebitDetails(string CreditDebitmasterid, string legderid, string credit, string debit, string chequedate, string chequeno, string date, string type, string FromAccount)
+        public void insertCreditDebitDetails(string CreditDebitmasterid, string legderid, string credit, string debit, string chequeno, string chequedate, string date, string type, string FromAccount)
         {
             string str = "INSERT INTO CreditDebitDetails (CreditDebitmasterid, ledgerId, credit, debit, chequedate, chequeno, date,Type,FromAccount)  VALUES (" + CreditDebitmasterid + ", " + legderid + ", " + credit + ", " + debit + ",'" + chequedate + "', '" + chequeno + "','" + date + "','" + type + "',N'" + FromAccount + "')";
             int id = _objdb.ExecuteSql(str);

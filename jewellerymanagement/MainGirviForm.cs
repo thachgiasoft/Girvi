@@ -37,6 +37,7 @@ namespace JewelleryManagement
         cls_Bhandval _objBhandval = new cls_Bhandval();
         clsGirviCommon _objGirviCommon = new clsGirviCommon();
         LoginBAL _objLoginBAl = new LoginBAL();
+        clsGirviCommon _objCommon = new clsGirviCommon();
 
         int x = 0;
         string texto = "Marque";
@@ -149,12 +150,13 @@ namespace JewelleryManagement
             {
                 _objfrm_GirviAdd.rbt_RecieptFalse.Checked = true;
             }
+            DataTable dt = _objCommon.getPavtiNoAutoIncriment();
 
-            if (rbt_PavtiNoYes.Checked == true)
+            if(dt.Rows[0][0].ToString() == "1")
             {
                 _objfrm_GirviAdd.rbt_PavtiNoYes.Checked = true;
             }
-            else if (rbt_pavtinoNo.Checked == true)
+            else 
             {
                 _objfrm_GirviAdd.rbt_pavtinoNo.Checked = true;
             }
@@ -574,8 +576,9 @@ namespace JewelleryManagement
             {
                 _objReleaseGirvi.rbt_Marathi.Checked = true;
             }
+           
 
-            if (rbt_PrintTrue.Checked == true)
+            if (rbt_PrintTrue.Checked ==true)
             {
                 _objReleaseGirvi.rbt_PrintTrue.Checked = true;
             }
@@ -583,6 +586,7 @@ namespace JewelleryManagement
             {
                 _objReleaseGirvi.rbt_PrintFalse.Checked = true;
             }
+            
 
 
 
@@ -598,12 +602,12 @@ namespace JewelleryManagement
 
 
 
-
-            if (rbt_PavtiNoYes.Checked == true)
+            DataTable dt = _objCommon.getPavtiNoAutoIncriment();
+            if (dt.Rows[0][0].ToString() == "1")
             {
                 _objReleaseGirvi.rbt_PavtiNoYes.Checked = true;
             }
-            else if (rbt_pavtinoNo.Checked == true)
+            else 
             {
                 _objReleaseGirvi.rbt_pavtinoNo.Checked = true;
             }

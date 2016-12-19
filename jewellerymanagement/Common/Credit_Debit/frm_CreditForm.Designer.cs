@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.dgv_DebitData = new System.Windows.Forms.DataGridView();
+            this.MasterId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DebitAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FromAccount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChequeNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChequeDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_chequeno = new System.Windows.Forms.Label();
             this.txt_chequeNo = new System.Windows.Forms.TextBox();
             this.lblamount = new System.Windows.Forms.Label();
@@ -45,12 +51,7 @@
             this.btn_Update = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.cachedCrt_BabulgaonGirviReliese1 = new JewelleryManagement.bin.Debug.CachedCrt_BabulgaonGirviReliese();
-            this.MasterId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DebitAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FromAccount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChequeNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChequeDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bttn_Print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DebitData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +76,36 @@
             this.dgv_DebitData.TabIndex = 0;
             this.dgv_DebitData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DebitData_CellContentClick);
             this.dgv_DebitData.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_CreditData_KeyDown);
+            // 
+            // MasterId
+            // 
+            this.MasterId.HeaderText = "MasterId";
+            this.MasterId.Name = "MasterId";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // DebitAmount
+            // 
+            this.DebitAmount.HeaderText = "Credit Amount";
+            this.DebitAmount.Name = "DebitAmount";
+            // 
+            // FromAccount
+            // 
+            this.FromAccount.HeaderText = "From Account";
+            this.FromAccount.Name = "FromAccount";
+            // 
+            // ChequeNo
+            // 
+            this.ChequeNo.HeaderText = "BankName/Cheque No";
+            this.ChequeNo.Name = "ChequeNo";
+            // 
+            // ChequeDate
+            // 
+            this.ChequeDate.HeaderText = "Cheque Date";
+            this.ChequeDate.Name = "ChequeDate";
             // 
             // lbl_chequeno
             // 
@@ -230,35 +261,15 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
-            // MasterId
+            // bttn_Print
             // 
-            this.MasterId.HeaderText = "MasterId";
-            this.MasterId.Name = "MasterId";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // DebitAmount
-            // 
-            this.DebitAmount.HeaderText = "Credit Amount";
-            this.DebitAmount.Name = "DebitAmount";
-            // 
-            // FromAccount
-            // 
-            this.FromAccount.HeaderText = "From Account";
-            this.FromAccount.Name = "FromAccount";
-            // 
-            // ChequeNo
-            // 
-            this.ChequeNo.HeaderText = "BankName/Cheque No";
-            this.ChequeNo.Name = "ChequeNo";
-            // 
-            // ChequeDate
-            // 
-            this.ChequeDate.HeaderText = "Cheque Date";
-            this.ChequeDate.Name = "ChequeDate";
+            this.bttn_Print.Location = new System.Drawing.Point(270, 164);
+            this.bttn_Print.Name = "bttn_Print";
+            this.bttn_Print.Size = new System.Drawing.Size(75, 29);
+            this.bttn_Print.TabIndex = 363;
+            this.bttn_Print.Text = "Print";
+            this.bttn_Print.UseVisualStyleBackColor = true;
+            this.bttn_Print.Click += new System.EventHandler(this.bttn_Print_Click);
             // 
             // frm_CreditForm
             // 
@@ -266,6 +277,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(817, 439);
+            this.Controls.Add(this.bttn_Print);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.lbl_AccountLedger);
@@ -319,5 +331,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FromAccount;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChequeNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChequeDate;
+        private System.Windows.Forms.Button bttn_Print;
     }
 }

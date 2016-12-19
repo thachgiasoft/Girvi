@@ -173,6 +173,8 @@
             this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.lbl_OpeningValue = new System.Windows.Forms.Label();
             this.lbl_OpeningBalance = new System.Windows.Forms.Label();
+            this.lbl_Khata = new System.Windows.Forms.Label();
+            this.txt_Khata = new System.Windows.Forms.TextBox();
             this.pnl_Main.SuspendLayout();
             this.pnl_Bottom.SuspendLayout();
             this.grp_Payment.SuspendLayout();
@@ -1926,6 +1928,8 @@
             // 
             this.pnl_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(132)))), ((int)(((byte)(153)))));
             this.pnl_Header.BackgroundImage = global::JewelleryManagement.Properties.Resources._742828_jewelry_wallpaper;
+            this.pnl_Header.Controls.Add(this.txt_Khata);
+            this.pnl_Header.Controls.Add(this.lbl_Khata);
             this.pnl_Header.Controls.Add(this.bttn_ViewOpeningBalance);
             this.pnl_Header.Controls.Add(this.lbl_Date);
             this.pnl_Header.Controls.Add(this.dtp_Date);
@@ -2000,6 +2004,29 @@
             this.lbl_OpeningBalance.TabIndex = 340;
             this.lbl_OpeningBalance.Text = "Opening Balance";
             this.lbl_OpeningBalance.Click += new System.EventHandler(this.lbl_OpeningBalance_Click);
+            // 
+            // lbl_Khata
+            // 
+            this.lbl_Khata.AutoSize = true;
+            this.lbl_Khata.BackColor = System.Drawing.Color.DarkRed;
+            this.lbl_Khata.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Khata.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_Khata.Location = new System.Drawing.Point(666, 9);
+            this.lbl_Khata.Name = "lbl_Khata";
+            this.lbl_Khata.Size = new System.Drawing.Size(181, 18);
+            this.lbl_Khata.TabIndex = 362;
+            this.lbl_Khata.Text = "Search By Khatawani No";
+            // 
+            // txt_Khata
+            // 
+            this.txt_Khata.BackColor = System.Drawing.Color.White;
+            this.txt_Khata.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Khata.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Khata.Location = new System.Drawing.Point(849, 5);
+            this.txt_Khata.Name = "txt_Khata";
+            this.txt_Khata.Size = new System.Drawing.Size(103, 24);
+            this.txt_Khata.TabIndex = 363;
+            this.txt_Khata.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Khata_KeyDown);
             // 
             // frm_GirviAdd
             // 
@@ -2200,5 +2227,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UpdatedGirviNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ForwardedTo;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateOfForward;
+        private System.Windows.Forms.TextBox txt_Khata;
+        private System.Windows.Forms.Label lbl_Khata;
     }
 }

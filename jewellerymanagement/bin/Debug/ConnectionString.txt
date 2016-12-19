@@ -1,1 +1,1 @@
-Data source=DESKTOP-2GMAORG\SQLEXPRESS;Initial catalog=sudhir;User Id=sa;Password=8118;
+Data source=DESKTOP-2GMAORG\SQLEXPRESS;Initial catalog=Sudhir;User Id=sa;Password=8118;

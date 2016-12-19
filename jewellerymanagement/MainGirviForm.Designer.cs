@@ -1119,14 +1119,14 @@
             this.yesToolStripMenuItem.Checked = true;
             this.yesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.yesToolStripMenuItem.Name = "yesToolStripMenuItem";
-            this.yesToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.yesToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.yesToolStripMenuItem.Text = "Yes";
             this.yesToolStripMenuItem.Click += new System.EventHandler(this.yesToolStripMenuItem_Click);
             // 
             // noToolStripMenuItem
             // 
             this.noToolStripMenuItem.Name = "noToolStripMenuItem";
-            this.noToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.noToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.noToolStripMenuItem.Text = "No";
             this.noToolStripMenuItem.Click += new System.EventHandler(this.noToolStripMenuItem_Click);
             // 
@@ -1196,7 +1196,6 @@
             this.pavTiNoToolStripMenuItem.Name = "pavTiNoToolStripMenuItem";
             this.pavTiNoToolStripMenuItem.Size = new System.Drawing.Size(344, 26);
             this.pavTiNoToolStripMenuItem.Text = "Pavti No AutoIncrement";
-            this.pavTiNoToolStripMenuItem.Visible = false;
             // 
             // compulsaryYesToolStripMenuItem
             // 

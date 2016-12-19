@@ -51,6 +51,7 @@
             this.btn_Update = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.cachedCrt_BabulgaonGirviReliese1 = new JewelleryManagement.bin.Debug.CachedCrt_BabulgaonGirviReliese();
+            this.bttn_Print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DebitData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,12 +261,23 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
+            // bttn_Print
+            // 
+            this.bttn_Print.Location = new System.Drawing.Point(264, 164);
+            this.bttn_Print.Name = "bttn_Print";
+            this.bttn_Print.Size = new System.Drawing.Size(75, 29);
+            this.bttn_Print.TabIndex = 363;
+            this.bttn_Print.Text = "Print";
+            this.bttn_Print.UseVisualStyleBackColor = true;
+            this.bttn_Print.Click += new System.EventHandler(this.bttn_Print_Click);
+            // 
             // frm_DebitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(817, 439);
+            this.Controls.Add(this.bttn_Print);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.lbl_AccountLedger);
@@ -319,5 +331,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FromAccount;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChequeNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChequeDate;
+        private System.Windows.Forms.Button bttn_Print;
     }
 }
