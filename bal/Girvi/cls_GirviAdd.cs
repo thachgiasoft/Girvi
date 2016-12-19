@@ -149,6 +149,13 @@ namespace BAL.Girvi
             return dt;
 
         }
+        public DataTable getKhatawaniByNameKhatawani(string khatawani)
+        {
+            string cmd = "SELECT khatawani_No, FullName, Contact_No, Address,PageNo,photo,cast,occupation,Address2,doc1,doc2,doc3,PoliceStation,Tahsil,District  FROM   Customer_Master WHERE  (khatawani_No = '" + khatawani + "')";
+            DataTable dt = _objSQLHelper.GetDataTable(cmd);
+            return dt;
+
+        }
 
         public DataTable getAllKhatawaniDetails()
         {

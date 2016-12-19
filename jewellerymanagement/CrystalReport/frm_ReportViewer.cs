@@ -212,6 +212,33 @@ namespace JewelleryManagement.CrystalReport
             UpdateNSNInGirviMaster(GirviNo);
         }
 
+        internal void ReceiveDebitDetailsReport(DataTable dt)
+        {
+            CrystalReport.CrystalReport_Girvi.crt_CreditForm _objReport = new CrystalReport.CrystalReport_Girvi.crt_CreditForm();
+            string CompanyInfo = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,LicenceNo,Antargat,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE companyid='1'";
+
+            DataTable dt_CompanyInfo = _objsqlhelper.GetDataTable(CompanyInfo);
+           double SumOfAmount = _objCommon.sumDataTableColumn(dt, "DebitAmount");
+
+            _objReport.Database.Tables[0].SetDataSource(dt_CompanyInfo);
+            _objReport.Database.Tables[1].SetDataSource(dt);
+            _objReport.SetParameterValue("SumCredit", SumOfAmount);
+            crReportViewer.ReportSource = _objReport;
+        }
+        internal void ReceiveCreditDetailsReport(DataTable dt)
+        {
+            CrystalReport.CrystalReport_Girvi.crt_DebitForm _objReport = new CrystalReport.CrystalReport_Girvi.crt_DebitForm();
+            string CompanyInfo = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,LicenceNo,Antargat,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE companyid='1'";
+
+            DataTable dt_CompanyInfo = _objsqlhelper.GetDataTable(CompanyInfo);
+            double SumOfAmount = _objCommon.sumDataTableColumn(dt, "DebitAmount");
+
+            _objReport.Database.Tables[0].SetDataSource(dt_CompanyInfo);
+            _objReport.Database.Tables[1].SetDataSource(dt);
+            _objReport.SetParameterValue("SumCredit", SumOfAmount);
+            crReportViewer.ReportSource = _objReport;
+        }
+
         public void UpdateNSNInGirviMaster(string GirviNo)
         {
             string NSNCount;
@@ -481,7 +508,7 @@ namespace JewelleryManagement.CrystalReport
         public void ReceiveDataAllKhatawaniGirviAddedDetails(DataTable dtData, string EndDate, bool other)
         {
             CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithgirviAdded _oVIReport = new CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithgirviAdded();
-            string str2 = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2 FROM CompanyMaster Where companyid='1'";
+            string str2 = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,Antargat,LicenceNo,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE (companyid = '1')";
             DataTable dt2 = _objsqlhelper.GetDataTable(str2);
             _oVIReport.Database.Tables[0].SetDataSource(dtData);
             _oVIReport.Database.Tables[1].SetDataSource(dt2);
@@ -943,7 +970,7 @@ namespace JewelleryManagement.CrystalReport
         public void ReceiveDataAllKhatawaniGirviDetails(DataTable dtData, string EndDate, bool other)
         {
             CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithgirvi _oVIReport = new CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithgirvi();
-            string str2 = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2 FROM CompanyMaster Where companyid='1'";
+            string str2 = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,LicenceNo,District,Tahsil,PinCode,Antargat,Antargat FROM CompanyMaster Where companyid='1'";
             DataTable dt2 = _objsqlhelper.GetDataTable(str2);
             _oVIReport.Database.Tables[0].SetDataSource(dtData);
             _oVIReport.Database.Tables[1].SetDataSource(dt2);
@@ -1016,7 +1043,7 @@ namespace JewelleryManagement.CrystalReport
         public void ReceiveDataAllKhatawaniReleaseGirviDetails(DataTable dtData, string EndDate, bool other)
         {
             CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithReleasegirvi _oVIReport = new CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithReleasegirvi();
-            string str2 = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2 FROM CompanyMaster Where companyid='1'";
+            string str2 = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,LicenceNo,District,Tahsil,PinCode,Antargat,Antargat FROM CompanyMaster Where companyid='1'";
             DataTable dt2 = _objsqlhelper.GetDataTable(str2);
             _oVIReport.Database.Tables[0].SetDataSource(dtData);
             _oVIReport.Database.Tables[1].SetDataSource(dt2);
@@ -1324,6 +1351,7 @@ namespace JewelleryManagement.CrystalReport
             //string str3 = "SELECT FullName,Address FROM Customer_Master WHERE (khatawani_No='" + KhNo + "')";
             //DataTable dt3 = _objsqlhelper.GetDataTable(str3);
             _oVIReport.Database.Tables[0].SetDataSource(dt2);
+
             _oVIReport.Database.Tables[1].SetDataSource(dtData);
 
 
@@ -1331,7 +1359,19 @@ namespace JewelleryManagement.CrystalReport
             _oVIReport.SetParameterValue("sumAmountJama", _objCommon.sumDataTableColumn(dtData, "AmountJama"));
             _oVIReport.SetParameterValue("sumInterestJama", _objCommon.sumDataTableColumn(dtData, "InterestJama"));
             _oVIReport.SetParameterValue("sumTotalAmountJama", _objCommon.sumDataTableColumn(dtData, "TotalAmountJama"));
+            //int nave = Convert.ToInt32(_objCommon.sumDataTableColumn(dtData, "TotalAmountJama"));
+            //int jama = Convert.ToInt32(_objCommon.sumDataTableColumn(dtData, "AmountJama"));
+            //if (nave > jama)
+            //{
+            //    int JamaBal = nave - jama;
+            //    _oVIReport.SetParameterValue("JamaBal", JamaBal);
+            //}
 
+            //if (jama  > nave)
+            //{
+            //    int NaveBal = jama -nave;
+            //    _oVIReport.SetParameterValue("NaveBal", NaveBal);
+            //}
 
 
             _oVIReport.SetParameterValue("opening", opening);

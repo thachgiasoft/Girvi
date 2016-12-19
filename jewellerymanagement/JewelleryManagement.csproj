@@ -117,6 +117,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bin\Debug\Crt_GirviRelieseRajnikarande.cs">
+      <DependentUpon>Crt_GirviRelieseRajnikarande.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_GirviReliesekarande.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_GirviReliesekarande.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KarandeGirviAdded.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarandeGirviAdded.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KarandeGirviAddedRavindra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarandeGirviAddedRavindra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KarandeKhatawani.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarandeKhatawani.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_KarandeRokadMultiPrint.cs">
+      <DependentUpon>crt_KarandeRokadMultiPrint.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="bin\Debug\Crt_YerpudeRelease.cs">
       <DependentUpon>Crt_YerpudeRelease.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -500,6 +536,18 @@
       <DependentUpon>Crt_KhatawaniIndex.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_DebitForm.cs">
+      <DependentUpon>crt_DebitForm.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_CreditForm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_CreditForm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CrystalReport\CrystalReport_Girvi\crt_YerpudeGirviAdd.cs">
       <DependentUpon>crt_YerpudeGirviAdd.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -791,6 +839,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ds_cashbook.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_creditdebit.cs">
+      <DependentUpon>ds_creditdebit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Dataset_Girvi\ds_creditdebit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_creditdebit.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\Dataset_Girvi\ds_forwardGirvi.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1244,6 +1300,30 @@
     <Compile Include="Reports\VayajReport.Designer.cs">
       <DependentUpon>VayajReport.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bin\Debug\Crt_GirviRelieseRajnikarande.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_GirviRelieseRajnikarande.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_GirviReliesekarande.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_GirviReliesekarande.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KarandeGirviAdded.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarandeGirviAdded.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KarandeGirviAddedRavindra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarandeGirviAddedRavindra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KarandeKhatawani.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarandeKhatawani.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_KarandeRokadMultiPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_KarandeRokadMultiPrint.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="bin\Debug\Crt_YerpudeRelease.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crt_YerpudeRelease.cs</LastGenOutput>
@@ -1474,6 +1554,14 @@
     <EmbeddedResource Include="CrystalReport\Crt_KhatawaniIndex.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crt_KhatawaniIndex.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_DebitForm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_DebitForm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_CreditForm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_CreditForm.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_YerpudeGirviAdd.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1857,6 +1945,17 @@
     </None>
     <None Include="Dataset\Dataset_Girvi\ds_cashbook.xss">
       <DependentUpon>ds_cashbook.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_creditdebit.xsc">
+      <DependentUpon>ds_creditdebit.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_creditdebit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_creditdebit.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Dataset_Girvi\ds_creditdebit.xss">
+      <DependentUpon>ds_creditdebit.xsd</DependentUpon>
     </None>
     <None Include="Dataset\Dataset_Girvi\ds_forwardGirvi.xsc">
       <DependentUpon>ds_forwardGirvi.xsd</DependentUpon>

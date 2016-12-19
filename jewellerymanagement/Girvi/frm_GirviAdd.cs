@@ -254,7 +254,7 @@ namespace JewelleryManagement.Girvi
             cmb_PoliceStation.DataSource = _objGirviAdd.getPoliceStation();
             Cmb_ItemType.DataSource = _objGirviAdd.getItemtype();
             cmb_Cast.DataSource = _objCaste.getAllCaste();
-
+          
             if (rbt_PavtiNoYes.Checked == true)
             {
                 string receipt_no = _objGirviAdd.getReceiptNo("GRT-" + _objFinancialYear.getSelectedFinancialYear().Rows[0]["startyear"].ToString().Substring(8) + "/" + _objFinancialYear.getSelectedFinancialYear().Rows[0]["endyear"].ToString().Substring(8) + "%");
@@ -2174,6 +2174,83 @@ namespace JewelleryManagement.Girvi
                 }
             }
         }
+        private void fillCustomerInfoKhatavni()
+        {
+
+
+            if (_objValidation.IsNotEmpty(txt_Khata.Text))
+            {
+                dgv_GirviDetail.Rows.Clear();
+                dgv_ItemDetail.Rows.Clear();
+                DataTable dtKhatawani = _objGirviAdd.getKhatawaniByNameKhatawani(txt_Khata.Text);
+                if (dtKhatawani.Rows.Count == 1)
+                {
+
+                    txt_KhatawaniNo.Text = Convert.ToString((dtKhatawani.Rows[0]["khatawani_No"]));
+                    cmb_FullName.Text = Convert.ToString((dtKhatawani.Rows[0]["FullName"]));
+                    txt_MobileNo.Text = Convert.ToString((dtKhatawani.Rows[0]["Contact_No"]));
+                    cmb_Address.Text = Convert.ToString((dtKhatawani.Rows[0]["Address"]));
+
+                    cmb_PoliceStation.Text = Convert.ToString((dtKhatawani.Rows[0]["PoliceStation"]));
+                    Cmb_Tahsil.Text = Convert.ToString((dtKhatawani.Rows[0]["Tahsil"]));
+                    cmb_District.Text = Convert.ToString((dtKhatawani.Rows[0]["District"]));
+                    cmb_Cast.Text = Convert.ToString((dtKhatawani.Rows[0]["cast"]));
+                    ProfilePhoto = Convert.ToString((dtKhatawani.Rows[0]["photo"]));
+                    Document1 = Convert.ToString((dtKhatawani.Rows[0]["doc1"]));
+                    Documennt2 = Convert.ToString((dtKhatawani.Rows[0]["doc2"]));
+                    Document3 = Convert.ToString((dtKhatawani.Rows[0]["doc3"]));
+                    pcbx_Photo.ImageLocation = Environment.CurrentDirectory + "\\Images\\" + Convert.ToString((dtKhatawani.Rows[0]["photo"]));
+                    // byte[] MyData = new byte[0];
+
+
+                    // MyData = (byte[])dtKhatawani.Rows[0]["photo"];
+
+                    //using (MemoryStream mStream = new MemoryStream(MyData))
+                    //  {
+                    //pcbx_Photo.Image= Image.FromStream(mStream);
+                    //}
+                    //pcbx_Photo.Image = Convert.ToBase64String(stream);
+
+                    if (dtKhatawani.Rows[0]["occupation"].ToString() == "कृषीत्तर")
+                    {
+                        rbt_Krushiuttar.Checked = true;
+                    }
+                    else
+                    {
+                        rbt_Krushi.Checked = true;
+
+                    }
+                    cmb_Post.Text = Convert.ToString((dtKhatawani.Rows[0]["Address2"]));
+
+                    DataTable dtGirvi = _objGirviAdd.getGirviDetailsByKhatawani(txt_KhatawaniNo.Text);
+                    for (int i = 0; i < dtGirvi.Rows.Count; i++)
+                    {
+                        dgv_GirviDetail.Rows.Add();
+                        int gcount = Convert.ToInt32(this.dgv_GirviDetail.Rows.Count);
+                        gcount = gcount - 1;
+
+                        dgv_GirviDetail.Rows[gcount].Cells["InvoiceNo1"].Value = dtGirvi.Rows[i]["GirviRecordNo"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["Receipt"].Value = dtGirvi.Rows[i]["receipt_no"].ToString();
+
+                        dgv_GirviDetail.Rows[gcount].Cells["Amount"].Value = dtGirvi.Rows[i]["Amount"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["DateOfDeposit"].Value = dtGirvi.Rows[i]["Date_of_deposit"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["InterestRate"].Value = dtGirvi.Rows[i]["interset_rate"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["LastDateOfRelease"].Value = dtGirvi.Rows[i]["duration"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["UpdatedGirviNo"].Value = dtGirvi.Rows[i]["updated_girvi_no"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["ForwardedTo"].Value = dtGirvi.Rows[i]["Forwarded_to"].ToString();
+                        dgv_GirviDetail.Rows[gcount].Cells["DateOfForward"].Value = dtGirvi.Rows[i]["Date_of_Forward"].ToString();
+
+                    }
+
+
+                    lst_FullName.Visible = false;
+                }
+                else
+                {
+                    clearallwithoutname();
+                }
+            }
+        }
 
         private void bttn_ResetGirviData_Click(object sender, EventArgs e)
         {
@@ -2643,7 +2720,7 @@ namespace JewelleryManagement.Girvi
 
         private void txt_KhatawaniNo_KeyDown(object sender, KeyEventArgs e)
         {
-
+            //fillCustomerInfoKhatavni();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -2703,6 +2780,11 @@ namespace JewelleryManagement.Girvi
         private void bttn_ViewOpeningBalance_Click(object sender, EventArgs e)
         {
             lbl_OpeningBalance.Text = _objGirviCommon.getOpeningBalance();
+        }
+
+        private void txt_Khata_KeyDown(object sender, KeyEventArgs e)
+        {
+            fillCustomerInfoKhatavni();
         }
 
         private void txt_Narration_Enter(object sender, EventArgs e)

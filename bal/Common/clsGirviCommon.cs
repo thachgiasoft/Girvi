@@ -949,6 +949,12 @@ namespace BAL.Common
             DataTable dt = _objSQLHelper.GetDataTable(str);
             return dt;
         }
+        public DataTable getPavtiNoAutoIncriment()
+        {
+            string str = "SELECT  PavtiNoAutoIncrement  FROM  setting_value";
+            DataTable dt = _objSQLHelper.GetDataTable(str);
+            return dt;
+        }
         public void setreceipt(string value)
         {
             string str = "UPDATE setting_value SET receipt='" + value + "'";

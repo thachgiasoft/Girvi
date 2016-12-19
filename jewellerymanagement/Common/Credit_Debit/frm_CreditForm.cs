@@ -19,6 +19,8 @@ namespace JewelleryManagement.Common.Credit_Debit
         }
         Cls_BalanceSheet _objCredit = new Cls_BalanceSheet();
         ClsFinancialYear _onjFinancialYear = new ClsFinancialYear();
+        Validation val = new Validation();
+        public delegate void SendData(DataTable dt);
 
         private void frm_CreditForm_Load(object sender, EventArgs e)
         {
@@ -87,9 +89,9 @@ namespace JewelleryManagement.Common.Credit_Debit
                             ledgerid = Convert.ToInt32(dt.Rows[j][0]);
                         }
                     }
+                   
 
-
-                    _objCredit.insertCreditDebitDetails(masterid, ledgerid.ToString(), txt_amount.Text, "0", txt_chequeNo.Text, txt_chequeNo.Text, dtp_date.Text, "Cr", cmb_AcountLedger.Text);
+                    _objCredit.insertCreditDebitDetails(masterid, ledgerid.ToString(), txt_amount.Text, "0", txt_chequeNo.Text, dtp_chequeDate.Text, dtp_date.Text, "Cr", cmb_AcountLedger.Text);
                     _objCredit.insertCreditDebitDetails(masterid, cmb_AcountLedger.SelectedValue.ToString(), "0",txt_amount.Text, txt_chequeNo.Text, txt_chequeNo.Text, dtp_date.Text, "Dr", cmb_AcountLedger.Text);
 
                     MessageBox.Show("Data Saved Successfully");
@@ -258,6 +260,23 @@ namespace JewelleryManagement.Common.Credit_Debit
         private void dgv_DebitData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bttn_Print_Click(object sender, EventArgs e)
+        {
+          
+            try
+            {
+                DataTable dt = val.DataGridView2DataTable(dgv_DebitData, "table1");
+                CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
+                SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDebitDetailsReport);
+                _obj(dt);
+                _objfrm_ReportViewer.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
