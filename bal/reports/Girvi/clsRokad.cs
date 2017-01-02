@@ -100,14 +100,14 @@ namespace BAL.Reports.Girvi
 
         public DataTable getAllGirviDatewise(string startdate, string enddate)
         {
-            string cmd = "SELECT khatawani_No,GirviRecordNo, Amount,Date_of_deposit,receipt_no,interset_rate FROM GirviMaster WHERE (CONVERT(DateTime, Date_of_deposit, 103) >= CONVERT(DateTime,  '" + startdate + "', 103)) AND (CONVERT(DateTime, Date_of_deposit, 103) <= CONVERT(DateTime, '" + enddate + "' , 103)) order by CONVERT(DateTime, Date_of_deposit, 103), receipt_no";
+            string cmd = "SELECT khatawani_No,GirviRecordNo, Amount,Date_of_deposit,receipt_no,interset_rate FROM GirviMaster WHERE (CONVERT(DateTime, Date_of_deposit, 103) >= CONVERT(DateTime,  '" + startdate + "', 103)) AND (CONVERT(DateTime, Date_of_deposit, 103) <= CONVERT(DateTime, '" + enddate + "' , 103)) order by CONVERT(DateTime, Date_of_deposit, 103) ASC, receipt_no ASC";
             DataTable dt = _objSQLHelper.GetDataTable(cmd);
             return dt;
         }
 
         public DataTable getAllGirviReleaseDatewise(string startdate, string enddate)
         {
-            string cmd = "SELECT Khatawani_no,Girvino,AmountDeposit,Interest_Amount,dateOfRelease,pavtino FROM GirviReleasemaster WHERE  (CONVERT(DateTime, dateOfRelease, 103) >= CONVERT(DateTime,  '" + startdate + "', 103)) AND (CONVERT(DateTime, dateOfRelease, 103) <=  CONVERT(DateTime, '" + enddate + "' , 103)) order by CONVERT(DateTime, dateOfRelease, 103)";
+            string cmd = "SELECT Khatawani_no,Girvino,AmountDeposit,Interest_Amount,dateOfRelease,pavtino FROM GirviReleasemaster WHERE  (CONVERT(DateTime, dateOfRelease, 103) >= CONVERT(DateTime,  '" + startdate + "', 103)) AND (CONVERT(DateTime, dateOfRelease, 103) <=  CONVERT(DateTime, '" + enddate + "' , 103)) order by CONVERT(DateTime, dateOfRelease, 103) ASC, pavtino ASC";
             DataTable dt = _objSQLHelper.GetDataTable(cmd);
             return dt;
         }
