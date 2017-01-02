@@ -76,6 +76,7 @@
   <ItemGroup>
     <Content Include="bin\Debug\BAL.dll" />
     <Content Include="bin\Debug\BAL.pdb" />
+    <Content Include="bin\Debug\WebCam_Capture.dll" />
     <Content Include="bin\Release\BAL.dll" />
     <Content Include="bin\Release\BAL.pdb" />
     <Content Include="obj\Debug\BAL.csproj.FileListAbsolute.txt" />

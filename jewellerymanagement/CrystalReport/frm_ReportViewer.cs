@@ -10,6 +10,7 @@ using BAL;
 using BAL.Common;
 using CrystalDecisions.CrystalReports.Engine;
 using JewelleryManagement.Reports.Girvi;
+using JewelleryManagement.CrystalReport.CrystalReport_Girvi;
 
 namespace JewelleryManagement.CrystalReport
 {
@@ -214,7 +215,7 @@ namespace JewelleryManagement.CrystalReport
 
         internal void ReceiveDebitDetailsReport(DataTable dt)
         {
-            CrystalReport.CrystalReport_Girvi.crt_CreditForm _objReport = new CrystalReport.CrystalReport_Girvi.crt_CreditForm();
+            crt_CreditForm _objReport = new crt_CreditForm();
             string CompanyInfo = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,LicenceNo,Antargat,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE companyid='1'";
 
             DataTable dt_CompanyInfo = _objsqlhelper.GetDataTable(CompanyInfo);
@@ -227,7 +228,7 @@ namespace JewelleryManagement.CrystalReport
         }
         internal void ReceiveCreditDetailsReport(DataTable dt)
         {
-            CrystalReport.CrystalReport_Girvi.crt_DebitForm _objReport = new CrystalReport.CrystalReport_Girvi.crt_DebitForm();
+            crt_DebitForm _objReport = new crt_DebitForm();
             string CompanyInfo = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,LicenceNo,Antargat,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE companyid='1'";
 
             DataTable dt_CompanyInfo = _objsqlhelper.GetDataTable(CompanyInfo);

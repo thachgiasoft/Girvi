@@ -923,7 +923,7 @@ namespace JewelleryManagement
 
         private void rokadAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            JewelleryManagement.Reports.Girvi.frm_RokadAll _objRokadAll = new Reports.Girvi.frm_RokadAll();
+            frm_RokadAll _objRokadAll = new frm_RokadAll();
 
             if (rbt_English.Checked == true)
             {

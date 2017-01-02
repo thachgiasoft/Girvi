@@ -89,8 +89,11 @@
       <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v12.0\Microsoft.VisualBasic.PowerPacks.Design.dll</HintPath>
+    </Reference>
     <Reference Include="SergeUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\SergeUtils.dll</HintPath>
@@ -117,16 +120,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bin\Debug\Crt_GirviRelieseRajnikarande.cs">
-      <DependentUpon>Crt_GirviRelieseRajnikarande.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="bin\Debug\Crt_GirviReliesekarande.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Crt_GirviReliesekarande.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_GirviRelieseRajnikarande.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_GirviRelieseRajnikarande.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="bin\Debug\crt_KarandeGirviAdded.cs">
@@ -148,10 +151,40 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="bin\Debug\crt_KarandeRokadMultiPrint.cs">
-      <DependentUpon>crt_KarandeRokadMultiPrint.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
+      <DependentUpon>crt_KarandeRokadMultiPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_karanjaNotice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_karanjaNotice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_KarnjaGirviRelease.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KarnjaGirviRelease.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_KarnjaGirviTheva.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KarnjaGirviTheva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crt_LambatGirviAdd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_LambatGirviAdd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\crt_NitinTumsarKhatawani.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_NitinTumsarKhatawani.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="bin\Debug\Crt_YerpudeRelease.cs">
       <DependentUpon>Crt_YerpudeRelease.rpt</DependentUpon>
@@ -319,30 +352,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crt_KarandeCustomerSaleWithoutVat.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="bin\Debug\Crt_karanjaNotice1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Crt_karanjaNotice.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="bin\Debug\Crt_KarnjaGirviRelease1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Crt_KarnjaGirviRelease.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="bin\Debug\Crt_KarnjaGirviTheva1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Crt_KarnjaGirviTheva.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="bin\Debug\crt_NitinTumsarKhatawani1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crt_NitinTumsarKhatawani.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="bin\Debug\crt_SagarRokadAll.cs">
@@ -536,16 +545,22 @@
       <DependentUpon>Crt_KhatawaniIndex.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_DebitForm.cs">
-      <DependentUpon>crt_DebitForm.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="CrystalReport\CrystalReport_Girvi\crt_CreditForm.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crt_CreditForm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\crt_DebitForm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt_DebitForm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadMonthlyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crt_KaranjaLaadMonthlyReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReport\CrystalReport_Girvi\crt_YerpudeGirviAdd.cs">
@@ -606,12 +621,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Crt_KaranjaLaadGirviReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadMonthlyReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Crt_KaranjaLaadMonthlyReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReport\CrystalReport_Girvi\crt_KarnajaLaadFormNo_12.cs">
@@ -839,9 +848,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ds_cashbook.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Dataset\Dataset_Girvi\ds_creditdebit.cs">
-      <DependentUpon>ds_creditdebit.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\Dataset_Girvi\ds_creditdebit.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1300,13 +1306,13 @@
     <Compile Include="Reports\VayajReport.Designer.cs">
       <DependentUpon>VayajReport.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="bin\Debug\Crt_GirviRelieseRajnikarande.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Crt_GirviRelieseRajnikarande.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="bin\Debug\Crt_GirviReliesekarande.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crt_GirviReliesekarande.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_GirviRelieseRajnikarande.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_GirviRelieseRajnikarande.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="bin\Debug\crt_KarandeGirviAdded.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1323,6 +1329,26 @@
     <EmbeddedResource Include="bin\Debug\crt_KarandeRokadMultiPrint.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crt_KarandeRokadMultiPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_karanjaNotice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_karanjaNotice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_KarnjaGirviRelease.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KarnjaGirviRelease.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_KarnjaGirviTheva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_KarnjaGirviTheva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crt_LambatGirviAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crt_LambatGirviAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\crt_NitinTumsarKhatawani.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_NitinTumsarKhatawani.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="bin\Debug\Crt_YerpudeRelease.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1436,22 +1462,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crt_KarandeCustomerSaleWithoutVat.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="bin\Debug\Crt_karanjaNotice.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Crt_karanjaNotice1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="bin\Debug\Crt_KarnjaGirviRelease.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Crt_KarnjaGirviRelease1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="bin\Debug\Crt_KarnjaGirviTheva.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Crt_KarnjaGirviTheva1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="bin\Debug\crt_NitinTumsarKhatawani.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crt_NitinTumsarKhatawani1.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="bin\Debug\crt_SagarRokadAll.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crt_SagarRokadAll.cs</LastGenOutput>
@@ -1555,13 +1565,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crt_KhatawaniIndex.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_CreditForm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt_CreditForm.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_DebitForm.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crt_DebitForm.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_CreditForm.rpt">
+    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadMonthlyReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crt_CreditForm.cs</LastGenOutput>
+      <LastGenOutput>Crt_KaranjaLaadMonthlyReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_YerpudeGirviAdd.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1602,10 +1616,6 @@
     <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadGirviReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Crt_KaranjaLaadGirviReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\Crt_KaranjaLaadMonthlyReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Crt_KaranjaLaadMonthlyReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport\CrystalReport_Girvi\crt_KarnajaLaadFormNo_12.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1924,6 +1934,9 @@
       <DependentUpon>VayajReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="bin\Debug\JewelleryManagement.vshost.exe.config" />
+    <None Include="bin\Debug\Katawani2" />
+    <None Include="bin\Debug\Shivaji02.ttf" />
     <None Include="Dataset\Dataset_Girvi\ds_balancesheetmonthwise.xsc">
       <DependentUpon>ds_balancesheetmonthwise.xsd</DependentUpon>
     </None>
@@ -2212,12 +2225,28 @@
     <None Include="Reports\Resources\button%282%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\AForge.dll" />
+    <Content Include="bin\Debug\AForge.Video.DirectShow.dll" />
+    <Content Include="bin\Debug\AForge.Video.dll" />
     <Content Include="bin\Debug\ConnectionString.txt" />
     <None Include="Resources\743239-jewelry-wallpaper.jpg" />
     <None Include="Resources\742687-jewelry-wallpaper.jpg" />
     <None Include="Resources\742618-jewelry-wallpaper.jpeg" />
     <None Include="Resources\742853-jewelry-wallpaper.jpg" />
     <None Include="Resources\742828-jewelry-wallpaper.jpeg" />
+    <Content Include="bin\Debug\JewelleryManagement.exe" />
+    <Content Include="bin\Debug\JewelleryManagement.pdb" />
+    <Content Include="bin\Debug\JewelleryManagement.vshost.exe" />
+    <Content Include="bin\Debug\log4net.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Smo.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.SmoExtended.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.SqlEnum.dll" />
+    <Content Include="bin\Debug\SergeUtils.dll" />
+    <Content Include="bin\Debug\System.Data.SQLite.dll" />
+    <Content Include="bin\Debug\WebCam_Capture.dll" />
+    <Content Include="bin\Debug\WinNTService.txt" />
     <Content Include="Resources\ADDBUTTON.png" />
     <Content Include="Resources\BLUEBUTTON.png" />
     <None Include="Resources\MetroUI_Mail.png" />
@@ -2263,6 +2292,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
