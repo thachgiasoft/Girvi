@@ -9,7 +9,9 @@ using System.Windows.Forms;
 using BAL;
 using BAL.Girvi;
 using System.Drawing.Text;
+using JewelleryManagement.CrystalReport;
 namespace JewelleryManagement.Girvi
+    
 {
     public partial class frm_DuplicateGirviRelease : Form
     {
@@ -20,7 +22,8 @@ namespace JewelleryManagement.Girvi
         Validation _objValidation = new Validation();
         cls_GirviRelease _objGirviRelease = new cls_GirviRelease();
         cls_GirviAdd _objGirviAdd = new cls_GirviAdd();
-        public delegate void SendData(string BillNO, string AccNo, string otherFont);
+        public delegate void SendData(string BillNO, string AccNo, string otherFont, string PrinterName);
+        PrinterSetting oPrintersetting = new PrinterSetting();
 
         private void cmb_FullName_Enter(object sender, EventArgs e)
         {
@@ -125,15 +128,14 @@ namespace JewelleryManagement.Girvi
             {
                 CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
                 SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDataReleaseGirvi);
-                _obj(dgv_GirviDetail.Rows[dgv_GirviDetail.CurrentCell.RowIndex].Cells["gn"].Value.ToString(), txt_KhatawaniNo.Text, "Other");
-                _objfrm_ReportViewer.Show();
-
+                _obj(dgv_GirviDetail.Rows[dgv_GirviDetail.CurrentCell.RowIndex].Cells["gn"].Value.ToString(), txt_KhatawaniNo.Text, "Other", oPrintersetting.PrinterName);
+                
             }
             else
             {
                 CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
                 SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDataReleaseGirvi);
-                _obj(dgv_GirviDetail.Rows[dgv_GirviDetail.CurrentCell.RowIndex].Cells["gn"].Value.ToString(), txt_KhatawaniNo.Text, "");
+                _obj(dgv_GirviDetail.Rows[dgv_GirviDetail.CurrentCell.RowIndex].Cells["gn"].Value.ToString(), txt_KhatawaniNo.Text, "", oPrintersetting.PrinterName);
                 _objfrm_ReportViewer.Show();
             }
         }

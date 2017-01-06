@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ReleaseGirvi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_Main = new System.Windows.Forms.Panel();
+            this.txtForwardInterestAmount = new System.Windows.Forms.TextBox();
+            this.txtForwardInterest = new System.Windows.Forms.TextBox();
+            this.txtForwardAmount = new System.Windows.Forms.TextBox();
             this.txt_vadhiv = new System.Windows.Forms.TextBox();
             this.lbl_vadhiv = new System.Windows.Forms.Label();
             this.dgv_girvi_updateDetails = new System.Windows.Forms.DataGridView();
@@ -56,6 +59,18 @@
             this.rbt_Hindi = new System.Windows.Forms.RadioButton();
             this.rbt_Marathi = new System.Windows.Forms.RadioButton();
             this.dgv_GirviUnrelease = new System.Windows.Forms.DataGridView();
+            this.GirviNoUnrelease = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RecieptNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoanAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateOfDeposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InterestRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Forward = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ForwardedTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Narration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ForwardAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ForwardInterest = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_ItemDetail = new System.Windows.Forms.DataGridView();
             this.GirviNoItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MetalType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,21 +138,6 @@
             this.bttn_Release = new System.Windows.Forms.Button();
             this.bttn_UnRelease = new System.Windows.Forms.Button();
             this.cachedcrt_KarandeCustomerSaleWithoutVat1 = new JewelleryManagement.bin.Debug.Cachedcrt_KarandeCustomerSaleWithoutVat();
-            this.txtForwardAmount = new System.Windows.Forms.TextBox();
-            this.txtForwardInterest = new System.Windows.Forms.TextBox();
-            this.txtForwardInterestAmount = new System.Windows.Forms.TextBox();
-            this.GirviNoUnrelease = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RecieptNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoanAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateOfDeposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InterestRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Forward = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ForwardedTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Narration = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ForwardAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ForwardInterest = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnl_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_girvi_updateDetails)).BeginInit();
             this.pnl_Buttons.SuspendLayout();
@@ -174,6 +174,45 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(1196, 567);
             this.pnl_Main.TabIndex = 0;
+            // 
+            // txtForwardInterestAmount
+            // 
+            this.txtForwardInterestAmount.BackColor = System.Drawing.Color.White;
+            this.txtForwardInterestAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtForwardInterestAmount.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtForwardInterestAmount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtForwardInterestAmount.ForeColor = System.Drawing.Color.Red;
+            this.txtForwardInterestAmount.Location = new System.Drawing.Point(977, 481);
+            this.txtForwardInterestAmount.Name = "txtForwardInterestAmount";
+            this.txtForwardInterestAmount.ReadOnly = true;
+            this.txtForwardInterestAmount.Size = new System.Drawing.Size(127, 31);
+            this.txtForwardInterestAmount.TabIndex = 377;
+            // 
+            // txtForwardInterest
+            // 
+            this.txtForwardInterest.BackColor = System.Drawing.Color.White;
+            this.txtForwardInterest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtForwardInterest.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtForwardInterest.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtForwardInterest.ForeColor = System.Drawing.Color.Red;
+            this.txtForwardInterest.Location = new System.Drawing.Point(844, 481);
+            this.txtForwardInterest.Name = "txtForwardInterest";
+            this.txtForwardInterest.ReadOnly = true;
+            this.txtForwardInterest.Size = new System.Drawing.Size(127, 31);
+            this.txtForwardInterest.TabIndex = 376;
+            // 
+            // txtForwardAmount
+            // 
+            this.txtForwardAmount.BackColor = System.Drawing.Color.White;
+            this.txtForwardAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtForwardAmount.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtForwardAmount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtForwardAmount.ForeColor = System.Drawing.Color.Red;
+            this.txtForwardAmount.Location = new System.Drawing.Point(711, 481);
+            this.txtForwardAmount.Name = "txtForwardAmount";
+            this.txtForwardAmount.ReadOnly = true;
+            this.txtForwardAmount.Size = new System.Drawing.Size(127, 31);
+            this.txtForwardAmount.TabIndex = 375;
             // 
             // txt_vadhiv
             // 
@@ -463,6 +502,85 @@
             this.dgv_GirviUnrelease.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_GirviUnrelease_CellContentClick);
             this.dgv_GirviUnrelease.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_GirviUnrelease_MouseClick);
             // 
+            // GirviNoUnrelease
+            // 
+            this.GirviNoUnrelease.HeaderText = "GirviNo";
+            this.GirviNoUnrelease.Name = "GirviNoUnrelease";
+            this.GirviNoUnrelease.ReadOnly = true;
+            this.GirviNoUnrelease.Visible = false;
+            // 
+            // RecieptNo
+            // 
+            this.RecieptNo.HeaderText = "ReceiptNo";
+            this.RecieptNo.Name = "RecieptNo";
+            this.RecieptNo.ReadOnly = true;
+            // 
+            // LoanAmount
+            // 
+            this.LoanAmount.HeaderText = "LoanAmount";
+            this.LoanAmount.Name = "LoanAmount";
+            this.LoanAmount.ReadOnly = true;
+            // 
+            // DateOfDeposit
+            // 
+            this.DateOfDeposit.FillWeight = 110F;
+            this.DateOfDeposit.HeaderText = "DateOfDeposit";
+            this.DateOfDeposit.Name = "DateOfDeposit";
+            this.DateOfDeposit.ReadOnly = true;
+            // 
+            // InterestRate
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.InterestRate.DefaultCellStyle = dataGridViewCellStyle1;
+            this.InterestRate.FillWeight = 50F;
+            this.InterestRate.HeaderText = "InterestRate";
+            this.InterestRate.Name = "InterestRate";
+            this.InterestRate.ReadOnly = true;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            // 
+            // Duration
+            // 
+            this.Duration.HeaderText = "Duration";
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            // 
+            // Forward
+            // 
+            this.Forward.HeaderText = "Forward";
+            this.Forward.Name = "Forward";
+            this.Forward.ReadOnly = true;
+            // 
+            // ForwardedTo
+            // 
+            this.ForwardedTo.HeaderText = "ForwardedTo";
+            this.ForwardedTo.Name = "ForwardedTo";
+            this.ForwardedTo.ReadOnly = true;
+            // 
+            // Narration
+            // 
+            this.Narration.HeaderText = "Narration";
+            this.Narration.Name = "Narration";
+            this.Narration.ReadOnly = true;
+            // 
+            // ForwardAmount
+            // 
+            this.ForwardAmount.HeaderText = "ForwardAmount";
+            this.ForwardAmount.Name = "ForwardAmount";
+            this.ForwardAmount.ReadOnly = true;
+            this.ForwardAmount.Visible = false;
+            // 
+            // ForwardInterest
+            // 
+            this.ForwardInterest.HeaderText = "ForwardInterest";
+            this.ForwardInterest.Name = "ForwardInterest";
+            this.ForwardInterest.ReadOnly = true;
+            this.ForwardInterest.Visible = false;
+            // 
             // dgv_ItemDetail
             // 
             this.dgv_ItemDetail.AllowUserToAddRows = false;
@@ -623,7 +741,7 @@
             this.lst_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lst_FullName.FormattingEnabled = true;
             this.lst_FullName.ItemHeight = 20;
-            this.lst_FullName.Location = new System.Drawing.Point(57, 44);
+            this.lst_FullName.Location = new System.Drawing.Point(57, 45);
             this.lst_FullName.Name = "lst_FullName";
             this.lst_FullName.Size = new System.Drawing.Size(251, 164);
             this.lst_FullName.TabIndex = 370;
@@ -1224,124 +1342,6 @@
             this.bttn_UnRelease.Text = "UNRELEASE";
             this.bttn_UnRelease.UseVisualStyleBackColor = false;
             this.bttn_UnRelease.Click += new System.EventHandler(this.bttn_UnRelease_Click);
-            // 
-            // txtForwardAmount
-            // 
-            this.txtForwardAmount.BackColor = System.Drawing.Color.White;
-            this.txtForwardAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtForwardAmount.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtForwardAmount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtForwardAmount.ForeColor = System.Drawing.Color.Red;
-            this.txtForwardAmount.Location = new System.Drawing.Point(711, 481);
-            this.txtForwardAmount.Name = "txtForwardAmount";
-            this.txtForwardAmount.ReadOnly = true;
-            this.txtForwardAmount.Size = new System.Drawing.Size(127, 31);
-            this.txtForwardAmount.TabIndex = 375;
-            // 
-            // txtForwardInterest
-            // 
-            this.txtForwardInterest.BackColor = System.Drawing.Color.White;
-            this.txtForwardInterest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtForwardInterest.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtForwardInterest.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtForwardInterest.ForeColor = System.Drawing.Color.Red;
-            this.txtForwardInterest.Location = new System.Drawing.Point(844, 481);
-            this.txtForwardInterest.Name = "txtForwardInterest";
-            this.txtForwardInterest.ReadOnly = true;
-            this.txtForwardInterest.Size = new System.Drawing.Size(127, 31);
-            this.txtForwardInterest.TabIndex = 376;
-            // 
-            // txtForwardInterestAmount
-            // 
-            this.txtForwardInterestAmount.BackColor = System.Drawing.Color.White;
-            this.txtForwardInterestAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtForwardInterestAmount.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtForwardInterestAmount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtForwardInterestAmount.ForeColor = System.Drawing.Color.Red;
-            this.txtForwardInterestAmount.Location = new System.Drawing.Point(977, 481);
-            this.txtForwardInterestAmount.Name = "txtForwardInterestAmount";
-            this.txtForwardInterestAmount.ReadOnly = true;
-            this.txtForwardInterestAmount.Size = new System.Drawing.Size(127, 31);
-            this.txtForwardInterestAmount.TabIndex = 377;
-            // 
-            // GirviNoUnrelease
-            // 
-            this.GirviNoUnrelease.HeaderText = "GirviNo";
-            this.GirviNoUnrelease.Name = "GirviNoUnrelease";
-            this.GirviNoUnrelease.ReadOnly = true;
-            this.GirviNoUnrelease.Visible = false;
-            // 
-            // RecieptNo
-            // 
-            this.RecieptNo.HeaderText = "ReceiptNo";
-            this.RecieptNo.Name = "RecieptNo";
-            this.RecieptNo.ReadOnly = true;
-            // 
-            // LoanAmount
-            // 
-            this.LoanAmount.HeaderText = "LoanAmount";
-            this.LoanAmount.Name = "LoanAmount";
-            this.LoanAmount.ReadOnly = true;
-            // 
-            // DateOfDeposit
-            // 
-            this.DateOfDeposit.FillWeight = 110F;
-            this.DateOfDeposit.HeaderText = "DateOfDeposit";
-            this.DateOfDeposit.Name = "DateOfDeposit";
-            this.DateOfDeposit.ReadOnly = true;
-            // 
-            // InterestRate
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.InterestRate.DefaultCellStyle = dataGridViewCellStyle6;
-            this.InterestRate.FillWeight = 50F;
-            this.InterestRate.HeaderText = "InterestRate";
-            this.InterestRate.Name = "InterestRate";
-            this.InterestRate.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            // 
-            // Duration
-            // 
-            this.Duration.HeaderText = "Duration";
-            this.Duration.Name = "Duration";
-            this.Duration.ReadOnly = true;
-            // 
-            // Forward
-            // 
-            this.Forward.HeaderText = "Forward";
-            this.Forward.Name = "Forward";
-            this.Forward.ReadOnly = true;
-            // 
-            // ForwardedTo
-            // 
-            this.ForwardedTo.HeaderText = "ForwardedTo";
-            this.ForwardedTo.Name = "ForwardedTo";
-            this.ForwardedTo.ReadOnly = true;
-            // 
-            // Narration
-            // 
-            this.Narration.HeaderText = "Narration";
-            this.Narration.Name = "Narration";
-            this.Narration.ReadOnly = true;
-            // 
-            // ForwardAmount
-            // 
-            this.ForwardAmount.HeaderText = "ForwardAmount";
-            this.ForwardAmount.Name = "ForwardAmount";
-            this.ForwardAmount.ReadOnly = true;
-            this.ForwardAmount.Visible = false;
-            // 
-            // ForwardInterest
-            // 
-            this.ForwardInterest.HeaderText = "ForwardInterest";
-            this.ForwardInterest.Name = "ForwardInterest";
-            this.ForwardInterest.ReadOnly = true;
-            this.ForwardInterest.Visible = false;
             // 
             // frm_ReleaseGirvi
             // 

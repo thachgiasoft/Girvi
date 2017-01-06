@@ -1054,6 +1054,20 @@ namespace BAL.Common
 
         }
 
+        public void PrintCount_Theva(string value)
+        {
+            string str1 = "UPDATE setting_value SET Print_count_theva='" + value + "'";
+            _objSQLHelper.ExecuteSql(str1);
+
+        }
+
+        public void PrintCount_Sodwa(string value)
+        {
+            string str1 = "UPDATE setting_value SET Print_count_sodva='" + value + "'";
+            _objSQLHelper.ExecuteSql(str1);
+
+        }
+
         public DataTable getduration()
         {
             string str1 = "SELECT Duration from setting_value ";

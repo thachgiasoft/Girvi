@@ -17,7 +17,12 @@ namespace BAL.Common
         {
             string str = "SELECT  Print_count_theva  FROM  setting_value";
             return _objSqlhelper.ExecuteScalar(str);
-        } 
+        }
+        public string getprintcountsodwa()
+        {
+            string str = "SELECT  Print_count_sodva  FROM  setting_value";
+            return _objSqlhelper.ExecuteScalar(str);
+        }
 
         public DataTable getmetaltype()
         {

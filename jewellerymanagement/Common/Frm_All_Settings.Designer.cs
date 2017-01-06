@@ -51,6 +51,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.cmb_PrintCountSodwa = new System.Windows.Forms.ComboBox();
+            this.lbl_PrintCountSodwa = new System.Windows.Forms.Label();
+            this.cmb_PrintCountTheva = new System.Windows.Forms.ComboBox();
+            this.lbl_PrintCountTheva = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -310,6 +314,10 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.cmb_PrintCountSodwa);
+            this.panel6.Controls.Add(this.lbl_PrintCountSodwa);
+            this.panel6.Controls.Add(this.cmb_PrintCountTheva);
+            this.panel6.Controls.Add(this.lbl_PrintCountTheva);
             this.panel6.Controls.Add(this.panel5);
             this.panel6.Controls.Add(this.panel4);
             this.panel6.Controls.Add(this.panel3);
@@ -324,15 +332,71 @@
             this.panel6.Controls.Add(this.lbl_receipt);
             this.panel6.Location = new System.Drawing.Point(25, 17);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(344, 231);
+            this.panel6.Size = new System.Drawing.Size(344, 267);
             this.panel6.TabIndex = 24;
+            // 
+            // cmb_PrintCountSodwa
+            // 
+            this.cmb_PrintCountSodwa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmb_PrintCountSodwa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmb_PrintCountSodwa.DisplayMember = "Duration";
+            this.cmb_PrintCountSodwa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_PrintCountSodwa.FormattingEnabled = true;
+            this.cmb_PrintCountSodwa.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cmb_PrintCountSodwa.Location = new System.Drawing.Point(164, 237);
+            this.cmb_PrintCountSodwa.Name = "cmb_PrintCountSodwa";
+            this.cmb_PrintCountSodwa.Size = new System.Drawing.Size(121, 21);
+            this.cmb_PrintCountSodwa.TabIndex = 27;
+            this.cmb_PrintCountSodwa.ValueMember = "Duration";
+            this.cmb_PrintCountSodwa.SelectedIndexChanged += new System.EventHandler(this.cmb_PrintCountSodwa_SelectedIndexChanged);
+            // 
+            // lbl_PrintCountSodwa
+            // 
+            this.lbl_PrintCountSodwa.AutoSize = true;
+            this.lbl_PrintCountSodwa.Location = new System.Drawing.Point(26, 241);
+            this.lbl_PrintCountSodwa.Name = "lbl_PrintCountSodwa";
+            this.lbl_PrintCountSodwa.Size = new System.Drawing.Size(95, 13);
+            this.lbl_PrintCountSodwa.TabIndex = 26;
+            this.lbl_PrintCountSodwa.Text = "Print Count Sodwa";
+            // 
+            // cmb_PrintCountTheva
+            // 
+            this.cmb_PrintCountTheva.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmb_PrintCountTheva.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmb_PrintCountTheva.DisplayMember = "Duration";
+            this.cmb_PrintCountTheva.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_PrintCountTheva.FormattingEnabled = true;
+            this.cmb_PrintCountTheva.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cmb_PrintCountTheva.Location = new System.Drawing.Point(165, 210);
+            this.cmb_PrintCountTheva.Name = "cmb_PrintCountTheva";
+            this.cmb_PrintCountTheva.Size = new System.Drawing.Size(121, 21);
+            this.cmb_PrintCountTheva.TabIndex = 25;
+            this.cmb_PrintCountTheva.ValueMember = "Duration";
+            this.cmb_PrintCountTheva.SelectedIndexChanged += new System.EventHandler(this.cmb_PrintCountTheva_SelectedIndexChanged);
+            // 
+            // lbl_PrintCountTheva
+            // 
+            this.lbl_PrintCountTheva.AutoSize = true;
+            this.lbl_PrintCountTheva.Location = new System.Drawing.Point(27, 214);
+            this.lbl_PrintCountTheva.Name = "lbl_PrintCountTheva";
+            this.lbl_PrintCountTheva.Size = new System.Drawing.Size(93, 13);
+            this.lbl_PrintCountTheva.TabIndex = 24;
+            this.lbl_PrintCountTheva.Text = "Print Count Theva";
             // 
             // Frm_All_Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JewelleryManagement.Properties.Resources._742618_jewelry_wallpaper;
-            this.ClientSize = new System.Drawing.Size(387, 264);
+            this.ClientSize = new System.Drawing.Size(387, 303);
             this.Controls.Add(this.panel6);
             this.Name = "Frm_All_Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -379,5 +443,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.ComboBox cmb_PrintCountTheva;
+        private System.Windows.Forms.Label lbl_PrintCountTheva;
+        private System.Windows.Forms.ComboBox cmb_PrintCountSodwa;
+        private System.Windows.Forms.Label lbl_PrintCountSodwa;
     }
 }
