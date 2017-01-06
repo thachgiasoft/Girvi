@@ -78,7 +78,9 @@ namespace JewelleryManagement
             }
 
                 cmb_Duration.Text = Convert.ToString(dtSettingValue.Rows[0]["Duration"]);
-            
+                cmb_PrintCountTheva.Text = Convert.ToString(dtSettingValue.Rows[0]["Print_count_theva"]);
+                cmb_PrintCountSodwa.Text = Convert.ToString(dtSettingValue.Rows[0]["Print_count_Sodva"]);
+
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
@@ -146,6 +148,16 @@ namespace JewelleryManagement
         private void cmb_Duration_SelectedIndexChanged(object sender, EventArgs e)
         {
             _objCommon.setDuration(cmb_Duration.Text.ToString());
+        }
+
+        private void cmb_PrintCountTheva_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _objCommon.PrintCount_Theva(cmb_PrintCountTheva.Text.ToString());
+        }
+
+        private void cmb_PrintCountSodwa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _objCommon.PrintCount_Sodwa(cmb_PrintCountSodwa.Text.ToString());
         }
     }
 }

@@ -33,14 +33,10 @@ namespace JewelleryManagement.CrystalReport
 
         public void ReceiveDataAddGirvi(string GirviNo, string AccNo, string OtherFont, string PrinterName)
         {
-            string crname;
-
-            crname = "Select GirviAdd from tbl_GirviCrystalReports";
-
+            string crname = "Select GirviAdd from tbl_GirviCrystalReports";
             DataTable dt_crname = _objsqlhelper.GetDataTable(crname);
             //crt_CustomerSale _objReport = new crt_CustomerSale();
             CrystalDecisions.CrystalReports.Engine.ReportDocument _objReport = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
-
             _objReport.Load(Environment.CurrentDirectory + "\\" + dt_crname.Rows[0]["GirviAdd"].ToString());
 
 
@@ -62,6 +58,7 @@ namespace JewelleryManagement.CrystalReport
             }
             DataTable dt_GirviMaster = _objsqlhelper.GetDataTable(GirviMasterDetails);
 
+            //Set_Font
             if (OtherFont == "Other")
             {
                 FieldObject field;
@@ -90,14 +87,27 @@ namespace JewelleryManagement.CrystalReport
             string MarathiConvertedAmount = funNumToWordConvert(Decimal.Parse(dt_GirviMaster.Rows[0]["girviAmount"].ToString())) + "रुपये";
 
             _objReport.SetParameterValue("GirviAmountInWords", MarathiConvertedAmount);
-
             _objReport.SetParameterValue("Interest", Convert.ToString(Math.Round(Convert.ToDecimal(dt_GirviMaster.Rows[0]["interset_rate"]) * 12, 0)));
             _objReport.SetParameterValue("GrossWt", _objSimplevalidations.Gettingdecimals(Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "gross_wt"))));
             _objReport.SetParameterValue("TotalAmount", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "amount")));
 
             string Printvalue = _objCommon.getprintcounttheva();
+            if (Printvalue == "4")
+            {
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "C");
+                _objReport.PrintToPrinter(1, true, 0, 0);
 
-            if (Printvalue == "3")
+                _objReport.SetParameterValue("PageNo", "O");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "P");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "E");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+            }
+            else if (Printvalue == "3")
             {
                 _objReport.PrintOptions.PrinterName = PrinterName;
                 _objReport.SetParameterValue("PageNo", "C");
@@ -111,30 +121,22 @@ namespace JewelleryManagement.CrystalReport
             }
             else if (Printvalue == "2")
             {
-                _objReport.SetParameterValue("PageNo", "");
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "O");
                 _objReport.PrintToPrinter(1, true, 0, 0);
 
-                _objReport.SetParameterValue("PageNo", "");
+                _objReport.SetParameterValue("PageNo", "C");
                 _objReport.PrintToPrinter(1, true, 0, 0);
             }
             else
             {
-                _objReport.SetParameterValue("PageNo", "");
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "C");
                 _objReport.PrintToPrinter(1, true, 0, 0);
             }
 
-
-            crReportViewer.ReportSource = _objReport;
         }
-
-
-        
-        
-        
-        
         //Prasad
-
-
         public int MonthDifference(DateTime lValue, DateTime rValue)
         {
             return (lValue.Month - rValue.Month) + 12 * (lValue.Year - rValue.Year);
@@ -397,15 +399,80 @@ namespace JewelleryManagement.CrystalReport
             _objReport.PrintOptions.PrinterName = PrinterName;
             _objReport.PrintToPrinter(1, false, 0, 0);
         }
+        //ReleaseGirvi
+        public void ReceiveDataReleaseGirvi(string GirviNo, string KhatawaniNo, string OtherFont,string PrinterName)
+        {
 
-        public void ReceiveDataReleaseGirvi(string GirviNo, string KhatawaniNo, string OtherFont)
-                         {
-            string crname = "Select GirviAdd,GirviRelease from tbl_GirviCrystalReports";
+            string crname = "Select GirviRelease from tbl_GirviCrystalReports";
             DataTable dt_crname = _objsqlhelper.GetDataTable(crname);
+            CrystalDecisions.CrystalReports.Engine.ReportDocument _objReport = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+            _objReport.Load(Environment.CurrentDirectory + "\\" + dt_crname.Rows[0]["GirviRelease"].ToString());
+
             if (dt_crname.Rows[0]["GirviRelease"] == null || dt_crname.Rows[0]["GirviRelease"].ToString() == "")
             {
-                CrystalReport.CrystalReport_Girvi.Crt_GirviReliese _objReport = new CrystalReport.CrystalReport_Girvi.Crt_GirviReliese();
+                
                 string CompanyMaster = "SELECT companyid, CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,Antargat,LicenceNo,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE (companyid = '1')";
+                string ItemsDetails = "SELECT  metal_type, item_type, gross_wt, net_wt, Total_Quantity,reduce_wt FROM GirviItemMaster WHERE (GirviNo = '" + GirviNo + "')";
+                // string GirviReleaseMaster = "SELECT  Girvino, AmountDeposit, dateOfRelease, intersetRate,IntersetPaid,dateOfRelease,Interest_Amount,pavtino FROM GirviReleaseMaster WHERE (GirviRecordNo = '" + GirviNo + "')";
+                string CustomerInfo = "SELECT khatawani_No As khatawani_NoCustomer , FullName, Contact_No, Address,PageNo,photo,cast,occupation,Address2  FROM   Customer_Master WHERE  (khatawani_No = '" + KhatawaniNo + "')";
+                string GirviReleaseMaster = "SELECT Girvino, AmountDeposit, TotalDays, intersetRate, IntersetPaid, dateOfRelease, Interest_Amount, pavtino,Narration FROM GirviReleasemaster WHERE (Girvino = '" + GirviNo + "')";
+                string GirviMasterDetails = "SELECT GirviRecordNo, Amount as girviAmount, Date_of_deposit, interset_rate,updated_girvi_no,duration,Forwarded_to,Date_of_Forward,receipt_no,loantype,reason FROM GirviMaster WHERE (GirviRecordNo = '" + GirviNo + "')";
+
+                DataTable dt_CompanyMaster = _objsqlhelper.GetDataTable(CompanyMaster);
+                DataTable dt_CustomerMaster = _objsqlhelper.GetDataTable(CustomerInfo);
+                DataTable dt_GirviItemMaster = _objsqlhelper.GetDataTable(ItemsDetails);
+                DataTable dt_GirviReleaseMaster = _objsqlhelper.GetDataTable(GirviReleaseMaster);
+                //dt_GirviMaster
+                for (int i = 0; i < dt_GirviItemMaster.Rows.Count; i++)
+                {
+                    dt_GirviItemMaster.Rows[i]["gross_wt"] = "1";
+                    double d = Convert.ToDouble(dt_GirviItemMaster.Rows[i]["gross_wt"]);
+                    dt_GirviItemMaster.Rows[i]["gross_wt"] = d.ToString("0.000");
+                }
+                DataTable dt_GirviMaster = _objsqlhelper.GetDataTable(GirviMasterDetails);
+
+
+                //Set_Font
+                if (OtherFont == "Other")
+                {
+                    FieldObject field;
+                    TextObject texto;
+
+                    for (int i = 0; i < _objReport.ReportDefinition.ReportObjects.Count; i++)
+                    {
+                        string strrr = _objReport.ReportDefinition.ReportObjects[i].Name;
+
+                        field = _objReport.ReportDefinition.ReportObjects[i] as FieldObject;
+                        texto = _objReport.ReportDefinition.ReportObjects[i] as TextObject;
+
+                        if (field != null)
+                        {
+                            if (strrr != "CompanyName1" && strrr != "Addressline11" && strrr != "Addressline21" && strrr != "city1" && strrr != "metaltype1" && strrr != "itemtype1" && strrr != "CompanyName2" && strrr != "Addressline12" && strrr != "Addressline22" && strrr != "city2" && strrr != "metaltype3" && strrr != "itemtype2")
+                                field.ApplyFont(new Font("Shivaji02", 12f, FontStyle.Regular));
+                        }
+                    }
+                }
+
+                _objReport.Database.Tables[0].SetDataSource(dt_CompanyMaster);
+                _objReport.Database.Tables[1].SetDataSource(dt_CustomerMaster);
+                _objReport.Database.Tables[2].SetDataSource(dt_GirviItemMaster);
+                _objReport.Database.Tables[3].SetDataSource(dt_GirviReleaseMaster);
+                _objReport.Database.Tables[4].SetDataSource(dt_GirviMaster);
+
+                //Get_Amount_In_Marathi
+                string MarathiConvertedAmount = funNumToWordConvert(Decimal.Parse(dt_GirviMaster.Rows[0]["girviAmount"].ToString()));
+                _objReport.SetParameterValue("GirviAmountInWords", MarathiConvertedAmount);
+
+                _objReport.SetParameterValue("InterestAmount", Convert.ToString(Math.Round(Convert.ToDecimal(dt_GirviReleaseMaster.Rows[0]["intersetRate"]) * 12, 0)));
+                //_objReport.SetParameterValue("GrossWt", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "gross_wt")));
+                //_objReport.SetParameterValue("TotalAmount", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "amount")));
+                crReportViewer.ReportSource = _objReport;
+                
+            }
+            else
+            {
+                _objReport.Load(Environment.CurrentDirectory + "\\" + dt_crname.Rows[0]["GirviRelease"].ToString());
+                string CompanyMaster = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,Antargat,LicenceNo,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE (companyid = '1')";
                 string ItemsDetails = "SELECT  metal_type, item_type, gross_wt, net_wt, Total_Quantity,reduce_wt FROM GirviItemMaster WHERE (GirviNo = '" + GirviNo + "')";
                 // string GirviReleaseMaster = "SELECT  Girvino, AmountDeposit, dateOfRelease, intersetRate,IntersetPaid,dateOfRelease,Interest_Amount,pavtino FROM GirviReleaseMaster WHERE (GirviRecordNo = '" + GirviNo + "')";
                 string CustomerInfo = "SELECT khatawani_No As khatawani_NoCustomer , FullName, Contact_No, Address,PageNo,photo,cast,occupation,Address2  FROM   Customer_Master WHERE  (khatawani_No = '" + KhatawaniNo + "')";
@@ -418,20 +485,13 @@ namespace JewelleryManagement.CrystalReport
                 DataTable dt_GirviReleaseMaster = _objsqlhelper.GetDataTable(GirviReleaseMaster);
                 DataTable dt_GirviMaster = _objsqlhelper.GetDataTable(GirviMasterDetails);
 
-                for (int i = 0; i < dt_GirviItemMaster.Rows.Count; i++)
-                {
-                    dt_GirviItemMaster.Rows[i]["gross_wt"] = "1";
-                    double d = Convert.ToDouble(dt_GirviItemMaster.Rows[i]["gross_wt"]);
-                    dt_GirviItemMaster.Rows[i]["gross_wt"] = d.ToString("0.000");
-                }
-
-                _objReport.Database.Tables[0].SetDataSource(dt_CompanyMaster);
-                _objReport.Database.Tables[1].SetDataSource(dt_CustomerMaster);
-                _objReport.Database.Tables[2].SetDataSource(dt_GirviItemMaster);
-                _objReport.Database.Tables[3].SetDataSource(dt_GirviReleaseMaster);
-                _objReport.Database.Tables[4].SetDataSource(dt_GirviMaster);
+                _objReport.Database.Tables["dt_CompanyMaster"].SetDataSource(dt_CompanyMaster);
+                _objReport.Database.Tables["dt_CustomerMaster"].SetDataSource(dt_CustomerMaster);
+                _objReport.Database.Tables["dt_GirviItemMaster"].SetDataSource(dt_GirviItemMaster);
+                _objReport.Database.Tables["dt_GirviReleaseMaster"].SetDataSource(dt_GirviReleaseMaster);
+                _objReport.Database.Tables["dt_GirviMaster"].SetDataSource(dt_GirviMaster);
                 string MarathiConvertedAmount = funNumToWordConvert(Decimal.Parse(dt_GirviMaster.Rows[0]["girviAmount"].ToString()));
-                _objReport.SetParameterValue("GirviAmountInWords", MarathiConvertedAmount);
+                _objReport.SetParameterValue(0, MarathiConvertedAmount);
                 _objReport.SetParameterValue("InterestAmount", Convert.ToString(Math.Round(Convert.ToDecimal(dt_GirviReleaseMaster.Rows[0]["intersetRate"]) * 12, 0)));
                 //_objReport.SetParameterValue("GrossWt", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "gross_wt")));
                 //_objReport.SetParameterValue("TotalAmount", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "amount")));
@@ -456,53 +516,49 @@ namespace JewelleryManagement.CrystalReport
                     }
                 }
             }
+
+            string Printvalue = _objCommon.getprintcounttheva();
+            if (Printvalue == "4")
+            {
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "C");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "O");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "P");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "E");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+            }
+            else if (Printvalue == "3")
+            {
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "C");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "O");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "P");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+            }
+            else if (Printvalue == "2")
+            {
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "O");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+
+                _objReport.SetParameterValue("PageNo", "C");
+                _objReport.PrintToPrinter(1, true, 0, 0);
+            }
             else
             {
-                CrystalDecisions.CrystalReports.Engine.ReportDocument _objReport = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
-                _objReport.Load(Environment.CurrentDirectory + "\\" + dt_crname.Rows[0]["GirviRelease"].ToString());
-                string CompanyMaster = "SELECT CompanyName, Addressline1, Addressline2, city, phoneNo, MobNo, MobNo2,Antargat,LicenceNo,Post,Tahsil,District,State,PinCode FROM CompanyMaster WHERE (companyid = '1')";
-                string ItemsDetails = "SELECT  metal_type, item_type, gross_wt, net_wt, Total_Quantity,reduce_wt FROM GirviItemMaster WHERE (GirviNo = '" + GirviNo + "')";
-                // string GirviReleaseMaster = "SELECT  Girvino, AmountDeposit, dateOfRelease, intersetRate,IntersetPaid,dateOfRelease,Interest_Amount,pavtino FROM GirviReleaseMaster WHERE (GirviRecordNo = '" + GirviNo + "')";
-                string CustomerInfo = "SELECT khatawani_No As khatawani_NoCustomer , FullName, Contact_No, Address,PageNo,photo,cast,occupation,Address2  FROM   Customer_Master WHERE  (khatawani_No = '" + KhatawaniNo + "')";
-                string GirviReleaseMaster = "SELECT Girvino, AmountDeposit, TotalDays, intersetRate, IntersetPaid, dateOfRelease, Interest_Amount, pavtino,Narration FROM GirviReleasemaster WHERE (Girvino = '" + GirviNo + "')";
-                string GirviMasterDetails = "SELECT GirviRecordNo, Amount as girviAmount, Date_of_deposit, interset_rate,updated_girvi_no,duration,Forwarded_to,Date_of_Forward,receipt_no,loantype,reason FROM GirviMaster WHERE (GirviRecordNo = '" + GirviNo + "')";
-
-                DataTable dt_CompanyMaster = _objsqlhelper.GetDataTable(CompanyMaster);
-                DataTable dt_CustomerMaster = _objsqlhelper.GetDataTable(CustomerInfo);
-                DataTable dt_GirviItemMaster = _objsqlhelper.GetDataTable(ItemsDetails);
-                DataTable dt_GirviReleaseMaster = _objsqlhelper.GetDataTable(GirviReleaseMaster);
-                DataTable dt_GirviMaster = _objsqlhelper.GetDataTable(GirviMasterDetails);
-
-                _objReport.Database.Tables["dt_CompanyMaster"].SetDataSource(dt_CompanyMaster);
-                _objReport.Database.Tables["dt_CustomerMaster"].SetDataSource(dt_CustomerMaster);
-                _objReport.Database.Tables["dt_GirviItemMaster"].SetDataSource(dt_GirviItemMaster);
-                _objReport.Database.Tables["dt_GirviReleaseMaster"].SetDataSource(dt_GirviReleaseMaster);
-                _objReport.Database.Tables["dt_GirviMaster"].SetDataSource(dt_GirviMaster);
-                string MarathiConvertedAmount = funNumToWordConvert(Decimal.Parse(dt_GirviMaster.Rows[0]["girviAmount"].ToString()));
-                _objReport.SetParameterValue("GirviAmountInWords", MarathiConvertedAmount);
-                _objReport.SetParameterValue("InterestAmount", Convert.ToString(Math.Round(Convert.ToDecimal(dt_GirviReleaseMaster.Rows[0]["intersetRate"]) * 12, 0)));
-                //_objReport.SetParameterValue("GrossWt", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "gross_wt")));
-                //_objReport.SetParameterValue("TotalAmount", Convert.ToString(_objCommon.sumDataTableColumn(dt_GirviItemMaster, "amount")));
-                crReportViewer.ReportSource = _objReport;
-                if (OtherFont == "Other")
-                {
-                    FieldObject field;
-                    TextObject texto;
-
-                    for (int i = 0; i < _objReport.ReportDefinition.ReportObjects.Count; i++)
-                    {
-                        string strrr = _objReport.ReportDefinition.ReportObjects[i].Name;
-
-                        field = _objReport.ReportDefinition.ReportObjects[i] as FieldObject;
-                        texto = _objReport.ReportDefinition.ReportObjects[i] as TextObject;
-
-                        if (field != null)
-                        {
-                            if (strrr != "CompanyName1" && strrr != "Addressline11" && strrr != "Addressline21" && strrr != "city1" && strrr != "metaltype1" && strrr != "itemtype1" && strrr != "CompanyName2" && strrr != "Addressline12" && strrr != "Addressline22" && strrr != "city2" && strrr != "metaltype3" && strrr != "itemtype2")
-                                field.ApplyFont(new Font("Shivaji02", 12f, FontStyle.Regular));
-                        }
-                    }
-                }
+                _objReport.PrintOptions.PrinterName = PrinterName;
+                _objReport.SetParameterValue("PageNo", "C");
+                _objReport.PrintToPrinter(1, true, 0, 0);
             }
         }
 
@@ -1075,7 +1131,6 @@ namespace JewelleryManagement.CrystalReport
             }
         }
 
-
         public void ReceiveDataAllKhatawaniUnReleaseGirviDetails(DataTable dtData, string EndDate, string IntrestDate, string StartDate, bool other)
         {
             CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithUnReleasegirvi _oVIReport = new CrystalReport.CrystalReport_Girvi.Crt_khatawaniwithUnReleasegirvi();
@@ -1111,10 +1166,6 @@ namespace JewelleryManagement.CrystalReport
                 }
             }
         }
-
-
-
-
 
         public void ReceiveDataInterestRecord(DataTable dtData, string KhNo, string TotalAmountNaaveSum, string TotalAmountJamaSum, string AccountBalance, bool other)
         {
@@ -1235,8 +1286,7 @@ namespace JewelleryManagement.CrystalReport
             }
 
         }
-
-
+        
         public void ReceiveRokadAllRecord(DataTable dtData, bool other, string opening)
         {
             string crname;
@@ -1290,8 +1340,7 @@ namespace JewelleryManagement.CrystalReport
                 }
             }
         }
-
-
+        
         public void ReceiveCashbookRecord(DataTable dtData, string startdate, string enddate, bool other)
         {
             CrystalReport.CrystalReport_Girvi.crt_CashBook _oVIReport = new CrystalReport.CrystalReport_Girvi.crt_CashBook();
@@ -1452,7 +1501,6 @@ namespace JewelleryManagement.CrystalReport
                 }
             }
         }
-
 
         public void ReceiveDataBalanceSheetMonthwise(DataTable dtData, bool Other)
         {
@@ -1645,9 +1693,7 @@ namespace JewelleryManagement.CrystalReport
 
 
         }
-
-
-
+        
         public void ReceiveDataGirviByAddress(DataTable dtData, bool other)
         {
             CrystalReport.CrystalReport_Girvi.Crt_NitinTumsarGirviByAddress _oVIReport = new CrystalReport.CrystalReport_Girvi.Crt_NitinTumsarGirviByAddress();

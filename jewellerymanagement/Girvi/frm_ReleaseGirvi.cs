@@ -11,13 +11,15 @@ using System.Data.SqlClient;
 using BAL.Girvi;
 using BAL.Common;
 using System.Drawing.Text;
+using JewelleryManagement.CrystalReport;
 using JewelleryManagement.Reports.Girvi;
+using System.Drawing.Imaging;
 namespace JewelleryManagement.Girvi
 {
     public partial class frm_ReleaseGirvi : Form
     {
         //forwardamount
-        public delegate void SendData(string GirviNo, string KhatawaniNo, string otherfont);
+        public delegate void SendData(string GirviNo, string KhatawaniNo, string otherfont,string PrinterName);
         public frm_ReleaseGirvi()
         {
             InitializeComponent();
@@ -29,6 +31,8 @@ namespace JewelleryManagement.Girvi
         cls_GirviRelease _objGirviRelease = new cls_GirviRelease();
         clsGirviCommon _objCommon = new clsGirviCommon();
         ClsFinancialYear _objFinancialYear = new ClsFinancialYear();
+        PrinterSetting oPrintersetting = new PrinterSetting();
+
 
         int currentMouseOverRow { get; set; }
         int count { get; set; }
@@ -1025,25 +1029,45 @@ namespace JewelleryManagement.Girvi
 
                                 if (rbt_PrintTrue.Checked == true)
                                 {
-                                    DialogResult drReportPrint = MessageBox.Show("Do You Want To Print", "JMS Says", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                                    if (drReportPrint == DialogResult.Yes)
+                                DialogResult drReportPrint = MessageBox.Show("Do You Want To Print", "JMS Says", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                                if (drReportPrint == DialogResult.Yes)
+                                {
+                                    if (rbt_OtherTrue.Checked == true)
                                     {
-                                        if (rbt_OtherTrue.Checked == true)
+                                        if (oPrintersetting.ShowDialog() == DialogResult.OK)
                                         {
                                             CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
                                             SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDataReleaseGirvi);
-                                            _obj(txt_Srno.Text, txt_khatawaniNo.Text, "Other");
-                                            _objfrm_ReportViewer.Show();
+                                            _obj(txt_InvoiceNo.Text, txt_khatawaniNo.Text, "Other", oPrintersetting.PrinterName);
+
                                         }
                                         else
                                         {
                                             CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
                                             SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDataReleaseGirvi);
-                                            _obj(txt_Srno.Text, txt_khatawaniNo.Text, "Marathi");
+                                            _obj (txt_InvoiceNo.Text, txt_khatawaniNo.Text, "Other", "");
+                                            _objfrm_ReportViewer.Show();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (oPrintersetting.ShowDialog() == DialogResult.OK)
+                                        {
+                                            CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
+                                            SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDataReleaseGirvi);
+                                            _obj(txt_InvoiceNo.Text, txt_khatawaniNo.Text, "All", oPrintersetting.PrinterName);
+
+                                        }
+                                        else
+                                        {
+                                            CrystalReport.frm_ReportViewer _objfrm_ReportViewer = new CrystalReport.frm_ReportViewer();
+                                            SendData _obj = new SendData(_objfrm_ReportViewer.ReceiveDataReleaseGirvi);
+                                            _obj(txt_InvoiceNo.Text, txt_khatawaniNo.Text, "All", "");
                                             _objfrm_ReportViewer.Show();
                                         }
                                     }
                                 }
+                            }
                                     MasterClear();
                                     //  bttn_ReleaseWith.Enabled = true;
                                     dgv_ItemDetail.Rows.Clear();
